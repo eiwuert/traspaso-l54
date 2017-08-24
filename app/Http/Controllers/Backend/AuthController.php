@@ -16,7 +16,7 @@ namespace App\Http\Controllers\Backend;
 	   public function __construct(){
 	       $this->authConfig = array(
 	           'client_info' => array(
-	               'client_id' => $_ENV['claveunica_client_id'],
+	               'client_id' => env('claveunica_client_id'),
 	               'redirect_uri' => \URL::to('/backend/callback'),
 	               'authorization_endpoint' => 'https://www.claveunica.gob.cl/openid/authorize',
 	               'token_endpoint' => 'https://www.claveunica.gob.cl/openid/token',
@@ -24,7 +24,7 @@ namespace App\Http\Controllers\Backend;
 	               'authentication_info' => array(
 	                   'method' => 'client_secret_post',
 	                   'params' => array(
-	                       'client_secret' => $_ENV['claveunica_secret_id']
+	                       'client_secret' => env('claveunica_secret_id')
 	                   )
 	               )
 	           )
