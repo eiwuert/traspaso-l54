@@ -18,570 +18,489 @@ class InstitucionesTableSeeder extends Seeder {
 			array (
 				'codigo' => 'AA001',
 				'nombre' => 'Presidencia de la República',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+	
 			),
 			1 => 
 			array (
 				'codigo' => 'AB001',
 				'nombre' => 'Subsecretaría del Interior',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			2 => 
 			array (
 				'codigo' => 'AB002',
 				'nombre' => 'Subsecretaría de Desarrollo Regional',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			3 => 
 			array (
 				'codigo' => 'AB003',
 				'nombre' => 'Agencia Nacional de Inteligencia',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			4 => 
 			array (
 				'codigo' => 'AB004',
 				'nombre' => 'Oficina Nacional de Emergencia',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			5 => 
 			array (
 				'codigo' => 'AB005',
 				'nombre' => 'Servicio de Gobierno Interior',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			6 => 
 			array (
 				'codigo' => 'AB006',
 				'nombre' => 'Servicio Electoral',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			7 => 
 			array (
 				'codigo' => 'AB007',
 				'nombre' => 'Intendencia Arica y Parinacota',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			8 => 
 			array (
 				'codigo' => 'AB008',
 				'nombre' => 'Intendencia de Antofagasta',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			9 => 
 			array (
 				'codigo' => 'AB009',
 				'nombre' => 'Intendencia de Atacama',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			10 => 
 			array (
 				'codigo' => 'AB010',
 				'nombre' => 'Intendencia de Aysén',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			11 => 
 			array (
 				'codigo' => 'AB011',
 				'nombre' => 'Intendencia de Coquimbo',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			12 => 
 			array (
 				'codigo' => 'AB012',
 				'nombre' => 'Intendencia de la Araucanía',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			13 => 
 			array (
 				'codigo' => 'AB013',
 				'nombre' => 'Intendencia de Los Lagos',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			14 => 
 			array (
 				'codigo' => 'AB014',
 				'nombre' => 'Intendencia de Los Ríos',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			15 => 
 			array (
 				'codigo' => 'AB015',
 				'nombre' => 'Intendencia de Magallanes',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			16 => 
 			array (
 				'codigo' => 'AB016',
 				'nombre' => 'Intendencia de O’Higgins',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			17 => 
 			array (
 				'codigo' => 'AB017',
 				'nombre' => 'Intendencia de Tarapacá',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			18 => 
 			array (
 				'codigo' => 'AB018',
 				'nombre' => 'Intendencia de Valparaíso',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			19 => 
 			array (
 				'codigo' => 'AB019',
 				'nombre' => 'Intendencia del Bío Bío',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			20 => 
 			array (
 				'codigo' => 'AB020',
 				'nombre' => 'Intendencia del Maule',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			21 => 
 			array (
 				'codigo' => 'AB021',
 				'nombre' => 'Intendencia Metropolitana',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			22 => 
 			array (
 				'codigo' => 'AB022',
 				'nombre' => 'Gobernación de Arica',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			23 => 
 			array (
 				'codigo' => 'AB023',
 				'nombre' => 'Gobernación de Parinacota',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			24 => 
 			array (
 				'codigo' => 'AB024',
 				'nombre' => 'Gobernación de Iquique',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			25 => 
 			array (
 				'codigo' => 'AB025',
 				'nombre' => 'Gobernación de Tamarugal',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			26 => 
 			array (
 				'codigo' => 'AB026',
 				'nombre' => 'Gobernación de Antofagasta',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			27 => 
 			array (
 				'codigo' => 'AB027',
 				'nombre' => 'Gobernación de El Loa',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			28 => 
 			array (
 				'codigo' => 'AB028',
 				'nombre' => 'Gobernación de Tocopilla',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			29 => 
 			array (
 				'codigo' => 'AB029',
 				'nombre' => 'Gobernación de Chañaral',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			30 => 
 			array (
 				'codigo' => 'AB030',
 				'nombre' => 'Gobernación de Copiapó',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			31 => 
 			array (
 				'codigo' => 'AB031',
 				'nombre' => 'Gobernación de Huasco',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			32 => 
 			array (
 				'codigo' => 'AB032',
 				'nombre' => 'Gobernación de Elqui',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			33 => 
 			array (
 				'codigo' => 'AB033',
 				'nombre' => 'Gobernación de Limarí',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			34 => 
 			array (
 				'codigo' => 'AB034',
 				'nombre' => 'Gobernación de Choapa',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			35 => 
 			array (
 				'codigo' => 'AB035',
 				'nombre' => 'Gobernación de Petorca',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			36 => 
 			array (
 				'codigo' => 'AB036',
 				'nombre' => 'Gobernación de Valparaíso',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			37 => 
 			array (
 				'codigo' => 'AB037',
 				'nombre' => 'Gobernación de San Felipe',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			38 => 
 			array (
 				'codigo' => 'AB038',
 				'nombre' => 'Gobernación de Los Andes',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			39 => 
 			array (
 				'codigo' => 'AB039',
 				'nombre' => 'Gobernación de Quillota',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			40 => 
 			array (
 				'codigo' => 'AB040',
 				'nombre' => 'Gobernación de San Antonio',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			41 => 
 			array (
 				'codigo' => 'AB041',
 				'nombre' => 'Gobernación de Isla de Pascua',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			42 => 
 			array (
 				'codigo' => 'AB042',
 				'nombre' => 'Gobernación de Cachapoal',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			43 => 
 			array (
 				'codigo' => 'AB043',
 				'nombre' => 'Gobernación de Colchagua',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			44 => 
 			array (
 				'codigo' => 'AB044',
 				'nombre' => 'Gobernación de Cardenal Caro',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			45 => 
 			array (
 				'codigo' => 'AB045',
 				'nombre' => 'Gobernación de Curicó',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			46 => 
 			array (
 				'codigo' => 'AB046',
 				'nombre' => 'Gobernación de Talca',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			47 => 
 			array (
 				'codigo' => 'AB047',
 				'nombre' => 'Gobernación de Linares',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			48 => 
 			array (
 				'codigo' => 'AB048',
 				'nombre' => 'Gobernación de Cauquenes',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			49 => 
 			array (
 				'codigo' => 'AB049',
 				'nombre' => 'Gobernación de Ñuble',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			50 => 
 			array (
 				'codigo' => 'AB050',
 				'nombre' => 'Gobernación de Bío Bío',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			)
 			/*,
 			51 => 
 			array (
 				'codigo' => 'AB051',
 				'nombre' => 'Gobernación de Concepción',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			52 => 
 			array (
 				'codigo' => 'AB052',
 				'nombre' => 'Gobernación de Arauco',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			53 => 
 			array (
 				'codigo' => 'AB053',
 				'nombre' => 'Gobernación de Malleco',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			54 => 
 			array (
 				'codigo' => 'AB054',
 				'nombre' => 'Gobernación de Cautín',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			55 => 
 			array (
 				'codigo' => 'AB055',
 				'nombre' => 'Gobernación de Valdivia',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			56 => 
 			array (
 				'codigo' => 'AB056',
 				'nombre' => 'Gobernación de Ranco',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			57 => 
 			array (
 				'codigo' => 'AB057',
 				'nombre' => 'Gobernación de Osorno',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			58 => 
 			array (
 				'codigo' => 'AB058',
 				'nombre' => 'Gobernación de Llanquihue',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			59 => 
 			array (
 				'codigo' => 'AB059',
 				'nombre' => 'Gobernación de Chiloé',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			60 => 
 			array (
 				'codigo' => 'AB060',
 				'nombre' => 'Gobernación de Palena',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			61 => 
 			array (
 				'codigo' => 'AB061',
 				'nombre' => 'Gobernación de Coyhaique',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			62 => 
 			array (
 				'codigo' => 'AB062',
 				'nombre' => 'Gobernación de Puerto Aysén',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			63 => 
 			array (
 				'codigo' => 'AB063',
 				'nombre' => 'Gobernación de General Carrera',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			64 => 
 			array (
 				'codigo' => 'AB064',
 				'nombre' => 'Gobernación de Capitán Prat',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			65 => 
 			array (
 				'codigo' => 'AB065',
 				'nombre' => 'Gobernación de Última Esperanza',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			66 => 
 			array (
 				'codigo' => 'AB066',
 				'nombre' => 'Gobernación de Magallanes',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			67 => 
 			array (
 				'codigo' => 'AB067',
 				'nombre' => 'Gobernación de Tierra del Fuego',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			68 => 
 			array (
 				'codigo' => 'AB068',
 				'nombre' => 'Gobernación de la Antártica Chilena',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			69 => 
 			array (
 				'codigo' => 'AB069',
 				'nombre' => 'Gobernación de Chacabuco',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			70 => 
 			array (
 				'codigo' => 'AB070',
 				'nombre' => 'Gobernación de Cordillera',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			71 => 
 			array (
 				'codigo' => 'AB071',
 				'nombre' => 'Gobernación de Maipo',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			72 => 
 			array (
 				'codigo' => 'AB072',
 				'nombre' => 'Gobernación de Talagante',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			73 => 
 			array (
 				'codigo' => 'AB073',
 				'nombre' => 'Gobernación de Melipilla',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			74 => 
 			array (
 				'codigo' => 'AB075',
 				'nombre' => 'Gobierno Regional de Arica y Parinacota',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			75 => 
 			array (
 				'codigo' => 'AB076',
 				'nombre' => 'Gobierno Regional de Tarapacá',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			76 => 
 			array (
 				'codigo' => 'AB077',
 				'nombre' => 'Gobierno Regional de Antofagasta',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			77 => 
 			array (
 				'codigo' => 'AB078',
 				'nombre' => 'Gobierno Regional de Atacama',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			78 => 
 			array (
 				'codigo' => 'AB079',
 				'nombre' => 'Gobierno Regional de Coquimbo',
 				'codigo_padre' => 'AB',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			79 => 
 			array (
 				'codigo' => 'AB080',
 				'nombre' => 'Gobierno Regional de Valparaíso',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			80 => 
 			array (
 				'codigo' => 'AB081',
 				'nombre' => 'Gobierno Regional Metropolitano de Santiago',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			)/*
 			83 => 
 			array (
@@ -589,8 +508,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Gobierno Regional de O´Higgins',
 				'codigo_padre' => 'AB',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			84 => 
 			array (
@@ -598,8 +516,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Gobierno Regional del Maule',
 				'codigo_padre' => 'AB',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			85 => 
 			array (
@@ -607,8 +524,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Gobierno Regional del Bío Bío',
 				'codigo_padre' => 'AB',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			86 => 
 			array (
@@ -616,8 +532,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Gobierno Regional de La Araucanía',
 				'codigo_padre' => 'AB',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			87 => 
 			array (
@@ -625,8 +540,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Gobierno Regional de Los Ríos',
 				'codigo_padre' => 'AB',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			88 => 
 			array (
@@ -634,8 +548,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Gobierno Regional de Los Lagos',
 				'codigo_padre' => 'AB',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			89 => 
 			array (
@@ -643,8 +556,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Gobierno Regional de Aysén',
 				'codigo_padre' => 'AB',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			90 => 
 			array (
@@ -652,8 +564,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Gobierno Regional de Magallanes y Antártica Chilena ',
 				'codigo_padre' => 'AB',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			91 => 
 			array (
@@ -661,8 +572,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Gobernación de Marga Marga',
 				'codigo_padre' => 'AB',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			92 => 
 			array (
@@ -670,8 +580,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Subsecretaría de Prevención del Delito',
 				'codigo_padre' => 'AB',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			93 => 
 			array (
@@ -679,8 +588,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio Nacional de Prevención y Rehabilitación del Consumo de Drogas y Alcohol',
 				'codigo_padre' => 'AB',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			94 => 
 			array (
@@ -688,8 +596,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Departamento de Extranjería y Migración',
 				'codigo_padre' => 'AB',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			96 => 
 			array (
@@ -697,8 +604,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Subsecretaría de Relaciones Exteriores',
 				'codigo_padre' => 'AC',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			97 => 
 			array (
@@ -706,8 +612,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Dirección General de Relaciones Económicas Internacionales',
 				'codigo_padre' => 'AC',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			98 => 
 			array (
@@ -715,8 +620,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Dirección Nacional de Fronteras y Límites del Estado',
 				'codigo_padre' => 'AC',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			99 => 
 			array (
@@ -724,8 +628,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Agencia de Cooperación Internacional',
 				'codigo_padre' => 'AC',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			100 => 
 			array (
@@ -733,8 +636,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Instituto Antártico Chileno',
 				'codigo_padre' => 'AC',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 
 			102 => 
@@ -743,8 +645,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Ejército de Chile',
 				'codigo_padre' => 'AD',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			103 => 
 			array (
@@ -752,8 +653,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Armada de Chile',
 				'codigo_padre' => 'AD',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			104 => 
 			array (
@@ -761,8 +661,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Fuerza Aérea de Chile',
 				'codigo_padre' => 'AD',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			105 => 
 			array (
@@ -770,8 +669,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Carabineros de Chile',
 				'codigo_padre' => 'AB',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			106 => 
 			array (
@@ -779,8 +677,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Policía de Investigaciones',
 				'codigo_padre' => 'AB',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			107 => 
 			array (
@@ -788,8 +685,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Dirección Administrativa',
 				'codigo_padre' => 'AD',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			108 => 
 			array (
@@ -797,8 +693,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Defensa Civil de Chile',
 				'codigo_padre' => 'AD',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			109 => 
 			array (
@@ -806,8 +701,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Dirección General de Movilización Nacional',
 				'codigo_padre' => 'AD',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			110 => 
 			array (
@@ -815,8 +709,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Dirección General del Territorio Marítimo y Marina Mercante',
 				'codigo_padre' => 'AD',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			111 => 
 			array (
@@ -824,8 +717,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Caja de Previsión de la Defensa Nacional',
 				'codigo_padre' => 'AD',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			112 => 
 			array (
@@ -833,8 +725,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Dirección de Previsión de Carabineros de Chile',
 				'codigo_padre' => 'AB',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			113 => 
 			array (
@@ -842,8 +733,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Instituto Geográfico Militar',
 				'codigo_padre' => 'AD',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			114 => 
 			array (
@@ -851,8 +741,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio Aerofotogramétrico FACh',
 				'codigo_padre' => 'AD',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			115 => 
 			array (
@@ -860,8 +749,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio Hidrográfico y Oceanográfico de la Armada',
 				'codigo_padre' => 'AD',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			116 => 
 			array (
@@ -869,8 +757,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Dirección General de Aeronáutica Civil',
 				'codigo_padre' => 'AD',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			117 => 
 			array (
@@ -878,8 +765,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Subsecretaría de Defensa',
 				'codigo_padre' => 'AD',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			118 => 
 			array (
@@ -887,8 +773,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Subsecretaría para las Fuerzas Armadas',
 				'codigo_padre' => 'AD',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			119 => 
 			array (
@@ -896,8 +781,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Estado Mayor Conjunto ',
 				'codigo_padre' => 'AD',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 
 			121 => 
@@ -906,8 +790,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Subsecretaría de Hacienda ',
 				'codigo_padre' => 'AE',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			122 => 
 			array (
@@ -915,8 +798,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Dirección de Presupuestos',
 				'codigo_padre' => 'AE',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			123 => 
 			array (
@@ -924,8 +806,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Tesorería General de la República',
 				'codigo_padre' => 'AE',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			124 => 
 			array (
@@ -933,8 +814,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Dirección Nacional del Servicio Civil',
 				'codigo_padre' => 'AE',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			125 => 
 			array (
@@ -942,8 +822,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Unidad de Análisis Financiero',
 				'codigo_padre' => 'AE',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			126 => 
 			array (
@@ -951,8 +830,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio de Impuestos Internos',
 				'codigo_padre' => 'AE',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			127 => 
 			array (
@@ -960,8 +838,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio Nacional de Aduanas',
 				'codigo_padre' => 'AE',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			128 => 
 			array (
@@ -969,8 +846,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Superintendencia de Bancos e Instituciones Financieras',
 				'codigo_padre' => 'AE',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			129 => 
 			array (
@@ -978,8 +854,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Superintendencia de Valores y Seguros',
 				'codigo_padre' => 'AE',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			130 => 
 			array (
@@ -987,8 +862,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Dirección de Compras y Contratación Pública',
 				'codigo_padre' => 'AE',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			131 => 
 			array (
@@ -996,8 +870,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Superintendencia de Casinos de Juego',
 				'codigo_padre' => 'AE',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 
 			133 => 
@@ -1006,8 +879,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Subsecretaría General de la Presidencia',
 				'codigo_padre' => 'AF',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			135 => 
 			array (
@@ -1015,8 +887,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Subsecretaría General de Gobierno',
 				'codigo_padre' => 'AG',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			136 => 
 			array (
@@ -1024,8 +895,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Instituto Nacional del Deporte',
 				'codigo_padre' => 'AY',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			137 => 
 			array (
@@ -1033,8 +903,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Consejo Nacional de Televisión',
 				'codigo_padre' => 'AG',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			139 => 
 			array (
@@ -1042,8 +911,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Subsecretaría de Economía y Empresa de Menor Tamaño',
 				'codigo_padre' => 'AH',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			140 => 
 			array (
@@ -1051,8 +919,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Subsecretaría de Pesca',
 				'codigo_padre' => 'AH',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			141 => 
 			array (
@@ -1060,8 +927,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Comité de Inversiones Extranjeras',
 				'codigo_padre' => 'AH',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			142 => 
 			array (
@@ -1069,8 +935,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Corporación de Fomento de la Producción',
 				'codigo_padre' => 'AH',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			143 => 
 			array (
@@ -1078,8 +943,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Fiscalía Nacional Económica',
 				'codigo_padre' => 'AH',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			144 => 
 			array (
@@ -1087,8 +951,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Instituto Nacional de Estadísticas',
 				'codigo_padre' => 'AH',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			145 => 
 			array (
@@ -1096,8 +959,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio Nacional de Turismo',
 				'codigo_padre' => 'AH',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			146 => 
 			array (
@@ -1105,8 +967,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio Nacional del Consumidor',
 				'codigo_padre' => 'AH',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			147 => 
 			array (
@@ -1114,8 +975,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio Nacional de Pesca',
 				'codigo_padre' => 'AH',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			148 => 
 			array (
@@ -1123,8 +983,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Subsecretaría de Turismo',
 				'codigo_padre' => 'AH',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			149 => 
 			array (
@@ -1132,8 +991,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio de Cooperación Técnica ',
 				'codigo_padre' => 'AH',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			150 => 
 			array (
@@ -1141,8 +999,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Comité Innova Bío Bío',
 				'codigo_padre' => 'AH',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			152 => 
 			array (
@@ -1150,8 +1007,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Subsecretaría de Planificación',
 				'codigo_padre' => 'AI',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			153 => 
 			array (
@@ -1159,8 +1015,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Corporación Nacional de Desarrollo Indígena',
 				'codigo_padre' => 'AI',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			154 => 
 			array (
@@ -1168,8 +1023,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio Nacional de la Discapacidad',
 				'codigo_padre' => 'AI',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			155 => 
 			array (
@@ -1177,8 +1031,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Fondo de Solidaridad e Inversión Social',
 				'codigo_padre' => 'AI',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			156 => 
 			array (
@@ -1186,8 +1039,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Instituto Nacional de la Juventud',
 				'codigo_padre' => 'AI',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			157 => 
 			array (
@@ -1195,8 +1047,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio Nacional del Adulto Mayor',
 				'codigo_padre' => 'AI',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			158 => 
 			array (
@@ -1204,8 +1055,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Subsecretaría de Evaluación Social',
 				'codigo_padre' => 'AI',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			159 => 
 			array (
@@ -1213,8 +1063,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Subsecretaría de Servicios Sociales',
 				'codigo_padre' => 'AI',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			161 => 
 			array (
@@ -1222,8 +1071,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Subsecretaría de Educación',
 				'codigo_padre' => 'AJ',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			162 => 
 			array (
@@ -1231,8 +1079,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Consejo de Rectores de las Universidades Chilenas',
 				'codigo_padre' => 'AJ',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			163 => 
 			array (
@@ -1240,8 +1087,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Agencia de Calidad de la Educación',
 				'codigo_padre' => 'AJ',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			164 => 
 			array (
@@ -1249,8 +1095,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 			'nombre' => 'Comisión Administradora del Sistema de Créditos para Estudios Superiores (Comisión Ingresa)',
 				'codigo_padre' => 'AJ',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			165 => 
 			array (
@@ -1258,8 +1103,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Dirección de Bibliotecas, Archivos y Museos',
 				'codigo_padre' => 'AJ',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			166 => 
 			array (
@@ -1267,8 +1111,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Consejo de Calificación Cinematográfica',
 				'codigo_padre' => 'AJ',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			167 => 
 			array (
@@ -1276,8 +1119,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Comisión Nacional de Investigación Científica y Tecnológica',
 				'codigo_padre' => 'AJ',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			168 => 
 			array (
@@ -1285,8 +1127,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Junta Nacional de Auxilio Escolar y Becas',
 				'codigo_padre' => 'AJ',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			169 => 
 			array (
@@ -1294,8 +1135,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Junta Nacional de Jardines Infantiles',
 				'codigo_padre' => 'AJ',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			170 => 
 			array (
@@ -1303,8 +1143,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Consejo de Monumentos Nacionales',
 				'codigo_padre' => 'AJ',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			171 => 
 			array (
@@ -1312,8 +1151,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Consejo Nacional de Educación',
 				'codigo_padre' => 'AJ',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			172 => 
 			array (
@@ -1321,8 +1159,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Superintendencia de Educación',
 				'codigo_padre' => 'AJ',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			174 => 
 			array (
@@ -1330,8 +1167,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Subsecretaría de Justicia',
 				'codigo_padre' => 'AK',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			175 => 
 			array (
@@ -1339,8 +1175,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio de Registro Civil e Identificación',
 				'codigo_padre' => 'AK',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			176 => 
 			array (
@@ -1348,8 +1183,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio Médico Legal',
 				'codigo_padre' => 'AK',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			177 => 
 			array (
@@ -1357,8 +1191,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio Nacional de Menores',
 				'codigo_padre' => 'AK',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			178 => 
 			array (
@@ -1366,8 +1199,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Defensoría Penal Pública',
 				'codigo_padre' => 'AK',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			179 => 
 			array (
@@ -1375,8 +1207,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Gendarmería de Chile',
 				'codigo_padre' => 'AK',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			180 => 
 			array (
@@ -1384,8 +1215,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Superintendencia de Insolvencia y Reemprendimiento',
 				'codigo_padre' => 'AH',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			181 => 
 			array (
@@ -1393,8 +1223,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Corporación de Asistencia Judicial Región Metropolitana',
 				'codigo_padre' => 'AK',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			182 => 
 			array (
@@ -1402,8 +1231,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Corporación de Asistencia Judicial Región Valparaíso',
 				'codigo_padre' => 'AK',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			183 => 
 			array (
@@ -1411,8 +1239,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Corporación de Asistencia Judicial Regiones Tarapacá y Antofagasta',
 				'codigo_padre' => 'AK',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			184 => 
 			array (
@@ -1420,8 +1247,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Corporación de Asistencia Judicial Región Bío Bío',
 				'codigo_padre' => 'AK',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			186 => 
 			array (
@@ -1429,8 +1255,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Subsecretaría del Trabajo',
 				'codigo_padre' => 'AL',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			187 => 
 			array (
@@ -1438,8 +1263,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Subsecretaría de Previsión Social',
 				'codigo_padre' => 'AL',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			188 => 
 			array (
@@ -1447,8 +1271,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Dirección del Trabajo',
 				'codigo_padre' => 'AL',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			189 => 
 			array (
@@ -1456,8 +1279,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Dirección General de Crédito Prendario',
 				'codigo_padre' => 'AL',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			190 => 
 			array (
@@ -1465,8 +1287,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Instituto de Previsión Social',
 				'codigo_padre' => 'AL',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			191 => 
 			array (
@@ -1474,8 +1295,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Instituto de Seguridad Laboral',
 				'codigo_padre' => 'AL',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			192 => 
 			array (
@@ -1483,8 +1303,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio Nacional de Capacitación y Empleo',
 				'codigo_padre' => 'AL',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			193 => 
 			array (
@@ -1492,8 +1311,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Superintendencia de Pensiones',
 				'codigo_padre' => 'AL',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			194 => 
 			array (
@@ -1501,8 +1319,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Superintendencia de Seguridad Social',
 				'codigo_padre' => 'AL',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			195 => 
 			array (
@@ -1510,8 +1327,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Comisión del Sistema Nacional de Certificación de Competencias Laborales',
 				'codigo_padre' => 'AL',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			197 => 
 			array (
@@ -1519,8 +1335,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Subsecretaría de Obras Públicas',
 				'codigo_padre' => 'AM',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			198 => 
 			array (
@@ -1528,8 +1343,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Dirección General de Obras Públicas',
 				'codigo_padre' => 'AM',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			199 => 
 			array (
@@ -1537,8 +1351,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Dirección de Contabilidad y Finanzas',
 				'codigo_padre' => 'AM',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			200 => 
 			array (
@@ -1546,8 +1359,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Dirección de Aeropuertos',
 				'codigo_padre' => 'AM',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			201 => 
 			array (
@@ -1555,8 +1367,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Dirección de Arquitectura',
 				'codigo_padre' => 'AM',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			202 => 
 			array (
@@ -1564,8 +1375,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Dirección General de Aguas',
 				'codigo_padre' => 'AM',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			203 => 
 			array (
@@ -1573,8 +1383,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Dirección de Obras Hidráulicas',
 				'codigo_padre' => 'AM',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			204 => 
 			array (
@@ -1582,8 +1391,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Dirección de Obras Portuarias',
 				'codigo_padre' => 'AM',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			205 => 
 			array (
@@ -1591,8 +1399,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Dirección de Planeamiento ',
 				'codigo_padre' => 'AM',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			206 => 
 			array (
@@ -1600,8 +1407,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Dirección de Vialidad',
 				'codigo_padre' => 'AM',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			207 => 
 			array (
@@ -1609,8 +1415,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Superintendencia de Servicios Sanitarios',
 				'codigo_padre' => 'AM',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			208 => 
 			array (
@@ -1618,8 +1423,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Instituto Nacional de Hidráulica',
 				'codigo_padre' => 'AM',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			209 => 
 			array (
@@ -1627,8 +1431,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Fiscalía Ministerio de Obras Públicas',
 				'codigo_padre' => 'AM',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			210 => 
 			array (
@@ -1636,8 +1439,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Coordinación de Concesiones de Obras Públicas',
 				'codigo_padre' => 'AM',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			212 => 
 			array (
@@ -1645,8 +1447,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Subsecretaría de Transportes',
 				'codigo_padre' => 'AN',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			213 => 
 			array (
@@ -1654,8 +1455,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Subsecretaría de Telecomunicaciones',
 				'codigo_padre' => 'AN',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			214 => 
 			array (
@@ -1663,8 +1463,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Junta de Aeronáutica Civil',
 				'codigo_padre' => 'AN',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			215 => 
 			array (
@@ -1672,8 +1471,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Centro de Control y Certificación Vehicular',
 				'codigo_padre' => 'AN',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			216 => 
 			array (
@@ -1681,8 +1479,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Unidad Operativa de Control de Tránsito',
 				'codigo_padre' => 'AN',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			218 => 
 			array (
@@ -1690,8 +1487,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Subsecretaría de Salud Pública',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			219 => 
 			array (
@@ -1699,8 +1495,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Subsecretaría de Redes Asistenciales',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			220 => 
 			array (
@@ -1708,8 +1503,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Central de Abastecimiento del Sistema Nacional de Servicios de Salud',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			221 => 
 			array (
@@ -1717,8 +1511,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Fondo Nacional de Salud',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			222 => 
 			array (
@@ -1726,8 +1519,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Instituto de Salud Pública',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			223 => 
 			array (
@@ -1735,8 +1527,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Superintendencia de Salud',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			224 => 
 			array (
@@ -1744,8 +1535,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio de Salud Metropolitano Central',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			225 => 
 			array (
@@ -1753,8 +1543,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio de Salud Metropolitano Norte',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			226 => 
 			array (
@@ -1762,8 +1551,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio de Salud Metropolitano Occidente',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			227 => 
 			array (
@@ -1771,8 +1559,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio de Salud Metropolitano Oriente',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			228 => 
 			array (
@@ -1780,8 +1567,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio de Salud Metropolitano Sur',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			229 => 
 			array (
@@ -1789,8 +1575,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio de Salud Metropolitano Sur Oriente',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			230 => 
 			array (
@@ -1798,8 +1583,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital Padre Hurtado',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			231 => 
 			array (
@@ -1807,8 +1591,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Centro de Referencia de Salud de Peñalolén Cordillera Oriente',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			232 => 
 			array (
@@ -1816,8 +1599,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Centro de Referencia de Salud de Maipú',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			233 => 
 			array (
@@ -1825,8 +1607,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio de Salud Arica',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			234 => 
 			array (
@@ -1834,8 +1615,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio de Salud Iquique',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			235 => 
 			array (
@@ -1843,8 +1623,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio de Salud Antofagasta',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			236 => 
 			array (
@@ -1852,8 +1631,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio de Salud Atacama',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			237 => 
 			array (
@@ -1861,8 +1639,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio de Salud Coquimbo',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			238 => 
 			array (
@@ -1870,8 +1647,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio de Salud Aconcagua',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			239 => 
 			array (
@@ -1879,8 +1655,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio de Salud Valparaíso - San Antonio',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			240 => 
 			array (
@@ -1888,8 +1663,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio de Salud Viña Del Mar - Quillota',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			241 => 
 			array (
@@ -1897,8 +1671,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio de Salud O´Higgins',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			242 => 
 			array (
@@ -1906,8 +1679,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio de Salud Maule',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			243 => 
 			array (
@@ -1915,8 +1687,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio de Salud Ñuble',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			244 => 
 			array (
@@ -1924,8 +1695,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio de Salud Concepción',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			245 => 
 			array (
@@ -1933,8 +1703,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio de Salud Talcahuano',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			246 => 
 			array (
@@ -1942,8 +1711,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio de Salud Bío Bío',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			247 => 
 			array (
@@ -1951,8 +1719,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio de Salud Arauco',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			248 => 
 			array (
@@ -1960,8 +1727,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio de Salud Araucanía Norte',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			249 => 
 			array (
@@ -1969,8 +1735,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio de Salud Araucanía Sur',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			250 => 
 			array (
@@ -1978,8 +1743,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio de Salud Valdivia',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			251 => 
 			array (
@@ -1987,8 +1751,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio de Salud Osorno',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			252 => 
 			array (
@@ -1996,8 +1759,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio de Salud de Chiloé',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			253 => 
 			array (
@@ -2005,8 +1767,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio de Salud Aysén',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			254 => 
 			array (
@@ -2014,8 +1775,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio de Salud del Reloncaví',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			255 => 
 			array (
@@ -2023,8 +1783,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio de Salud Magallanes',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			256 => 
 			array (
@@ -2032,8 +1791,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Secretaría Regional Ministerial de Arica y Parinacota',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			257 => 
 			array (
@@ -2041,8 +1799,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Secretaría Regional Ministerial de Tarapacá',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			258 => 
 			array (
@@ -2050,8 +1807,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Secretaría Regional Ministerial de Antofagasta',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			259 => 
 			array (
@@ -2059,8 +1815,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Secretaría Regional Ministerial de Atacama',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			260 => 
 			array (
@@ -2068,8 +1823,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Secretaría Regional Ministerial de Coquimbo',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			261 => 
 			array (
@@ -2077,8 +1831,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Secretaría Regional Ministerial de Valparaíso',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			262 => 
 			array (
@@ -2086,8 +1839,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Secretaría Regional Ministerial Metropolitano de Santiago',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			263 => 
 			array (
@@ -2095,8 +1847,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Secretaría Regional Ministerial de O´Higgins',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			264 => 
 			array (
@@ -2104,8 +1855,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Secretaría Regional Ministerial del Maule',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			265 => 
 			array (
@@ -2113,8 +1863,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Secretaría Regional Ministerial del Bío Bío',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			266 => 
 			array (
@@ -2122,8 +1871,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Secretaría Regional Ministerial de La Araucanía',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			267 => 
 			array (
@@ -2131,8 +1879,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Secretaría Regional Ministerial de Los Ríos',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			268 => 
 			array (
@@ -2140,8 +1887,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Secretaría Regional Ministerial de Los Lagos',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			269 => 
 			array (
@@ -2149,8 +1895,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Secretaría Regional Ministerial de Aysén',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			270 => 
 			array (
@@ -2158,8 +1903,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Secretaría Regional Ministerial de Magallanes y Antártica Chilena',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			271 => 
 			array (
@@ -2167,8 +1911,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital de San Camilo',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			272 => 
 			array (
@@ -2176,8 +1919,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital Leonardo Guzmán de Antofagasta',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			273 => 
 			array (
@@ -2185,8 +1927,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital de Victoria',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			274 => 
 			array (
@@ -2194,8 +1935,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital Mauricio heyermann de Angol',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			275 => 
 			array (
@@ -2203,8 +1943,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital Juan Noé de Arica',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			276 => 
 			array (
@@ -2212,8 +1951,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital Regional de Coyhaique',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			277 => 
 			array (
@@ -2221,8 +1959,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital Víctor Ríos Ruiz de Los Angeles',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			278 => 
 			array (
@@ -2230,8 +1967,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital Dr. Augusto Riffart de Castro',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			279 => 
 			array (
@@ -2239,8 +1975,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital San Jose de Coronel',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			280 => 
 			array (
@@ -2248,8 +1983,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital de Lota',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			281 => 
 			array (
@@ -2257,8 +1991,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital Guillermo Grant Benavente de Concepción',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			282 => 
 			array (
@@ -2266,8 +1999,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital de Ovalle',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			283 => 
 			array (
@@ -2275,8 +2007,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital La Serena',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			284 => 
 			array (
@@ -2284,8 +2015,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital San Pablo de Coquimbo',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			285 => 
 			array (
@@ -2293,8 +2023,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital Ernesto Torres de Iquique',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			286 => 
 			array (
@@ -2302,8 +2031,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'HUAP Posta central',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			287 => 
 			array (
@@ -2311,8 +2039,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital San Borja Arriarán',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			288 => 
 			array (
@@ -2320,8 +2047,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital San José',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			289 => 
 			array (
@@ -2329,8 +2055,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital Roberto del Río',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			290 => 
 			array (
@@ -2338,8 +2063,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital Félix Bulnes',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			291 => 
 			array (
@@ -2347,8 +2071,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital de Melipilla',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			292 => 
 			array (
@@ -2356,8 +2079,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital San Juan de Dios',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			293 => 
 			array (
@@ -2365,8 +2087,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Instituto Pedro Aguirre Cerda',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			294 => 
 			array (
@@ -2374,8 +2095,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Instituto de Neurocirugía',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			295 => 
 			array (
@@ -2383,8 +2103,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Instituto Nacional de Geriatría',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			296 => 
 			array (
@@ -2392,8 +2111,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital Del Salvador',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			297 => 
 			array (
@@ -2401,8 +2119,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital Barros Luco ',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			298 => 
 			array (
@@ -2410,8 +2127,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital Sótero del Río',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			299 => 
 			array (
@@ -2419,8 +2135,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital Lautaro Navarro de Punta Arenas',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			300 => 
 			array (
@@ -2428,8 +2143,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital de Curicó',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			301 => 
 			array (
@@ -2437,8 +2151,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital de Linares',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			302 => 
 			array (
@@ -2446,8 +2159,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital Regional de Talca',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			303 => 
 			array (
@@ -2455,8 +2167,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital de San Carlos',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			304 => 
 			array (
@@ -2464,8 +2175,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital San Juan de Dios de San Fernando',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			305 => 
 			array (
@@ -2473,8 +2183,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital Regional de Rancagua',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			306 => 
 			array (
@@ -2482,8 +2191,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital de Osorno',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			307 => 
 			array (
@@ -2491,8 +2199,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital de Puerto Montt',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			308 => 
 			array (
@@ -2500,8 +2207,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital de Tomé',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			309 => 
 			array (
@@ -2509,8 +2215,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital de Las Higueras',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			310 => 
 			array (
@@ -2518,8 +2223,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital Base de Valdivia',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			311 => 
 			array (
@@ -2527,8 +2231,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital Claudio Vicuña de San Antonio',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			312 => 
 			array (
@@ -2536,8 +2239,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital Carlos Van Büren',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			313 => 
 			array (
@@ -2545,8 +2247,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital Eduardo Pereira de Valparaíso',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			314 => 
 			array (
@@ -2554,8 +2255,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital de Quilpué',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			315 => 
 			array (
@@ -2563,8 +2263,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital Gustavo Fricke',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			316 => 
 			array (
@@ -2572,8 +2271,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital San Martín de Quillota',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			317 => 
 			array (
@@ -2581,8 +2279,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Instituto Psiquiátrico',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			318 => 
 			array (
@@ -2590,8 +2287,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital San Juan de Dios de Los Andes',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			319 => 
 			array (
@@ -2599,8 +2295,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital Exequiel González',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			320 => 
 			array (
@@ -2608,8 +2303,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital El Pino',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			321 => 
 			array (
@@ -2617,8 +2311,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital Herminda Martin',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			322 => 
 			array (
@@ -2626,8 +2319,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Instituto Nacional del Tórax',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			323 => 
 			array (
@@ -2635,8 +2327,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital Luis Tisné',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			324 => 
 			array (
@@ -2644,8 +2335,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Instituto Traumatológico',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			325 => 
 			array (
@@ -2653,8 +2343,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Instituto Nacional del Cáncer',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			326 => 
 			array (
@@ -2662,8 +2351,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital Luis Calvo Mackenna',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			327 => 
 			array (
@@ -2671,8 +2359,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Hospital Dr. Hernán Henríquez Aravena de Temuco',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			328 => 
 			array (
@@ -2680,8 +2367,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Autoridad Sanitaria',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			329 => 
 			array (
@@ -2689,8 +2375,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Comisión de Medicina Preventiva e Invalidez',
 				'codigo_padre' => 'AO',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			331 => 
 			array (
@@ -2698,8 +2383,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Subsecretaría de Vivienda y Urbanismo',
 				'codigo_padre' => 'AP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			332 => 
 			array (
@@ -2707,8 +2391,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'SERVIU Región de Tarapacá',
 				'codigo_padre' => 'AP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			333 => 
 			array (
@@ -2716,8 +2399,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'SERVIU Región de Antofagasta',
 				'codigo_padre' => 'AP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			334 => 
 			array (
@@ -2725,8 +2407,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'SERVIU Región de Atacama',
 				'codigo_padre' => 'AP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			335 => 
 			array (
@@ -2734,8 +2415,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'SERVIU Región de Coquimbo',
 				'codigo_padre' => 'AP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			336 => 
 			array (
@@ -2743,8 +2423,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'SERVIU Región de Valparaíso',
 				'codigo_padre' => 'AP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			337 => 
 			array (
@@ -2752,8 +2431,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'SERVIU Región Metropolitana de Santiago',
 				'codigo_padre' => 'AP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			338 => 
 			array (
@@ -2761,8 +2439,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'SERVIU Región del Libertador Bernardo O\'Higgins',
 				'codigo_padre' => 'AP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			339 => 
 			array (
@@ -2770,8 +2447,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'SERVIU Región del Maule',
 				'codigo_padre' => 'AP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			340 => 
 			array (
@@ -2779,8 +2455,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'SERVIU Región del Bío Bío',
 				'codigo_padre' => 'AP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			341 => 
 			array (
@@ -2788,8 +2463,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'SERVIU Región de la Araucanía',
 				'codigo_padre' => 'AP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			342 => 
 			array (
@@ -2797,8 +2471,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'SERVIU Región de los Lagos',
 				'codigo_padre' => 'AP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			343 => 
 			array (
@@ -2806,8 +2479,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'SERVIU Región de Aysén del General Carlos Ibáñez del Campo',
 				'codigo_padre' => 'AP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			344 => 
 			array (
@@ -2815,8 +2487,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'SERVIU Región de Magallanes y la Antártica Chilena',
 				'codigo_padre' => 'AP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			345 => 
 			array (
@@ -2824,8 +2495,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'SERVIU Región de Los Ríos',
 				'codigo_padre' => 'AP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			346 => 
 			array (
@@ -2833,8 +2503,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'SERVIU Arica y Parinacota',
 				'codigo_padre' => 'AP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			347 => 
 			array (
@@ -2842,8 +2511,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Parque Metropolitano de Santiago',
 				'codigo_padre' => 'AP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			349 => 
 			array (
@@ -2851,8 +2519,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Subsecretaría de Bienes Nacionales',
 				'codigo_padre' => 'AQ',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			351 => 
 			array (
@@ -2860,8 +2527,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Subsecretaría de Agricultura',
 				'codigo_padre' => 'AR',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			352 => 
 			array (
@@ -2869,8 +2535,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Comisión Nacional de Riego',
 				'codigo_padre' => 'AR',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			353 => 
 			array (
@@ -2878,8 +2543,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Corporación Nacional Forestal',
 				'codigo_padre' => 'AR',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			354 => 
 			array (
@@ -2887,8 +2551,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Instituto de Desarrollo Agropecuario',
 				'codigo_padre' => 'AR',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			355 => 
 			array (
@@ -2896,8 +2559,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Oficinas de Estudios y Políticas Agrarias',
 				'codigo_padre' => 'AR',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			356 => 
 			array (
@@ -2905,8 +2567,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio Agrícola y Ganadero',
 				'codigo_padre' => 'AR',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			358 => 
 			array (
@@ -2914,8 +2575,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Subsecretaría de Minería',
 				'codigo_padre' => 'AS',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			359 => 
 			array (
@@ -2923,8 +2583,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Comisión Chilena del Cobre',
 				'codigo_padre' => 'AS',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			360 => 
 			array (
@@ -2932,8 +2591,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio Nacional de Geología y Minería',
 				'codigo_padre' => 'AS',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			362 => 
 			array (
@@ -2941,8 +2599,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio Nacional de la Mujer',
 				'codigo_padre' => 'AT',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			364 => 
 			array (
@@ -2950,8 +2607,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Comisión Nacional de Energía',
 				'codigo_padre' => 'AU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			365 => 
 			array (
@@ -2959,8 +2615,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Subsecretaría de Energía',
 				'codigo_padre' => 'AU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			366 => 
 			array (
@@ -2968,8 +2623,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Comisión Chilena de Energía Nuclear',
 				'codigo_padre' => 'AU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			367 => 
 			array (
@@ -2977,8 +2631,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Superintendencia de Electricidad y Combustibles',
 				'codigo_padre' => 'AU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			369 => 
 			array (
@@ -2986,8 +2639,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Consejo Nacional de la Cultura y las Artes',
 				'codigo_padre' => 'AV',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			371 => 
 			array (
@@ -2995,8 +2647,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Comisión Nacional del Medio Ambiente',
 				'codigo_padre' => 'AW',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			372 => 
 			array (
@@ -3004,8 +2655,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Subsecretaría del Medio Ambiente',
 				'codigo_padre' => 'AW',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			373 => 
 			array (
@@ -3013,8 +2663,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Superintendencia del Medio Ambiente',
 				'codigo_padre' => 'AW',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			374 => 
 			array (
@@ -3022,8 +2671,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Servicio Evaluación Ambiental',
 				'codigo_padre' => 'AW',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			376 => 
 			array (
@@ -3031,8 +2679,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Consejo de Defensa del Estado',
 				'codigo_padre' => 'AX',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			378 => 
 			array (
@@ -3040,8 +2687,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Instituto Nacional de Propiedad Industrial',
 				'codigo_padre' => 'AH',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			379 => 
 			array (
@@ -3049,8 +2695,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Subsecretaría del Deporte',
 				'codigo_padre' => 'AY',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			380 => 
 			array (
@@ -3058,8 +2703,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Comisión Nacional de Acreditación',
 				'codigo_padre' => 'AJ',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			382 => 
 			array (
@@ -3067,8 +2711,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Astilleros y Maestranzas de La Armada',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			383 => 
 			array (
@@ -3076,8 +2719,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Casa de Moneda de Chile S.A.',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			384 => 
 			array (
@@ -3085,8 +2727,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 			'nombre' => 'Cimm (Centro de Investigación Minera y Metalúrgica)',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			385 => 
 			array (
@@ -3094,8 +2735,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Cimm Tecnologías y Servicios S.A.',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			386 => 
 			array (
@@ -3103,8 +2743,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Comercializadora de Trigo S.A.',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			387 => 
 			array (
@@ -3112,8 +2751,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Corporación Nacional del Cobre de Chile',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			388 => 
 			array (
@@ -3121,8 +2759,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Empresa Concesionaria de Servicios Sanitarios S.A.',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			389 => 
 			array (
@@ -3130,8 +2767,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Empresa de Abastecimiento de Zonas Aisladas',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			390 => 
 			array (
@@ -3139,8 +2775,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Empresa de Correos de Chile',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			391 => 
 			array (
@@ -3148,8 +2783,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Empresa de los Ferrocarriles del Estado',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			392 => 
 			array (
@@ -3157,8 +2791,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Empresa de Servicios Sanitarios Lago Peñuelas S.A.',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			393 => 
 			array (
@@ -3166,8 +2799,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Empresa de Transporte de Pasajeros Metro S.A.',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			394 => 
 			array (
@@ -3175,8 +2807,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Empresa Nacional de Aeronáutica',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			395 => 
 			array (
@@ -3184,8 +2815,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Empresa Nacional de Minería',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			396 => 
 			array (
@@ -3193,8 +2823,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Empresa Nacional del Carbón S.A.',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			397 => 
 			array (
@@ -3202,8 +2831,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Empresa Nacional del Petróleo',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			398 => 
 			array (
@@ -3211,8 +2839,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Empresa Periodística La Nación S.A.',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			399 => 
 			array (
@@ -3220,8 +2847,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Empresa Portuaria Antofagasta',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			400 => 
 			array (
@@ -3229,8 +2855,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Empresa Portuaria Arica',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			401 => 
 			array (
@@ -3238,8 +2863,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Empresa Portuaria Austral',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			402 => 
 			array (
@@ -3247,8 +2871,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Empresa Portuaria Chacabuco',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			403 => 
 			array (
@@ -3256,8 +2879,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Empresa Portuaria Coquimbo',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			404 => 
 			array (
@@ -3265,8 +2887,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Empresa Portuaria Iquique',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			405 => 
 			array (
@@ -3274,8 +2895,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Empresa Portuaria Puerto Montt',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			406 => 
 			array (
@@ -3283,8 +2903,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Empresa Portuaria San Antonio',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			407 => 
 			array (
@@ -3292,8 +2911,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Empresa Portuaria Talcahuano San Vicente',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			408 => 
 			array (
@@ -3301,8 +2919,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Empresa Portuaria Valparaíso',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			409 => 
 			array (
@@ -3310,8 +2927,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Fábrica y Maestranzas del Ejército',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			410 => 
 			array (
@@ -3319,8 +2935,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Polla Chilena de Beneficencia S.A.',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			411 => 
 			array (
@@ -3328,8 +2943,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Puerto Madero Impresores S.A.',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			412 => 
 			array (
@@ -3337,8 +2951,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Sociedad Agrícola Sacor Ltda.',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			413 => 
 			array (
@@ -3346,8 +2959,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Sociedad Agrícola y Servicios Isla de Pascua Ltda.',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			414 => 
 			array (
@@ -3355,8 +2967,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Televisión Nacional de Chile',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			415 => 
 			array (
@@ -3364,8 +2975,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Zona Franca de Iquique S.A.',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			416 => 
 			array (
@@ -3373,8 +2983,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Metro',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			417 => 
 			array (
@@ -3382,8 +2991,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Polla Chilena',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			418 => 
 			array (
@@ -3391,8 +2999,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Empresas de Servicios Sanitarios',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			419 => 
 			array (
@@ -3400,8 +3007,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Zofri',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			420 => 
 			array (
@@ -3409,8 +3015,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Empresas Portuarias',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			421 => 
 			array (
@@ -3418,8 +3023,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Televisión Nacional de Chile',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			422 => 
 			array (
@@ -3427,8 +3031,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Empresa de los Ferrocarriles del Estado',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			423 => 
 			array (
@@ -3436,8 +3039,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Empresa de Correos de Chile',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			424 => 
 			array (
@@ -3445,8 +3047,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Banco del Estado',
 				'codigo_padre' => 'EP',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			426 => 
 			array (
@@ -3454,8 +3055,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Fundación Artesanías de Chile',
 				'codigo_padre' => 'FU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			427 => 
 			array (
@@ -3463,8 +3063,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Fundación de las Familias',
 				'codigo_padre' => 'FU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			428 => 
 			array (
@@ -3472,8 +3071,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Fundación Chilenter',
 				'codigo_padre' => 'FU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			429 => 
 			array (
@@ -3481,8 +3079,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Fundación Integra',
 				'codigo_padre' => 'FU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			430 => 
 			array (
@@ -3490,8 +3087,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Fundación Orquestas Juveniles',
 				'codigo_padre' => 'FU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			431 => 
 			array (
@@ -3499,8 +3095,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Fundación de Promoción y Desarrollo de la Mujer',
 				'codigo_padre' => 'FU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			432 => 
 			array (
@@ -3508,8 +3103,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Fundación Tiempos Nuevos',
 				'codigo_padre' => 'FU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			434 => 
 			array (
@@ -3517,8 +3111,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Algarrobo',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			435 => 
 			array (
@@ -3526,8 +3119,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Alhué',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			436 => 
 			array (
@@ -3535,8 +3127,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Alto Biobío',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			437 => 
 			array (
@@ -3544,8 +3135,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Alto del Carmen',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			438 => 
 			array (
@@ -3553,8 +3143,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Alto Hospicio',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			439 => 
 			array (
@@ -3562,8 +3151,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Ancud',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			440 => 
 			array (
@@ -3571,8 +3159,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Andacollo',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			441 => 
 			array (
@@ -3580,8 +3167,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Angol',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			442 => 
 			array (
@@ -3589,8 +3175,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Antofagasta',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			443 => 
 			array (
@@ -3598,8 +3183,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Antuco',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			444 => 
 			array (
@@ -3607,8 +3191,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Arauco',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			445 => 
 			array (
@@ -3616,8 +3199,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Arica',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			446 => 
 			array (
@@ -3625,8 +3207,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Aysen',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			447 => 
 			array (
@@ -3634,8 +3215,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Buin',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			448 => 
 			array (
@@ -3643,8 +3223,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Bulnes',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			449 => 
 			array (
@@ -3652,8 +3231,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Cabildo',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			450 => 
 			array (
@@ -3661,8 +3239,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Cabo de Hornos y Antártica',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			451 => 
 			array (
@@ -3670,8 +3247,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Cabrero',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			452 => 
 			array (
@@ -3679,8 +3255,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Calama',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			453 => 
 			array (
@@ -3688,8 +3263,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Calbuco',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			454 => 
 			array (
@@ -3697,8 +3271,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Caldera',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			455 => 
 			array (
@@ -3706,8 +3279,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Calera de Tango',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			456 => 
 			array (
@@ -3715,8 +3287,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Calle Larga',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			457 => 
 			array (
@@ -3724,8 +3295,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Camarones',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			458 => 
 			array (
@@ -3733,8 +3303,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Camiña',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			459 => 
 			array (
@@ -3742,8 +3311,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Canela',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			460 => 
 			array (
@@ -3751,8 +3319,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Cañete',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			461 => 
 			array (
@@ -3760,8 +3327,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Carahue',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			462 => 
 			array (
@@ -3769,8 +3335,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Cartagena',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			463 => 
 			array (
@@ -3778,8 +3343,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Casablanca',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			464 => 
 			array (
@@ -3787,8 +3351,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Castro',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			465 => 
 			array (
@@ -3796,8 +3359,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Catemu',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			466 => 
 			array (
@@ -3805,8 +3367,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Cauquenes',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			467 => 
 			array (
@@ -3814,8 +3375,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Cerrillos',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			468 => 
 			array (
@@ -3823,8 +3383,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Cerro Navia',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			469 => 
 			array (
@@ -3832,8 +3391,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Chaitén',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			470 => 
 			array (
@@ -3841,8 +3399,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Chanco',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			471 => 
 			array (
@@ -3850,8 +3407,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Chañaral',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			472 => 
 			array (
@@ -3859,8 +3415,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Chépica',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			473 => 
 			array (
@@ -3868,8 +3423,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Chiguayante',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			474 => 
 			array (
@@ -3877,8 +3431,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Chile Chico',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			475 => 
 			array (
@@ -3886,8 +3439,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Chillán',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			476 => 
 			array (
@@ -3895,8 +3447,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Chillán Viejo',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			477 => 
 			array (
@@ -3904,8 +3455,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Chimbarongo',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			478 => 
 			array (
@@ -3913,8 +3463,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Cholchol',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			479 => 
 			array (
@@ -3922,8 +3471,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Chonchi',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			480 => 
 			array (
@@ -3931,8 +3479,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Cisnes',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			481 => 
 			array (
@@ -3940,8 +3487,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Cobquecura',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			482 => 
 			array (
@@ -3949,8 +3495,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Cochamó',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			483 => 
 			array (
@@ -3958,8 +3503,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Cochrane',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			484 => 
 			array (
@@ -3967,8 +3511,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Codegua',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			485 => 
 			array (
@@ -3976,8 +3519,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Coelemu',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			486 => 
 			array (
@@ -3985,8 +3527,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Coihueco',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			487 => 
 			array (
@@ -3994,8 +3535,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Coinco',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			488 => 
 			array (
@@ -4003,8 +3543,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Colbún',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			489 => 
 			array (
@@ -4012,8 +3551,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Colchane',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			490 => 
 			array (
@@ -4021,8 +3559,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Colina',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			491 => 
 			array (
@@ -4030,8 +3567,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Collipulli',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			492 => 
 			array (
@@ -4039,8 +3575,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Coltauco',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			493 => 
 			array (
@@ -4048,8 +3583,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Combarbalá',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			494 => 
 			array (
@@ -4057,8 +3591,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Concepción',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			495 => 
 			array (
@@ -4066,8 +3599,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Conchalí',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			496 => 
 			array (
@@ -4075,8 +3607,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Concón',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			497 => 
 			array (
@@ -4084,8 +3615,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Constitución',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			498 => 
 			array (
@@ -4093,8 +3623,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Contulmo',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			499 => 
 			array (
@@ -4102,8 +3631,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Copiapó',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 		));
 		\DB::table('entidades')->insert(array (
@@ -4113,8 +3641,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Coquimbo',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			1 => 
 			array (
@@ -4122,8 +3649,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Coronel',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			2 => 
 			array (
@@ -4131,8 +3657,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Corral',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			3 => 
 			array (
@@ -4140,8 +3665,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Coyhaique',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			4 => 
 			array (
@@ -4149,8 +3673,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Cunco',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			5 => 
 			array (
@@ -4158,8 +3681,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Curacautín',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			6 => 
 			array (
@@ -4167,8 +3689,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Curacaví',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			7 => 
 			array (
@@ -4176,8 +3697,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Curaco de Vélez',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			8 => 
 			array (
@@ -4185,8 +3705,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Curanilahue',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			9 => 
 			array (
@@ -4194,8 +3713,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Curarrehue',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			10 => 
 			array (
@@ -4203,8 +3721,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Curepto',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			11 => 
 			array (
@@ -4212,8 +3729,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Curicó',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			12 => 
 			array (
@@ -4221,8 +3737,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Dalcahue',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			13 => 
 			array (
@@ -4230,8 +3745,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Diego de Almagro',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			14 => 
 			array (
@@ -4239,8 +3753,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Doñihue',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			15 => 
 			array (
@@ -4248,8 +3761,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de El Bosque',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			16 => 
 			array (
@@ -4257,8 +3769,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de El Carmen',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			17 => 
 			array (
@@ -4266,8 +3777,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de El Monte',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			18 => 
 			array (
@@ -4275,8 +3785,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de El Quisco',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			19 => 
 			array (
@@ -4284,8 +3793,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de El Tabo',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			20 => 
 			array (
@@ -4293,8 +3801,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Empedrado',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			21 => 
 			array (
@@ -4302,8 +3809,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Ercilla',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			22 => 
 			array (
@@ -4311,8 +3817,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Estación Central',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			23 => 
 			array (
@@ -4320,8 +3825,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Florida',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			24 => 
 			array (
@@ -4329,8 +3833,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Freire',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			25 => 
 			array (
@@ -4338,8 +3841,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Freirina',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			26 => 
 			array (
@@ -4347,8 +3849,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Fresia',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			27 => 
 			array (
@@ -4356,8 +3857,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Frutillar',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			28 => 
 			array (
@@ -4365,8 +3865,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Futaleufú',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			29 => 
 			array (
@@ -4374,8 +3873,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Futrono',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			30 => 
 			array (
@@ -4383,8 +3881,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Galvarino',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			31 => 
 			array (
@@ -4392,8 +3889,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de General Lagos',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			32 => 
 			array (
@@ -4401,8 +3897,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Gorbea',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			33 => 
 			array (
@@ -4410,8 +3905,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Graneros',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			34 => 
 			array (
@@ -4419,8 +3913,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Guaitecas',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			35 => 
 			array (
@@ -4428,8 +3921,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Hijuelas',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			36 => 
 			array (
@@ -4437,8 +3929,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Hualaihué',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			37 => 
 			array (
@@ -4446,8 +3937,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Hualañé',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			38 => 
 			array (
@@ -4455,8 +3945,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Hualpén',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			39 => 
 			array (
@@ -4464,8 +3953,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Hualqui',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			40 => 
 			array (
@@ -4473,8 +3961,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Huara',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			41 => 
 			array (
@@ -4482,8 +3969,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Huasco',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			42 => 
 			array (
@@ -4491,8 +3977,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Huechuraba',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			43 => 
 			array (
@@ -4500,8 +3985,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Illapel',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			44 => 
 			array (
@@ -4509,8 +3993,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Independencia',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			45 => 
 			array (
@@ -4518,8 +4001,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Iquique',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			46 => 
 			array (
@@ -4527,8 +4009,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Isla de Maipo',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			47 => 
 			array (
@@ -4536,8 +4017,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Isla de Pascua',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			48 => 
 			array (
@@ -4545,8 +4025,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Juan Fernández',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			49 => 
 			array (
@@ -4554,8 +4033,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de La Calera',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			50 => 
 			array (
@@ -4563,8 +4041,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de La Cisterna',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			51 => 
 			array (
@@ -4572,8 +4049,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de La Cruz',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			52 => 
 			array (
@@ -4581,8 +4057,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de La Estrella',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			53 => 
 			array (
@@ -4590,8 +4065,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de La Florida',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			54 => 
 			array (
@@ -4599,8 +4073,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de La Granja',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			55 => 
 			array (
@@ -4608,8 +4081,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de La Higuera',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			56 => 
 			array (
@@ -4617,8 +4089,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de La Ligua',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			57 => 
 			array (
@@ -4626,8 +4097,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de La Pintana',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			58 => 
 			array (
@@ -4635,8 +4105,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de La Reina',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			59 => 
 			array (
@@ -4644,8 +4113,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de La Serena',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			60 => 
 			array (
@@ -4653,8 +4121,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de La Unión',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			61 => 
 			array (
@@ -4662,8 +4129,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Lago Ranco',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			62 => 
 			array (
@@ -4671,8 +4137,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Lago Verde',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			63 => 
 			array (
@@ -4680,8 +4145,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Laguna Blanca',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			64 => 
 			array (
@@ -4689,8 +4153,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Laja',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			65 => 
 			array (
@@ -4698,8 +4161,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Lampa',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			66 => 
 			array (
@@ -4707,8 +4169,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Lanco',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			67 => 
 			array (
@@ -4716,8 +4177,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Las Cabras',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			68 => 
 			array (
@@ -4725,8 +4185,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Las Condes',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			69 => 
 			array (
@@ -4734,8 +4193,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Lautaro',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			70 => 
 			array (
@@ -4743,8 +4201,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Lebu',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			71 => 
 			array (
@@ -4752,8 +4209,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Licantén',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			72 => 
 			array (
@@ -4761,8 +4217,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Limache',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			73 => 
 			array (
@@ -4770,8 +4225,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Linares',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			74 => 
 			array (
@@ -4779,8 +4233,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Litueche',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			75 => 
 			array (
@@ -4788,8 +4241,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Llanquihue',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			76 => 
 			array (
@@ -4797,8 +4249,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Llay Llay',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			77 => 
 			array (
@@ -4806,8 +4257,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Lo Barnechea',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			78 => 
 			array (
@@ -4815,8 +4265,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Lo Espejo',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			79 => 
 			array (
@@ -4824,8 +4273,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Lo Prado',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			80 => 
 			array (
@@ -4833,8 +4281,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Lolol',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			81 => 
 			array (
@@ -4842,8 +4289,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Loncoche',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			82 => 
 			array (
@@ -4851,8 +4297,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Longaví',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			83 => 
 			array (
@@ -4860,8 +4305,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Lonquimay',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			84 => 
 			array (
@@ -4869,8 +4313,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Los Alamos',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			85 => 
 			array (
@@ -4878,8 +4321,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Los Andes',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			86 => 
 			array (
@@ -4887,8 +4329,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Los Angeles',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			87 => 
 			array (
@@ -4896,8 +4337,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Los Lagos',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			88 => 
 			array (
@@ -4905,8 +4345,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Los Muermos',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			89 => 
 			array (
@@ -4914,8 +4353,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Los Sauces',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			90 => 
 			array (
@@ -4923,8 +4361,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Los Vilos',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			91 => 
 			array (
@@ -4932,8 +4369,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Lota',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			92 => 
 			array (
@@ -4941,8 +4377,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Lumaco',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			93 => 
 			array (
@@ -4950,8 +4385,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Machalí',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			94 => 
 			array (
@@ -4959,8 +4393,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Macul',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			95 => 
 			array (
@@ -4968,8 +4401,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Máfil',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			96 => 
 			array (
@@ -4977,8 +4409,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Maipú',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			97 => 
 			array (
@@ -4986,8 +4417,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Malloa',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			98 => 
 			array (
@@ -4995,8 +4425,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Marchihue',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			99 => 
 			array (
@@ -5004,8 +4433,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de María Elena',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			100 => 
 			array (
@@ -5013,8 +4441,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de María Pinto',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			101 => 
 			array (
@@ -5022,8 +4449,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Mariquina',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			102 => 
 			array (
@@ -5031,8 +4457,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Maule',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			103 => 
 			array (
@@ -5040,8 +4465,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Maullín',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			104 => 
 			array (
@@ -5049,8 +4473,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Mejillones',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			105 => 
 			array (
@@ -5058,8 +4481,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Melipeuco',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			106 => 
 			array (
@@ -5067,8 +4489,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Melipilla',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			107 => 
 			array (
@@ -5076,8 +4497,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Molina',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			108 => 
 			array (
@@ -5085,8 +4505,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Monte Patria',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			109 => 
 			array (
@@ -5094,8 +4513,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Mostazal',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			110 => 
 			array (
@@ -5103,8 +4521,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Mulchén',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			111 => 
 			array (
@@ -5112,8 +4529,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Nacimiento',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			112 => 
 			array (
@@ -5121,8 +4537,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Nancagua',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			113 => 
 			array (
@@ -5130,8 +4545,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Navidad',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			114 => 
 			array (
@@ -5139,8 +4553,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Negrete',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			115 => 
 			array (
@@ -5148,8 +4561,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Ninhue',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			116 => 
 			array (
@@ -5157,8 +4569,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Nogales',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			117 => 
 			array (
@@ -5166,8 +4577,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Nueva Imperial',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			118 => 
 			array (
@@ -5175,8 +4585,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Ñiquén',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			119 => 
 			array (
@@ -5184,8 +4593,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Ñuñoa',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			120 => 
 			array (
@@ -5193,8 +4601,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de O\'higgins',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			121 => 
 			array (
@@ -5202,8 +4609,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Olivar',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			122 => 
 			array (
@@ -5211,8 +4617,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Ollagüe',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			123 => 
 			array (
@@ -5220,8 +4625,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Olmué',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			124 => 
 			array (
@@ -5229,8 +4633,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Osorno',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			125 => 
 			array (
@@ -5238,8 +4641,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Ovalle',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			126 => 
 			array (
@@ -5247,8 +4649,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Padre Hurtado',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			127 => 
 			array (
@@ -5256,8 +4657,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Padre Las Casas',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			128 => 
 			array (
@@ -5265,8 +4665,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Paiguano',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			129 => 
 			array (
@@ -5274,8 +4673,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Paillaco',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			130 => 
 			array (
@@ -5283,8 +4681,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Paine',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			131 => 
 			array (
@@ -5292,8 +4689,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Palena',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			132 => 
 			array (
@@ -5301,8 +4697,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Palmilla',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			133 => 
 			array (
@@ -5310,8 +4705,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Panguipulli',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			134 => 
 			array (
@@ -5319,8 +4713,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Panquehue',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			135 => 
 			array (
@@ -5328,8 +4721,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Papudo',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			136 => 
 			array (
@@ -5337,8 +4729,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Paredones',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			137 => 
 			array (
@@ -5346,8 +4737,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Parral',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			138 => 
 			array (
@@ -5355,8 +4745,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Pedro Aguirre Cerda',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			139 => 
 			array (
@@ -5364,8 +4753,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Pelarco',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			140 => 
 			array (
@@ -5373,8 +4761,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Pelluhue',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			141 => 
 			array (
@@ -5382,8 +4769,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Pemuco',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			142 => 
 			array (
@@ -5391,8 +4777,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Pencahue',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			143 => 
 			array (
@@ -5400,8 +4785,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Penco',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			144 => 
 			array (
@@ -5409,8 +4793,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Peñaflor',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			145 => 
 			array (
@@ -5418,8 +4801,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Peñalolén',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			146 => 
 			array (
@@ -5427,8 +4809,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Peralillo',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			147 => 
 			array (
@@ -5436,8 +4817,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Perquenco',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			148 => 
 			array (
@@ -5445,8 +4825,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Petorca',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			149 => 
 			array (
@@ -5454,8 +4833,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Peumo',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			150 => 
 			array (
@@ -5463,8 +4841,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Pica',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			151 => 
 			array (
@@ -5472,8 +4849,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Pichidegua',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			152 => 
 			array (
@@ -5481,8 +4857,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Pichilemu',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			153 => 
 			array (
@@ -5490,8 +4865,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Pinto',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			154 => 
 			array (
@@ -5499,8 +4873,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Pirque',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			155 => 
 			array (
@@ -5508,8 +4881,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Pitrufquén',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			156 => 
 			array (
@@ -5517,8 +4889,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Placilla',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			157 => 
 			array (
@@ -5526,8 +4897,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Portezuelo',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			158 => 
 			array (
@@ -5535,8 +4905,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Porvenir',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			159 => 
 			array (
@@ -5544,8 +4913,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Pozo Almonte',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			160 => 
 			array (
@@ -5553,8 +4921,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Primavera',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			161 => 
 			array (
@@ -5562,8 +4929,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Providencia',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			162 => 
 			array (
@@ -5571,8 +4937,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Puchuncaví',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			163 => 
 			array (
@@ -5580,8 +4945,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Pucón',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			164 => 
 			array (
@@ -5589,8 +4953,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Pudahuel',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			165 => 
 			array (
@@ -5598,8 +4961,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Puente Alto',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			166 => 
 			array (
@@ -5607,8 +4969,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Puerto Montt',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			167 => 
 			array (
@@ -5616,8 +4977,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Puerto Natales',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			168 => 
 			array (
@@ -5625,8 +4985,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Puerto Octay',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			169 => 
 			array (
@@ -5634,8 +4993,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Puerto Varas',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			170 => 
 			array (
@@ -5643,8 +5001,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Pumanque',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			171 => 
 			array (
@@ -5652,8 +5009,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Punitaqui',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			172 => 
 			array (
@@ -5661,8 +5017,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Punta Arenas',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			173 => 
 			array (
@@ -5670,8 +5025,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Puqueldón',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			174 => 
 			array (
@@ -5679,8 +5033,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Purén',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			175 => 
 			array (
@@ -5688,8 +5041,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Purranque',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			176 => 
 			array (
@@ -5697,8 +5049,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Putaendo',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			177 => 
 			array (
@@ -5706,8 +5057,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Putre',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			178 => 
 			array (
@@ -5715,8 +5065,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Puyehue',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			179 => 
 			array (
@@ -5724,8 +5073,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Queilén',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			180 => 
 			array (
@@ -5733,8 +5081,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Quellón',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			181 => 
 			array (
@@ -5742,8 +5089,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Quemchi',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			182 => 
 			array (
@@ -5751,8 +5097,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Quilaco',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			183 => 
 			array (
@@ -5760,8 +5105,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Quilicura',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			184 => 
 			array (
@@ -5769,8 +5113,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Quilleco',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			185 => 
 			array (
@@ -5778,8 +5121,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Quillón',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			186 => 
 			array (
@@ -5787,8 +5129,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Quillota',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			187 => 
 			array (
@@ -5796,8 +5137,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Quilpué',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			188 => 
 			array (
@@ -5805,8 +5145,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Quinchao',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			189 => 
 			array (
@@ -5814,8 +5153,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Quinta de Tilcoco',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			190 => 
 			array (
@@ -5823,8 +5161,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Quinta Normal',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			191 => 
 			array (
@@ -5832,8 +5169,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Quintero',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			192 => 
 			array (
@@ -5841,8 +5177,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Quirihue',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			193 => 
 			array (
@@ -5850,8 +5185,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Rancagua',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			194 => 
 			array (
@@ -5859,8 +5193,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Ránquil',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			195 => 
 			array (
@@ -5868,8 +5201,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Rauco',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			196 => 
 			array (
@@ -5877,8 +5209,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Recoleta',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			197 => 
 			array (
@@ -5886,8 +5217,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Renaico',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			198 => 
 			array (
@@ -5895,8 +5225,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Renca',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			199 => 
 			array (
@@ -5904,8 +5233,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Rengo',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			200 => 
 			array (
@@ -5913,8 +5241,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Requínoa',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			201 => 
 			array (
@@ -5922,8 +5249,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Retiro',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			202 => 
 			array (
@@ -5931,8 +5257,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Rinconada',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			203 => 
 			array (
@@ -5940,8 +5265,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Rio Bueno',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			204 => 
 			array (
@@ -5949,8 +5273,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Río Claro',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			205 => 
 			array (
@@ -5958,8 +5281,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Río Hurtado',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			206 => 
 			array (
@@ -5967,8 +5289,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Río Ibáñez',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			207 => 
 			array (
@@ -5976,8 +5297,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Río Negro',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			208 => 
 			array (
@@ -5985,8 +5305,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Río Verde',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			209 => 
 			array (
@@ -5994,8 +5313,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Romeral',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			210 => 
 			array (
@@ -6003,8 +5321,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Saavedra',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			211 => 
 			array (
@@ -6012,8 +5329,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Sagrada Familia',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			212 => 
 			array (
@@ -6021,8 +5337,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Salamanca',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			213 => 
 			array (
@@ -6030,8 +5345,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de San Antonio',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			214 => 
 			array (
@@ -6039,8 +5353,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de San Bernardo',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			215 => 
 			array (
@@ -6048,8 +5361,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de San Carlos',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			216 => 
 			array (
@@ -6057,8 +5369,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de San Clemente',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			217 => 
 			array (
@@ -6066,8 +5377,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de San Esteban',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			218 => 
 			array (
@@ -6075,8 +5385,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de San Fabián',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			219 => 
 			array (
@@ -6084,8 +5393,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de San Felipe',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			220 => 
 			array (
@@ -6093,8 +5401,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de San Fernando',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			221 => 
 			array (
@@ -6102,8 +5409,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de San Gregorio',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			222 => 
 			array (
@@ -6111,8 +5417,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de San Ignacio',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			223 => 
 			array (
@@ -6120,8 +5425,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de San Javier',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			224 => 
 			array (
@@ -6129,8 +5433,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de San Joaquín',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			225 => 
 			array (
@@ -6138,8 +5441,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de San José de Maipo',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			226 => 
 			array (
@@ -6147,8 +5449,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de San Juan de la Costa',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			227 => 
 			array (
@@ -6156,8 +5457,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de San Miguel',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			228 => 
 			array (
@@ -6165,8 +5465,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de San Nicolás',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			229 => 
 			array (
@@ -6174,8 +5473,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de San Pablo',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			230 => 
 			array (
@@ -6183,8 +5481,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de San Pedro',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			231 => 
 			array (
@@ -6192,8 +5489,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de San Pedro de Atacama',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			232 => 
 			array (
@@ -6201,8 +5497,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de San Pedro De La Paz',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			233 => 
 			array (
@@ -6210,8 +5505,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de San Rafael',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			234 => 
 			array (
@@ -6219,8 +5513,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de San Ramón',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			235 => 
 			array (
@@ -6228,8 +5521,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de San Rosendo',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			236 => 
 			array (
@@ -6237,8 +5529,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de San Vicente de Tagua Tagua',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			237 => 
 			array (
@@ -6246,8 +5537,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Santa Bárbara',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			238 => 
 			array (
@@ -6255,8 +5545,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Santa Cruz',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			239 => 
 			array (
@@ -6264,8 +5553,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Santa Juana',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			240 => 
 			array (
@@ -6273,8 +5561,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Santa María',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			241 => 
 			array (
@@ -6282,8 +5569,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Santiago',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			242 => 
 			array (
@@ -6291,8 +5577,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Santo Domingo',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			243 => 
 			array (
@@ -6300,8 +5585,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Sierra Gorda',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			244 => 
 			array (
@@ -6309,8 +5593,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Talagante',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			245 => 
 			array (
@@ -6318,8 +5601,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Talca',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			246 => 
 			array (
@@ -6327,8 +5609,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Talcahuano',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			247 => 
 			array (
@@ -6336,8 +5617,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Taltal',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			248 => 
 			array (
@@ -6345,8 +5625,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Temuco',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			249 => 
 			array (
@@ -6354,8 +5633,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Teno',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			250 => 
 			array (
@@ -6363,8 +5641,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Teodoro Schmidt',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			251 => 
 			array (
@@ -6372,8 +5649,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Tierra Amarilla',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			252 => 
 			array (
@@ -6381,8 +5657,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Tiltil',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			253 => 
 			array (
@@ -6390,8 +5665,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Timaukel',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			254 => 
 			array (
@@ -6399,8 +5673,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Tirúa',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			255 => 
 			array (
@@ -6408,8 +5681,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Tocopilla',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			256 => 
 			array (
@@ -6417,8 +5689,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Toltén',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			257 => 
 			array (
@@ -6426,8 +5697,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Tome',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			258 => 
 			array (
@@ -6435,8 +5705,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Torres del Paine',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			259 => 
 			array (
@@ -6444,8 +5713,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Tortel',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			260 => 
 			array (
@@ -6453,8 +5721,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Traiguén',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			261 => 
 			array (
@@ -6462,8 +5729,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Treguaco',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			262 => 
 			array (
@@ -6471,8 +5737,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Tucapel',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			263 => 
 			array (
@@ -6480,8 +5745,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Valdivia',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			264 => 
 			array (
@@ -6489,8 +5753,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Vallenar',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			265 => 
 			array (
@@ -6498,8 +5761,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Valparaíso',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			266 => 
 			array (
@@ -6507,8 +5769,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Vichuquén',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			267 => 
 			array (
@@ -6516,8 +5777,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Victoria',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			268 => 
 			array (
@@ -6525,8 +5785,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Vicuña',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			269 => 
 			array (
@@ -6534,8 +5793,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Vilcún',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			270 => 
 			array (
@@ -6543,8 +5801,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Villa Alegre',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			271 => 
 			array (
@@ -6552,8 +5809,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Villa Alemana',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			272 => 
 			array (
@@ -6561,8 +5817,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Villarrica',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			273 => 
 			array (
@@ -6570,8 +5825,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Viña del Mar',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			274 => 
 			array (
@@ -6579,8 +5833,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Vitacura',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			275 => 
 			array (
@@ -6588,8 +5841,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Yerbas Buenas',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			276 => 
 			array (
@@ -6597,8 +5849,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Yumbel',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			277 => 
 			array (
@@ -6606,8 +5857,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Yungay',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			),
 			278 => 
 			array (
@@ -6615,8 +5865,7 @@ class InstitucionesTableSeeder extends Seeder {
 
 				'nombre' => 'Municipalidad de Zapallar',
 				'codigo_padre' => 'MU',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				 
 			)*/
 
 		));

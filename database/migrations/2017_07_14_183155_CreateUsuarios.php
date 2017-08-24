@@ -21,7 +21,7 @@ class CreateUsuarios extends Migration {
 			$table->integer('institucion_id')->unsigned();
 			$table->foreign('institucion_id')->references('id')->on('instituciones')->onDelete('cascade');
 			$table->enum('perfil',array('root','superadmin','admin','auditor'));
-			$table->string('remember_token',100);
+			$table->string('remember_token',100)->nullable();
 			$table->timestamps();
 			$table->softDeletes();
 		});

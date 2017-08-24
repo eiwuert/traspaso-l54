@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Models\Institucion;
 class UsuariosTableSeeder extends Seeder {
 
 	/**
@@ -19,10 +20,9 @@ class UsuariosTableSeeder extends Seeder {
 				'apellidos' => 'Prueba',
 				'rut' => '11111111',
 				'correo' => 'prueba@prueba.com',
-				'institucion_id' => \Institucion::first()->id,
-				'perfil' => 'root',
-				'created_at' => '0000-00-00 00:00:00',
-				'updated_at' => '0000-00-00 00:00:00',
+				'institucion_id' => Institucion::first()->id,
+				'perfil' => 'root'
+
 			)
 		));
 	}
