@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Lobby Strap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../bootstrap.css" media="screen">
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+      <script src="../bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand">Plataforma<br/>Ley de Lobby</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="javascript:;">Audiencias</a>
+            </li>
+            <li>
+              <a href="javascript:;">Sujetos pasivos</a>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Edgar Allan Poe <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="download">
+                <li><a href="javascript:;">Mi perfil</a></li>
+                <li><a href="login.html">Salir</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container container-form">
+
+      <div class="row">
+        <div class="col-md-12">
+          <ol class="breadcrumb">
+            <li class="active">Solicitud de Audiencia</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="row">
+
+          <div class="col-lg-offset-2 col-lg-8">
+
+              <div class="panel panel-primary panel-lobby">
+                <div class="panel-heading">
+                  <h3><i class="glyphicon glyphicon-log-in"></i>&nbsp;&nbsp;&nbsp;<strong>La solicitud ha sido enviada con éxito</strong></h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <h3>Datos del receptor</h3>
+                        <p><strong>Nombre:</strong> Manuel López</p>
+                        <p><strong>Cargo:</strong> Subsecretario</p>
+                      </div>
+                      <div class="col-lg-6">
+                        <h3>Datos del solicitante</h3>
+                        <p><strong>Nombre:</strong> Edgar Allan Poe</p>
+                        <p><strong>RUT:</strong> 2.321.321-K (Chile)</p>
+                      </div>
+                    </div>
+                    
+                    <h4>Recuerde que:</h4>
+                    <ul>
+                      <li>La autoridad deberá pronunciarse dentro de 3 días hábiles sobre la solicitud de audiencia.</li>
+                      <li>La información entregrada podrá modificarse por el lobbista o gestor de interés mientras no exista pronunciamiento de la autoridad a quien se solicitó audiencia.</li>
+                      <li>La autoridad, con anterioridad a la realización de la audiencia podrá solicitar al lobbista o gestor de interés complemente o  aclare puntos respecto de la información declarada.</li>
+                      <li>Se podrá negar la audiencia de no cumplir con el deber de informar por parte del lobbista o gestor de interés, salvo resolución fundada en contra.</li>
+                    </ul>
+
+                    <div class="text-center">
+                      <a class="btn btn-default" href="dashboard.html?show=new-record">Cerrar</a>
+                    </div>
+
+                </div>
+              </div>
+
+          </div>
+          
+        
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="javascript:;">Audiencias</a>
+              </li>
+              <li>
+                <a href="javascript:;">Sujetos pasivos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+        <div class="area2">
+            <div class="container">
+                <div class="row">
+                  <div class="col-xs-3">
+                      <a class="main-logo" href="http://www.minsegpres.gob.cl" target="_blank"><img src="../img/logo.png" alt="Ministerio Secretaría General de la Presidencia"></a>
+                  </div>
+                  <div class="col-xs-5">
+                      <h3>Enlaces</h3>
+                      <ul>
+                          <li><a href="http://www.minsegpres.gob.cl" target="_blank">Ministerio Secretaría General de la Presidencia</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-xs-4">
+                      <div class="social">
+                          <a href="#"><img src="../img/ico-github.png" alt="Github"></a>
+                          <a href="#"><img src="../img/ico-twitter.png" alt="Facebook"></a>
+                          <a href="#"><img src="../img/ico-facebook.png" alt="Twitter"></a>
+                      </div>
+                      <div class="politicas">
+                          <a href="#">Politicas de Privacidad</a> | <a href="">Visualizadores y Plugins</a> | <a href="#">CC</a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="testModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="myModalLabel">Nuevo asistente</h4>
+        </div>
+        <div class="modal-body">
+
+          <form class="form-horizontal">
+
+            <div class="form-group">
+              <label for="inputEmail" class="col-lg-2 control-label">Nombre</label>
+              <div class="col-lg-4">
+                <input class="form-control" id="inputEmail" placeholder="Nombres" type="text">
+              </div>                    
+              <label for="inputEmail" class="col-lg-2 control-label">Apellido</label>
+              <div class="col-lg-4">
+                <input class="form-control" id="inputEmail" placeholder="Apellidos" type="text">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="inputEmail" class="col-lg-2 control-label">RUT/ID/Pasaporte</label>
+              <div class="col-lg-4">
+                <input class="form-control" id="inputEmail" placeholder="RUT/ID/Pasaporte" type="text">
+              </div>                    
+              <label for="inputEmail" class="col-lg-2 control-label">Nacionalidad</label>
+              <div class="col-lg-4">
+                  <select class="form-control" id="select">
+                    <option>Chile</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="inputEmail" class="col-lg-2 control-label">Medio de contacto</label>
+              <div class="col-lg-10">
+                <select class="form-control" id="select">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="inputEmail" class="col-lg-2 control-label">Calidad de los asistentes</label>
+              <div class="col-lg-10">
+                <div class="radio">
+                  <label>
+                    <input name="optionsRadios" id="optionsRadios1" value="option1" checked="" type="radio">
+                    Si, recibo remuneración (Lobbista) <a class="help-marker pull-right" data-toggle="popover" data-placement="top" data-container="body" data-content="Lorem Impsum Lorem Impsum Lorem Impsum Lorem Impsum" data-trigger="hover"></a>
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input name="optionsRadios" id="optionsRadios2" value="option2" type="radio">
+                    No recibo remuneración (Gestor de Interés Particular)
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input name="optionsRadios" id="optionsRadios2" value="option2" type="radio">
+                    Sujeto pasivo de Lobby
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="inputEmail" class="col-lg-6 control-label">Nombre de la organización o persona natural que representará en esta reunión (si corresponde)</label>
+              <div class="col-lg-6">
+                <input class="form-control" id="inputEmail" placeholder="Nombre" type="text">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="inputEmail" class="col-lg-6 control-label">RUT de la persona natural o jurídica que representará en esta reunión</label>
+              <div class="col-lg-6">
+                <input class="form-control" id="inputEmail" placeholder="RUT" type="text">
+              </div>
+            </div>
+
+          </form>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <script src="../../bower_components/jquery/jquery.min.js"></script>
+    <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/bootswatch.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

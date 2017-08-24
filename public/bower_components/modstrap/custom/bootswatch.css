@@ -1,0 +1,40 @@
+/* GobCL */
+@font-face {
+  font-family: 'gobCL';
+  src: url('fonts/gobcl_bold-webfont.eot');
+  src: url('fonts/gobcl_bold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/gobcl_bold-webfont.woff') format('woff'), url('fonts/gobcl_bold-webfont.ttf') format('truetype'), url('fonts/gobcl_bold-webfont.svg#gobCL') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gobCL';
+  src: url('fonts/gobcl_light-webfont.eot');
+  src: url('fonts/gobcl_light-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/gobcl_light-webfont.woff') format('woff'), url('fonts/gobcl_light-webfont.ttf') format('truetype'), url('fonts/gobcl_light-webfont.svg#gobCL') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gobCL';
+  src: url('fonts/gobcl_regular-webfont.eot');
+  src: url('fonts/gobcl_regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/gobcl_regular-webfont.woff') format('woff'), url('fonts/gobcl_regular-webfont.ttf') format('truetype'), url('fonts/gobcl_regular-webfont.svg#gobCL') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+.gobCL {
+  font-family: gobCL, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  font-family: gobCL, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.navbar .navbar-brand {
+  background-image: url(img/header-lineas.png);
+  background-repeat: no-repeat;
+  font-weight: bold;
+  width: 170px;
+  padding: 15px 12px 12px 0px;
+  font-size: 20px;
+}

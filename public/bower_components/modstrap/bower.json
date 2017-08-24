@@ -1,0 +1,42 @@
+{
+  "name": "modstrap",
+  "description": "Tema Bootstrap de Modernización.",
+  "version": "1.0.0",
+  "author": "Pablo Paladino",
+  "homepage": "http://www.modernizacion.gob.cl",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/modernizacion/modstrap.git"
+  },
+  "license": "MIT",
+  "ignore": [
+    "2",
+    "api",
+    "assets",
+    "bower_components",
+    "default",
+    "global",
+    "help",
+    "tests",
+    "_config.yml",
+    ".gitignore",
+    ".travis.yml",
+    "CNAME",
+    "composer.json",
+    "favicon.ico",
+    "Gemfile",
+    "Gruntfile.js",
+    "index.html",
+    "package.json",
+    "*/index.html",
+    "*/thumbnail.png"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  },
+  "devDependencies": {
+    "font-awesome": "~4.0.0",
+    "html5shiv": "~3.7.0",
+    "respond": "~1.4.2"
+  }
+}

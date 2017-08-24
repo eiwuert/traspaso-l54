@@ -1,0 +1,11 @@
+<?php
+
+namespace App\Http\Controllers\Frontend;
+
+use Illuminate\Routing\Controller as BaseController;
+
+class BaseControllerFrontEnd extends BaseController {
+
+	protected $layout = 'layouts.frontend';
+
+}
