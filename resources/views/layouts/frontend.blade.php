@@ -29,6 +29,7 @@
 						<li role="presentation">
 							<form action="{{ url('backend/autenticar')}}" method="post">
 								<input id="ingresoBtn" class="btn btn-primary" type="submit" alt="Ingreso con ClaveUnica" value="Ingreso a la plataforma"/>
+								{{ csrf_field() }}
 							</form>
 						</li>
 					</ul>

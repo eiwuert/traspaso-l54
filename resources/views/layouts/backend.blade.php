@@ -84,7 +84,7 @@
 		<script type="text/javascript" src="<?=asset('bower_components/jquery/dist/jquery.min.js');?>"></script>
     	<script type="text/javascript" src="<?=asset('bower_components/bootstrap/dist/js/bootstrap.min.js');?>"></script>
         <script>
-            var siteURL = "<?=url()?>";
+            var siteURL = "<?=url()->current();?>";
         </script>
 		
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

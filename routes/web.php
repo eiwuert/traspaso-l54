@@ -15,9 +15,6 @@ Route::get('/', function () {
     //return view('welcome');
     return View::make('frontend.home');
 });
-Route::post('backend/autenticar', 'AuthController@autenticar');
-Route::get('backend/callback', 'AuthController@getCallback');
-
 
 Route::get('/portada', function()
 {

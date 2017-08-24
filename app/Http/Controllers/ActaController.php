@@ -1,5 +1,13 @@
 <?php
-	namespace App\Http\Controllers;
+namespace App\Http\Controllers;
+use Illuminate\Routing\Controller as BaseController;
+use View;
+use App\Models\Gestion;
+use App\Models\GestionProgramaProyecto;
+use App\Models\GestionComiteInterministerial;
+use App\Models\GestionPublicacion;
+use App\Models\GestionCompromisoInternacional;
+use App\Models\GestionLicitacion;
 
 class ActaController extends BaseController{
 	

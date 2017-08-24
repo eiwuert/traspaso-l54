@@ -1,6 +1,9 @@
 <?php
 namespace App\Http\Controllers\Backend;
 	
+	use Illuminate\Routing\Controller as BaseController;
+	use App\Models\Usuario;
+	use Illuminate\Http\Request;
 	use InoOicClient\Flow\Basic;
 	use InoOicClient\Http;
 	use InoOicClient\Client;
@@ -47,8 +50,8 @@ namespace App\Http\Controllers\Backend;
 
 		}
 
-		public function getCallback(){
-			$error = \Input::get('error');
+		public function getCallback(Request $request){
+			$error = $request->input('error');
 			if ($error) return \Redirect::to('/');
 			
 			$flow = new Basic($this->authConfig);
@@ -57,7 +60,7 @@ namespace App\Http\Controllers\Backend;
 	        $rut_numero = $infoPersonal['RolUnico']['numero'];
 	        $rut_dv = $infoPersonal['RolUnico']['DV'];
 	        $rut = $rut_numero.$rut_dv;
-	        $usuario = \Usuario::where('rut',$rut)->first();
+	        $usuario = Usuario::where('rut',$rut)->first();
 	        if($usuario){
 	        	\Auth::login($usuario);
 	        	return \Redirect::to(\URL::to('backend'));	

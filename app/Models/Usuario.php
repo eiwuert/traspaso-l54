@@ -3,17 +3,15 @@
 namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
-use Illuminate\Auth\UserTrait;
-use Illuminate\Auth\UserInterface;
-use Illuminate\Auth\Reminders\RemindableTrait;
-use Illuminate\Auth\Reminders\RemindableInterface;
-use Illuminate\Database\Eloquent\SoftDeletingTrait;
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 
-class Usuario extends Model implements UserInterface, RemindableInterface {
+class Usuario extends Authenticatable {
 
-	use UserTrait, RemindableTrait;
-	use SoftDeletingTrait;
+	//use UserTrait, RemindableTrait;
+	use SoftDeletes;
 
 	protected $table 	= 'usuarios';
 	protected $hidden 	= array('remember_token');
