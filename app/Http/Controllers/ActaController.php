@@ -2,6 +2,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Routing\Controller as BaseController;
 use View;
+use App\Models\Acta;
 use App\Models\Gestion;
 use App\Models\GestionProgramaProyecto;
 use App\Models\GestionComiteInterministerial;
