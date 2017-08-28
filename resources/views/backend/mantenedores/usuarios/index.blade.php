@@ -32,10 +32,10 @@
 						<td>{{ $usuario->institucion->nombre }}</td>
 						<td>{{ $usuario->perfil }}</td>
 						<td>
-						{{ Form::open(array('url' => 'backend/mantenedor/usuarios/' . $usuario->id, 'class' => 'pull-right')) }}
-						{{ Form::hidden('_method', 'DELETE') }}
-						{{ Form::submit('Borrar este usuario', array('class' => 'btn btn-warning')) }}
-						{{ Form::close() }}
+						{!! Form::open(array('url' => 'backend/mantenedor/usuarios/' . $usuario->id, 'class' => 'pull-right')) !!}
+						{!! Form::hidden('_method', 'DELETE') !!}
+						{!! Form::submit('Borrar este usuario', array('class' => 'btn btn-warning')) !!}
+						{!! Form::close() !!}
 
 						<!--<a class="btn btn-small btn-success" href="{{ URL::to('backend/mantenedor/usuarios/' . $usuario->id) }}">Ver</a>-->
 						<a class="btn btn-small btn-info" href="{{ URL::to('backend/mantenedor/usuarios/' . $usuario->id . '/edit') }}">Editar</a>

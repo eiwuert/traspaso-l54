@@ -36,7 +36,7 @@
 	        <ul class="nav navbar-nav">
             	<li><a role="menuitem" tabindex="-1" href="{{ url('backend/actas/listado') }}">Actas</a></li>
 	        </ul>
-	        @if(\Auth::user()->perfil == 'root' || \Auth::user()->perfil == 'superadmin')
+	        @if(Auth::user()->perfil == 'root' || Auth::user()->perfil == 'superadmin')
 	        <ul class="nav navbar-nav">
 	        	<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gestión <span class="caret"></span></a>

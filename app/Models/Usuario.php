@@ -20,6 +20,6 @@ class Usuario extends Authenticatable {
 
 
 	public function institucion(){
-        return $this->belongsTo('Institucion','institucion_id');
+        return $this->belongsTo('App\Models\Institucion','institucion_id');
     }
 }

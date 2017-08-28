@@ -1,17 +1,18 @@
 <?php
 
 namespace App\Http\Controllers\Backend;
-
-use Usuario;
-use Institucion;
+//use App\Http\Controllers\Backend\BaseController as BaseController;
+use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Support\Facades\Input as Input;
+use App\Models\Usuario as Usuario;
+use App\Models\Institucion;
 use View;
 use Validator;
-use Input;
 use Session;
 use Redirect;
 use Auth;
 
-class UsuarioController extends \BaseController {
+class UsuarioController extends BaseController {
 
 	/**
 	 * Display a listing of the resource.
@@ -45,11 +46,11 @@ class UsuarioController extends \BaseController {
 	{
 		//
 		if(Auth::user()->perfil == 'root'){
-			$instituciones = Institucion::all()->lists( 'nombre', 'id');
+			$instituciones = Institucion::all()->pluck('nombre', 'id')->all();
 			$roles = array('-1' => 'Seleccione un rol de usuario', 'root' => 'Root', 'superadmin' => 'Super admin', 'admin' => 'admin', 'auditor' => 'Auditor');
 		}
 		elseif(Auth::user()->perfil == 'superadmin'){
-			$instituciones = Institucion::where('id', '=', Auth::user()->institucion_id)->lists( 'nombre', 'id');
+			$instituciones = Institucion::where('id', '=', Auth::user()->institucion_id)->pluck('nombre', 'id')->all();
 			$roles = array('-1' => 'Seleccione un rol de usuario', 'admin' => 'admin', 'auditor' => 'Auditor');
 
 		}
@@ -122,11 +123,11 @@ class UsuarioController extends \BaseController {
 		$usuario = Usuario::find($id);
 
 		if(Auth::user()->perfil == 'root'){
-			$instituciones = Institucion::all()->lists( 'nombre', 'id');
+			$instituciones = Institucion::all()->pluck('nombre', 'id')->all();
 			$roles = array('-1' => 'Seleccione un rol de usuario', 'root' => 'Root', 'superadmin' => 'Super admin', 'admin' => 'admin', 'auditor' => 'Auditor');
 		}
 		elseif(Auth::user()->perfil == 'superadmin'){
-			$instituciones = Institucion::where('id', '=', Auth::user()->institucion_id)->lists( 'nombre', 'id');
+			$instituciones = Institucion::where('id', '=', Auth::user()->institucion_id)->pluck('nombre', 'id')->all();
 			$roles = array('-1' => 'Seleccione un rol de usuario', 'admin' => 'admin', 'auditor' => 'Auditor');
 
 		}
