@@ -1,19 +1,20 @@
 <?php
 namespace App\Http\Controllers\Backend;
+
+use Illuminate\Routing\Controller as BaseController;
 use View;
-use Input;
-use Acta;
+use Illuminate\Http\Request;
+use App\Models\Acta;
 use Response;
-use Financiera;
-use FinancieraActivo;
-use FinancieraAnticipoFondo;
-use FinancieraConciliacionBancaria;
-use FinancieraCuentaCorriente;
-use FinancieraInternoRendir;
+use App\Models\Financiera;
+use App\Models\FinancieraActivo;
+use App\Models\FinancieraAnticipoFondo;
+use App\Models\FinancieraConciliacionBancaria;
+use App\Models\FinancieraCuentaCorriente;
+use App\Models\FinancieraInternoRendir;
 
-class FinancieraController extends \BaseController {
+class FinancieraController extends BaseController {
 
-	
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -42,13 +43,13 @@ class FinancieraController extends \BaseController {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(Request $request)
 	{
 
 		$acta = new Acta();
 		$acta->institucion_id = \Auth::user()->institucion_id;
 		$acta->save();
-		$datos = Input::all();
+		$datos = $request->all();
 
 
 		$financiera 								= new Financiera;
@@ -63,7 +64,7 @@ class FinancieraController extends \BaseController {
 			else
 				$activo = new FinancieraActivo;
 			$activo->nombre 	= $data_activo['nombre'];
-			$activo->detalle 		= $data_activo['detalle'];
+			$activo->detalle 	= $data_activo['detalle'];
 			$activo->monto 		= $data_activo['monto'];
 			$activo->plazo 		= $data_activo['plazo'];
 			$activo->acta_id 	= $acta->id;
@@ -174,10 +175,10 @@ class FinancieraController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update(Request $request, $id)
 	{
 		$acta = Acta::find($id);
-		$datos = Input::all();
+		$datos = $request->all();
 
 		$financiera = Financiera::find($datos['financiera']['id']);
 
@@ -186,7 +187,7 @@ class FinancieraController extends \BaseController {
 		$financiera->acta_id 							= $id;
 		$financiera->save();
 
-		$data_activo_existente 			= FinancieraActivo::where('acta_id',$acta->id)->get()->lists('id');
+		$data_activo_existente 			= FinancieraActivo::where('acta_id',$acta->id)->get()->pluck('id')->all();
 		$array_no_modificados_activo 	= array();
 
 		foreach($datos['activos'] as $data_activo){
@@ -207,7 +208,7 @@ class FinancieraController extends \BaseController {
 		FinancieraActivo::whereIn('id',$resultado)->delete();
 
 
-		$data_anticipo_existente 		= FinancieraAnticipoFondo::where('acta_id',$acta->id)->get()->lists('id');
+		$data_anticipo_existente 		= FinancieraAnticipoFondo::where('acta_id',$acta->id)->get()->pluck('id')->all();
 		$array_no_modificados_anticipos = array();
 		foreach($datos['anticipos'] as $data_anticipo){
 			if(isset($data_anticipo['id'])){
@@ -226,7 +227,7 @@ class FinancieraController extends \BaseController {
 		FinancieraAnticipoFondo::whereIn('id',$resultado)->delete();
 
 
-		$data_conciliacion_existente = FinancieraConciliacionBancaria::where('acta_id',$acta->id)->get()->lists('id');
+		$data_conciliacion_existente = FinancieraConciliacionBancaria::where('acta_id',$acta->id)->get()->pluck('id')->all();
 		$array_no_modificados_conciliaciones = array();
 		foreach($datos['conciliaciones'] as $data_conciliacion){
 			if(isset($data_conciliacion['id'])){
@@ -250,7 +251,7 @@ class FinancieraController extends \BaseController {
 
 
 
-		$data_cuenta_existente = FinancieraCuentaCorriente::where('acta_id',$acta->id)->get()->lists('id');
+		$data_cuenta_existente = FinancieraCuentaCorriente::where('acta_id',$acta->id)->get()->pluck('id')->all();
 		$array_no_modificados_cuentas = array();
 		foreach($datos['cuentas'] as $data_cuenta){
 			if(isset($data_cuenta['id'])){
@@ -269,7 +270,7 @@ class FinancieraController extends \BaseController {
 		FinancieraCuentaCorriente::whereIn('id',$resultado)->delete();
 
 
-		$data_interno_existente = FinancieraInternoRendir::where('acta_id',$acta->id)->get()->lists('id');
+		$data_interno_existente = FinancieraInternoRendir::where('acta_id',$acta->id)->get()->pluck('id')->all();
 		$array_no_modificados_internos = array();
 		foreach($datos['internos'] as $data_interno){
 			if(isset($data_interno['id'])){

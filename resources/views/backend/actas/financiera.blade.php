@@ -20,7 +20,6 @@
 
 		<div class="table-responsive" id="financiera">
 			<form method="POST" enctype="multipart/form-data" v-on:submit.prevent="setData">
-
 			
 		  	<br>
 		  	<div class="form-group">
@@ -233,6 +232,7 @@
 			<!--<button class="btn btn-success" @click.prevent="setData">Guardar borrador</button>-->
 			<button type="submit" class="btn btn-success">Guardar borrador</button>
 			</div>
+			
 
 			</form>
 		</div>

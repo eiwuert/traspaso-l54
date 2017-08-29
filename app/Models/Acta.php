@@ -25,7 +25,7 @@ class Acta extends Model  {
     }
     public function financiera ()
     {
-        return $this->hasMany('Financiera');
+        return $this->hasMany('App\Models\Financiera');
     }
     public function inventario ()
     {
@@ -57,19 +57,19 @@ class Acta extends Model  {
     }
     public function financieraFuncionarios ()
     {
-        return $this->hasMany('FinancieraFuncionario');
+        return $this->hasMany('App\Models\FinancieraFuncionario');
     }
     public function FinancieraConciliacionesBancarias ()
     {
-        return $this->hasMany('FinancieraConciliacionBancaria');
+        return $this->hasMany('App\Models\FinancieraConciliacionBancaria');
     }
     public function FinancieraActivos ()
     {
-        return $this->hasMany('FinancieraActivo');
+        return $this->hasMany('App\Models\FinancieraActivo');
     }
     public function FinancieraAnticiposFondos ()
     {
-        return $this->hasMany('FinancieraAnticipoFondo');
+        return $this->hasMany('App\Models\FinancieraAnticipoFondo');
     }
     public function iventarioVehiculos ()
     {
@@ -105,11 +105,11 @@ class Acta extends Model  {
     }
     public function financieraCuentaCorriente ()
     {
-        return $this->hasMany('FinancieraCuentaCorriente');
+        return $this->hasMany('App\Models\FinancieraCuentaCorriente');
     }
     public function financieraInternoRendir ()
     {
-        return $this->hasMany('FinancieraInternoRendir');
+        return $this->hasMany('App\Models\FinancieraInternoRendir');
     }
     public function inventarioMuebleInmueble ()
     {

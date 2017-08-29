@@ -108,13 +108,17 @@ var App = new Vue({
 
 		setData: function () {
             var self = this;
+
+            var token = $('meta[name="csrf-token"]').attr('content');
+
             var payload = {
             	cuentas: this.cuentas,
             	conciliaciones: this.conciliaciones,
             	activos: this.activos,
             	internos: this.internos,
             	anticipos: this.anticipos,
-            	financiera: this.financieradata
+            	financiera: this.financieradata,
+            	_token : token,
             }
             var payload = JSON.stringify(payload);
 
