@@ -180,12 +180,35 @@ class FinancieraController extends BaseController {
 		$acta = Acta::find($id);
 		$datos = $request->all();
 
-		$financiera = Financiera::find($datos['financiera']['id']);
+		if(isset($datos['financiera'])){
 
-		$financiera->enlace_informe_contabilidad 		= $datos['financiera']['enlace_informe_contabilidad'];
-		$financiera->estado 							= 'borrador';
-		$financiera->acta_id 							= $id;
-		$financiera->save();
+			$financiera = Financiera::find($datos['financiera']['id']);
+
+			if(is_null($financiera)){
+
+				$financiera 								= new Financiera;
+				$financiera->enlace_informe_contabilidad 	= $datos['financiera']['enlace_informe_contabilidad'];
+				$financiera->estado 						= 'borrador';
+				$financiera->acta_id 						= $acta->id;
+				$financiera->save();
+
+			}
+			else{
+				$financiera->enlace_informe_contabilidad 		= $datos['financiera']['enlace_informe_contabilidad'];
+				$financiera->estado 							= 'borrador';
+				$financiera->acta_id 							= $id;
+				$financiera->save();
+			}
+
+		}
+		else{
+			$financiera 								= new Financiera;
+			$financiera->enlace_informe_contabilidad 	= $datos['financiera']['enlace_informe_contabilidad'];
+			$financiera->estado 						= 'borrador';
+			$financiera->acta_id 						= $acta->id;
+			$financiera->save();
+		}
+
 
 		$data_activo_existente 			= FinancieraActivo::where('acta_id',$acta->id)->get()->pluck('id')->all();
 		$array_no_modificados_activo 	= array();
@@ -289,6 +312,10 @@ class FinancieraController extends BaseController {
 		}
 		$resultado = array_diff($data_interno_existente, $array_no_modificados_internos);
 		FinancieraInternoRendir::whereIn('id',$resultado)->delete();
+
+		return Response::json(array(
+			'acta_id'=>$acta->id
+		));
 	}
 
 

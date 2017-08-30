@@ -2,14 +2,14 @@
 namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
-use Illuminate\Database\Eloquent\SoftDeletingTrait;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class LegalSumarioInvestigacion extends Model {
 
-	use SoftDeletingTrait;
+	use SoftDeletes;
 	protected $table = 'legal_sumarios_investigaciones';
 
 	public function acta(){
-		return $this->belongsTo('Acta', 'acta_id');
+		return $this->belongsTo('App\Models\Acta', 'acta_id');
 	}
 }

@@ -1,17 +1,19 @@
 <?php
 namespace App\Http\Controllers\Backend;
+use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Http\Request;
 use View;
 use Input;
-use Acta;
 use Response;
-use Legal;
-use LegalDocumentoTomaRazon;
-use LegalJuicioPendiente;
-use LegalProyectoLeyTramitacion;
-use LegalRequerimientoRespuesta;
-use LegalSumarioInvestigacion;
+use App\Models\Acta;
+use App\Models\Legal;
+use App\Models\LegalDocumentoTomaRazon;
+use App\Models\LegalJuicioPendiente;
+use App\Models\LegalProyectoLeyTramitacion;
+use App\Models\LegalRequerimientoRespuesta;
+use App\Models\LegalSumarioInvestigacion;
 
-class LegalController extends \BaseController {
+class LegalController extends BaseController {
 
 	
 	/**
@@ -42,13 +44,13 @@ class LegalController extends \BaseController {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(Request $request)
 	{
 
 		$acta = new Acta();
 		$acta->institucion_id = \Auth::user()->institucion_id;
 		$acta->save();
-		$datos = Input::all();
+		$datos = $request->all();
 
 
 		$legal = new Legal;
@@ -177,13 +179,33 @@ class LegalController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update(Request $request,$id)
 	{
 
-		$acta = Acta::find($id);
-		$datos = Input::all();
+		$acta 	= Acta::find($id);
+		$datos 	= $request->all();
 
-		$data_documento_existente 		= LegalDocumentoTomaRazon::where('acta_id',$acta->id)->get()->lists('id');
+		if(isset($datos['legal'])){
+			$legal = Legal::find($datos['legal']['id']);
+
+			if(is_null($legal)){
+				$legal = new Legal;
+				$legal->estado = 'borrador';
+				$legal->acta_id = $acta->id;
+				$legal->save();
+
+			}
+
+		}
+		else{
+			$legal = new Legal;
+			$legal->estado = 'borrador';
+			$legal->acta_id = $acta->id;
+			$legal->save();
+		}
+
+
+		$data_documento_existente 		= LegalDocumentoTomaRazon::where('acta_id',$acta->id)->get()->pluck('id')->all();
 		$array_no_modificados_documento = array();
 
 		foreach($datos['documentos'] as $data_documento){
@@ -204,7 +226,7 @@ class LegalController extends \BaseController {
 		LegalDocumentoTomaRazon::whereIn('id',$resultado)->delete();
 
 
-		$data_proyecto_existente 		= LegalProyectoLeyTramitacion::where('acta_id',$acta->id)->get()->lists('id');
+		$data_proyecto_existente 		= LegalProyectoLeyTramitacion::where('acta_id',$acta->id)->get()->pluck('id')->all();
 		$array_no_modificados_proyecto 	= array();
 		foreach($datos['proyectos'] as $data_proyecto){
 			if(isset($data_proyecto['id'])){
@@ -222,7 +244,7 @@ class LegalController extends \BaseController {
 		$resultado = array_diff($data_proyecto_existente, $array_no_modificados_proyecto);
 		LegalProyectoLeyTramitacion::whereIn('id',$resultado)->delete();
 
-		$data_juicio_existente 			= LegalJuicioPendiente::where('acta_id',$acta->id)->get()->lists('id');
+		$data_juicio_existente 			= LegalJuicioPendiente::where('acta_id',$acta->id)->get()->pluck('id')->all();
 		$array_no_modificados_juicio	= array();
 		foreach($datos['juicios'] as $data_juicio){
 			if(isset($data_juicio['id'])){
@@ -244,7 +266,7 @@ class LegalController extends \BaseController {
 		$resultado = array_diff($data_juicio_existente, $array_no_modificados_juicio);
 		LegalJuicioPendiente::whereIn('id',$resultado)->delete();
 
-		$data_sumario_existente 		= LegalSumarioInvestigacion::where('acta_id',$acta->id)->get()->lists('id');
+		$data_sumario_existente 		= LegalSumarioInvestigacion::where('acta_id',$acta->id)->get()->pluck('id')->all();
 		$array_no_modificados_sumario	= array();
 		foreach($datos['sumarios'] as $data_sumario){
 			if(isset($data_sumario['id'])){
@@ -263,7 +285,7 @@ class LegalController extends \BaseController {
 		$resultado = array_diff($data_sumario_existente, $array_no_modificados_sumario);
 		LegalSumarioInvestigacion::whereIn('id',$resultado)->delete();
 
-		$data_requerimiento_existente 		= LegalRequerimientoRespuesta::where('acta_id',$acta->id)->get()->lists('id');
+		$data_requerimiento_existente 		= LegalRequerimientoRespuesta::where('acta_id',$acta->id)->get()->pluck('id')->all();
 		$array_no_modificados_requerimiento	= array();
 		foreach($datos['requerimientos'] as $data_requerimiento){
 			if(isset($data_requerimiento['id'])){
@@ -282,6 +304,10 @@ class LegalController extends \BaseController {
 		}
 		$resultado = array_diff($data_requerimiento_existente, $array_no_modificados_requerimiento);
 		LegalRequerimientoRespuesta::whereIn('id',$resultado)->delete();
+
+		return Response::json(array(
+			'acta_id'=>$acta->id
+		));
 
 
 	}

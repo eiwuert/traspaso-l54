@@ -106,7 +106,15 @@
 								<td><input type="text" name="numero_causa" class="form-control" v-model="juicio.numero_causa"></td>
 								<td><input type="text" name="anio" class="form-control" v-model="juicio.anio"></td>
 								<td><input type="text" name="tribunal" class="form-control" v-model="juicio.tribunal"></td>
-								<td><input type="text" name="sede" class="form-control" v-model="juicio.sede"></td>
+								<td>
+									<select name="sede" v-model="juicio.sede" class="form-control">
+									  <option disabled value="">Seleccione una opción</option>
+									  <option value="Civil">Civil</option>
+									  <option value="Penal">Penal</option>
+									  <option value="Laboral">Laboral</option>
+									  <option value="Competencia común">Competencia común</option>
+									</select>
+								</td>
 								<td><input type="text" name="naturaleza" class="form-control" v-model="juicio.naturaleza"></td>
 								<td><input type="text" name="instancia" class="form-control" v-model="juicio.instancia"></td>
 								<td><button class="btn btn-danger" @click.prevent="borrarJuicio(juicio)">Eliminar</button></td>
@@ -137,7 +145,13 @@
 						</thead>
 						<tbody>
 							<tr v-for="sumario in sumarios">
-								<td><input type="text" name="tipo" class="form-control" v-model="sumario.tipo" ></td>
+								<td>
+									<select name="tipo" v-model="sumario.tipo" class="form-control">
+									  <option disabled value="">Seleccione una opción</option>
+									  <option value="Sumario">Sumario</option>
+									  <option value="Investigación">Investigación</option>
+									</select>
+								</td>
 								<td><input type="text" name="numero_resolucion" class="form-control" v-model="sumario.numero_resolucion" ></td>
 								<td><input type="text" name="fecha_resolucion" class="form-control" v-model="sumario.fecha_resolucion" ></td>
 								<td><input type="text" name="estado_proceso" class="form-control" v-model="sumario.estado_proceso" ></td>

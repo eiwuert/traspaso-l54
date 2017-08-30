@@ -37,9 +37,7 @@ var App = new Vue({
 				this.$set('legaldata', null);
 			}
 			else{
-
 				var acta_id = window.location.pathname.match( /\d+/g )[0];
-				
 				this.$http.get('/backend/actas/legal/'+acta_id+'/edit').then((response) => {
 					this.$set('legaldata',response.data.legal[0]);
 	            	this.$set('documentos', response.data.documentos);
@@ -47,7 +45,6 @@ var App = new Vue({
 	            	this.$set('juicios', response.data.juicios);
 	            	this.$set('sumarios', response.data.sumarios);
 	            	this.$set('requerimientos', response.data.requerimientos);
-	            	console.log(legal);
 	          	});
 
 			}
@@ -107,13 +104,16 @@ var App = new Vue({
 
 		setData: function () {
             var self = this;
+            var token = $('meta[name="csrf-token"]').attr('content');
+
             var payload = {
             	documentos: this.documentos,
             	proyectos: this.proyectos,
             	juicios: this.juicios,
             	sumarios: this.sumarios,
             	requerimientos: this.requerimientos,
-            	legal: this.legaldata
+            	legal: this.legaldata,
+            	_token: token
             }
             var payload = JSON.stringify(payload);
 
@@ -134,9 +134,11 @@ var App = new Vue({
 			else{
 
 				var acta_id = window.location.pathname.match( /\d+/g )[0];
+				console.log(acta_id);
 
 				this.$http.put('/backend/actas/legal/'+acta_id,payload)
 	            .then((response) => {
+	            	console.log(this.response);
 				    window.location.replace('/backend/actas/iniciar/'+this.legaldata.acta_id)
 
 				}, (error) => {
