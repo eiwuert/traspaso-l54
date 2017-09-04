@@ -46,8 +46,8 @@
 							<div class="col-xs-12">
 
 								<div class="btn-group pull-right" role="group" aria-label="...">
-									<a class="btn btn-primary btn-lg {{ (URL::current() == url('portada'))?'active':'' }}" href="{{ url('portada') }}">Portada</a>
 									<a class="btn btn-primary btn-lg {{ (URL::current() == url('acerca'))?'active':'' }}" href="#">Acerca de la iniciativa</a>
+									<a class="btn btn-primary btn-lg" href="http://biblioteca.digital.gob.cl/">Biblioteca Digital</a>
 								</div>
 
 							</div>
