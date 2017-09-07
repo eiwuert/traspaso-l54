@@ -2,11 +2,11 @@
 namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
-use Illuminate\Database\Eloquent\SoftDeletingTrait;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class InventarioProductoEmergencia extends Model {
 
-	use SoftDeletingTrait;
+	use SoftDeletes;
 	protected $table = 'inventario_productos_emergencias';
 
 	public function acta(){

@@ -200,7 +200,7 @@
 			<!--<button class="btn btn-success" @click.prevent="setData">Guardar borrador</button>-->
 			<button type="submit" class="btn btn-success">Guardar borrador</button>
 			</div>
-
+			
 			</form>
 		</div>
 	</div>

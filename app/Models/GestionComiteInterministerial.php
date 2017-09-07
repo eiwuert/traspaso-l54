@@ -2,11 +2,11 @@
 namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
-use Illuminate\Database\Eloquent\SoftDeletingTrait;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class GestionComiteInterministerial extends Model {
 
-	use SoftDeletingTrait;
+	use SoftDeletes;
 	protected $table = 'gestion_comites_interministeriales';
 
 	public function acta(){

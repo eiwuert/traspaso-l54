@@ -36,6 +36,7 @@ return array(
     'CreateLegalRequerimientosRespuestas' => $baseDir . '/database/migrations/2017_07_17_154130_CreateLegalRequerimientosRespuestas.php',
     'CreateLegalSumariosInvestigaciones' => $baseDir . '/database/migrations/2017_07_17_152933_CreateLegalSumariosInvestigaciones.php',
     'CreateOtrosAntecedentes' => $baseDir . '/database/migrations/2017_07_14_194854_CreateOtrosAntecedentes.php',
+    'CreateOtrosAntecedentesArchivos' => $baseDir . '/database/migrations/2017_09_05_175954_CreateOtrosAntecedentesArchivos.php',
     'CreateParticipacionCiudadanaTable' => $baseDir . '/database/migrations/2017_07_14_183919_create_participacion_ciudadana_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
     'CreatePersonalNombramientosTable' => $baseDir . '/database/migrations/2017_07_14_192150_create_personal_nombramientos_table.php',
@@ -580,6 +581,5 @@ return array(
     'Text_Template' => $vendorDir . '/phpunit/php-text-template/src/Template.php',
     'UpdateGestion19072017' => $baseDir . '/database/migrations/2017_07_19_202950_UpdateGestion19072017.php',
     'UpdateGestionPublicaciones19072017' => $baseDir . '/database/migrations/2017_07_19_210009_UpdateGestionPublicaciones19072017.php',
-    'UsersTableSeeder' => $baseDir . '/database/seeds/UsersTableSeeder.php',
     'UsuariosTableSeeder' => $baseDir . '/database/seeds/UsuariosTableSeeder.php',
 );

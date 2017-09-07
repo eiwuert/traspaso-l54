@@ -1,18 +1,19 @@
 <?php
 namespace App\Http\Controllers\Backend;
+use Illuminate\Routing\Controller as BaseController;
 use View;
 use Input;
 use Acta;
-use Gestion;
-use GestionProgramaProyecto;
-use GestionComiteInterministerial;
-use GestionPublicacion;
-use GestionCompromisoInternacional;
-use GestionLicitacion;
+use App\Models\Gestion;
+use App\Models\GestionProgramaProyecto;
+use App\Models\GestionComiteInterministerial;
+use App\Models\GestionPublicacion;
+use App\Models\GestionCompromisoInternacional;
+use App\Models\GestionLicitacion;
 use Response;
 
 
-class GestionController extends \BaseController {
+class GestionController extends BaseController {
 
 	/**
 	 * Display a listing of the resource.
@@ -46,7 +47,7 @@ class GestionController extends \BaseController {
 	{
 
 		$acta = new Acta();
-		$acta->institucion_id = 16;
+		$acta->institucion_id = \Auth::user()->institucion_id;
 		$acta->save();
 		$datos = Input::all();
 
@@ -132,7 +133,7 @@ class GestionController extends \BaseController {
 		//Acta existente
 
 
-		return View::make('backend.actas.gestion', array('acta_id' => $id));
+		return View::make('backend.actas.gestion');
 	}
 
 
@@ -173,8 +174,10 @@ class GestionController extends \BaseController {
 		$acta = Acta::find($id);
 		$datos = Input::all();
 
-		$gestion = Gestion::find($datos['gestion']['id']);
-
+		if(isset($datos['gestion']['id']))
+			$gestion = Gestion::find($datos['gestion']['id']);
+		else
+			$gestion = new Gestion;
 		$gestion->enlace_marco_normativo 			= $datos['gestion']['enlace_marco_normativo'];
 		$gestion->enlace_definiciones_estrategicas 	= $datos['gestion']['enlace_definiciones_estrategicas'];
 		$gestion->enlace_estructura_organica 		= $datos['gestion']['enlace_estructura_organica'];
@@ -185,58 +188,90 @@ class GestionController extends \BaseController {
 		$gestion->acta_id 							= $id;
 		$gestion->save();
 
-		foreach($datos['programas'] as $p){
-			if(isset($p['id']))
-				$programa = GestionProgramaProyecto::find($p['id']);
-			else
+		$array_programas = GestionProgramaProyecto::where('acta_id',$acta->id)->get()->lists('id');
+		$array_no_programas = array();
+		foreach($datos['programas'] as $n){
+			if(isset($n['id'])){
+				$programa = GestionProgramaProyecto::find($n['id']);
+				array_push($array_no_programas,$n['id']);
+			}else{
 				$programa = new GestionProgramaProyecto;
+			}
 			$programa->nombre = $p['nombre'];
 			$programa->monto = $p['monto'];
 			$programa->etapa = $p['etapa'];
 			$programa->acta_id = $id;
 			$programa->save();
 		}
+		$resultado = array_diff($array_programas, $array_no_programas);
+		GestionProgramaProyecto::whereIn('id',$resultado)->delete();
 
-		foreach($datos['comites'] as $c){
-			if(isset($c['id']))
-				$comite = GestionComiteInterministerial::find($c['id']);
-			else
+		$array_comites = GestionComiteInterministerial::where('acta_id',$acta->id)->get()->lists('id');
+		$array_no_comites = array();
+		foreach($datos['comites'] as $n){
+			if(isset($n['id'])){
+				$comite = GestionComiteInterministerial::find($n['id']);
+				array_push($array_no_comites,$n['id']);
+			}else{
 				$comite = new GestionComiteInterministerial;
+			}
 			$comite->nombre = $c['nombre'];
 			$comite->calidad_participacion = $c['calidad_participacion'];
 			$comite->acta_id = $id;
 			$comite->save();
 		}
+		$resultado = array_diff($array_comites, $array_no_comites);
+		GestionComiteInterministerial::whereIn('id',$resultado)->delete();
 
-		foreach($datos['publicaciones'] as $p){
-			if(isset($p['id']))
-				$publicacion = GestionPublicacion::find($p['id']);
-			else
+		$array_publicaciones = GestionPublicacion::where('acta_id',$acta->id)->get()->lists('id');
+		$array_no_publicaciones = array();
+		foreach($datos['publicaciones'] as $n){
+			if(isset($n['id'])){
+				$publicacion = GestionPublicacion::find($n['id']);
+				array_push($array_no_publicaciones,$n['id']);
+			}else{
 				$publicacion = new GestionPublicacion;
+			}
 			$publicacion->nombre = $p['nombre'];
 			$publicacion->enlace_publicacion = $p['enlace_publicacion'];
 			$publicacion->acta_id = $id;
 			$publicacion->save();
 		}
-		foreach($datos['compromisos'] as $c){
-			if(isset($c['id']))
-				$compromiso = GestionCompromisoInternacional::find($c['id']);
-			else
+		$resultado = array_diff($array_publicaciones, $array_no_publicaciones);
+		GestionPublicacion::whereIn('id',$resultado)->delete();
+
+		$array_compromisos = GestionCompromisoInternacional::where('acta_id',$acta->id)->get()->lists('id');
+		$array_no_compromisos = array();
+		foreach($datos['compromisos'] as $n){
+			if(isset($n['id'])){
+				$compromiso = GestionCompromisoInternacional::find($n['id']);
+				array_push($array_no_compromisos,$n['id']);
+			}else{
 				$compromiso = new GestionCompromisoInternacional;
+			}
 			$compromiso->nombre = $c['nombre'];
 			$compromiso->calidad_participacion = $c['calidad_participacion'];
 			$compromiso->acta_id = $acta->id;
 			$compromiso->save();
 		}
-		foreach($datos['licitaciones'] as $l){
-			if(isset($l['id']))
-				$licitacion = GestionLicitacion::find($l['id']);
-			else
+		$resultado = array_diff($array_compromisos, $array_no_compromisos);
+		GestionCompromisoInternacional::whereIn('id',$resultado)->delete();
+
+		$array_licitaciones = GestionLicitacion::where('acta_id',$acta->id)->get()->lists('id');
+		$array_no_licitaciones = array();
+		foreach($datos['licitaciones'] as $n){
+			if(isset($n['id'])){
+				$licitacion = GestionLicitacion::find($n['id']);
+				array_push($array_no_licitaciones,$n['id']);
+			}else{
 				$licitacion = new GestionLicitacion;
+			}
 			$licitacion->nombre = $l['nombre'];
 			$licitacion->estado = $l['estado'];
 			$licitacion->save();
 		}
+		$resultado = array_diff($array_licitaciones, $array_no_licitaciones);
+		GestionLicitacion::whereIn('id',$resultado)->delete();
 	}
 
 

@@ -10,6 +10,11 @@ class ComposerStaticInit3fc6b79b2bd4d8e6eb08d32fc252f3e5
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '1d1b89d124cc9cb8219922c9d5569199' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest.php',
+        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
+        'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
+        'b067bc7112e384b61c701452d53a14a8' => __DIR__ . '/..' . '/mtdowling/jmespath.php/src/JmesPath.php',
+        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+        '8a9dc1de0ca7e01f3e08231539562f61' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/functions.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         'e7223560d890eab89cda23685e711e2c' => __DIR__ . '/..' . '/psy/psysh/src/Psy/functions.php',
@@ -72,6 +77,7 @@ class ComposerStaticInit3fc6b79b2bd4d8e6eb08d32fc252f3e5
         array (
             'Psy\\' => 4,
             'Psr\\Log\\' => 8,
+            'Psr\\Http\\Message\\' => 17,
             'Psr\\Container\\' => 14,
             'PhpParser\\' => 10,
         ),
@@ -81,13 +87,24 @@ class ComposerStaticInit3fc6b79b2bd4d8e6eb08d32fc252f3e5
         ),
         'L' => 
         array (
+            'League\\Flysystem\\AwsS3v3\\' => 25,
             'League\\Flysystem\\' => 17,
             'Laravel\\Tinker\\' => 15,
+        ),
+        'J' => 
+        array (
+            'JmesPath\\' => 9,
         ),
         'I' => 
         array (
             'Interop\\Container\\' => 18,
             'Illuminate\\' => 11,
+        ),
+        'G' => 
+        array (
+            'GuzzleHttp\\Psr7\\' => 16,
+            'GuzzleHttp\\Promise\\' => 19,
+            'GuzzleHttp\\' => 11,
         ),
         'F' => 
         array (
@@ -106,6 +123,7 @@ class ComposerStaticInit3fc6b79b2bd4d8e6eb08d32fc252f3e5
         ),
         'A' => 
         array (
+            'Aws\\' => 4,
             'App\\' => 4,
         ),
     );
@@ -237,6 +255,10 @@ class ComposerStaticInit3fc6b79b2bd4d8e6eb08d32fc252f3e5
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
+        'Psr\\Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
         'Psr\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
@@ -249,6 +271,10 @@ class ComposerStaticInit3fc6b79b2bd4d8e6eb08d32fc252f3e5
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
+        'League\\Flysystem\\AwsS3v3\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/flysystem-aws-s3-v3/src',
+        ),
         'League\\Flysystem\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/flysystem/src',
@@ -257,6 +283,10 @@ class ComposerStaticInit3fc6b79b2bd4d8e6eb08d32fc252f3e5
         array (
             0 => __DIR__ . '/..' . '/laravel/tinker/src',
         ),
+        'JmesPath\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mtdowling/jmespath.php/src',
+        ),
         'Interop\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/container-interop/container-interop/src/Interop/Container',
@@ -264,6 +294,18 @@ class ComposerStaticInit3fc6b79b2bd4d8e6eb08d32fc252f3e5
         'Illuminate\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate',
+        ),
+        'GuzzleHttp\\Psr7\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
+        ),
+        'GuzzleHttp\\Promise\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/promises/src',
+        ),
+        'GuzzleHttp\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
         'Faker\\' => 
         array (
@@ -288,6 +330,10 @@ class ComposerStaticInit3fc6b79b2bd4d8e6eb08d32fc252f3e5
         'Carbon\\' => 
         array (
             0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
+        ),
+        'Aws\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/aws/aws-sdk-php/src',
         ),
         'App\\' => 
         array (
@@ -372,6 +418,7 @@ class ComposerStaticInit3fc6b79b2bd4d8e6eb08d32fc252f3e5
         'CreateLegalRequerimientosRespuestas' => __DIR__ . '/../..' . '/database/migrations/2017_07_17_154130_CreateLegalRequerimientosRespuestas.php',
         'CreateLegalSumariosInvestigaciones' => __DIR__ . '/../..' . '/database/migrations/2017_07_17_152933_CreateLegalSumariosInvestigaciones.php',
         'CreateOtrosAntecedentes' => __DIR__ . '/../..' . '/database/migrations/2017_07_14_194854_CreateOtrosAntecedentes.php',
+        'CreateOtrosAntecedentesArchivos' => __DIR__ . '/../..' . '/database/migrations/2017_09_05_175954_CreateOtrosAntecedentesArchivos.php',
         'CreateParticipacionCiudadanaTable' => __DIR__ . '/../..' . '/database/migrations/2017_07_14_183919_create_participacion_ciudadana_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreatePersonalNombramientosTable' => __DIR__ . '/../..' . '/database/migrations/2017_07_14_192150_create_personal_nombramientos_table.php',
@@ -916,7 +963,6 @@ class ComposerStaticInit3fc6b79b2bd4d8e6eb08d32fc252f3e5
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
         'UpdateGestion19072017' => __DIR__ . '/../..' . '/database/migrations/2017_07_19_202950_UpdateGestion19072017.php',
         'UpdateGestionPublicaciones19072017' => __DIR__ . '/../..' . '/database/migrations/2017_07_19_210009_UpdateGestionPublicaciones19072017.php',
-        'UsersTableSeeder' => __DIR__ . '/../..' . '/database/seeds/UsersTableSeeder.php',
         'UsuariosTableSeeder' => __DIR__ . '/../..' . '/database/seeds/UsuariosTableSeeder.php',
     );
 
