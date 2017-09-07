@@ -8,6 +8,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="description" content="">
 		<meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+
 		<meta name="csrf-token" content="{{ csrf_token() }}" />
 
 
@@ -88,6 +89,8 @@
         <script>
             var siteURL = "<?=url()->current();?>";
         </script>
+
+        
 		
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script type="text/javascript" src="<?=asset('js/vue.js');?>"></script>
@@ -99,6 +102,10 @@
 		<script type="text/javascript" src="<?=asset('js/legal.js');?>"></script>
 		<script type="text/javascript" src="<?=asset('js/inventario.js');?>"></script>
 		<script type="text/javascript" src="{{ asset('js/usuario.js') }}"></script>
+		<script type="text/javascript" src="<?=asset('js/administrativa.js');?>"></script>
+		<script type="text/javascript" src="<?=asset('js/otro.js');?>"></script>
+		<script type="text/javascript" src="<?=asset('js/dropzone.js');?>"></script>
 
+		@yield('scripts')
     </body>
 </html>

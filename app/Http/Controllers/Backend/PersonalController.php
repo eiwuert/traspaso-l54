@@ -1,14 +1,16 @@
 <?php
 
 namespace App\Http\Controllers\Backend;
+use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Http\Request;
 use View;
 use Input;
-use Acta;
-use Personal;
-use PersonalNombramiento;
+use App\Models\Acta;
+use App\Models\Personal;
+use App\Models\PersonalNombramiento;
 use Response;
 
-class PersonalController extends \BaseController {
+class PersonalController extends BaseController {
 
 	/**
 	 * Display a listing of the resource.
@@ -37,15 +39,15 @@ class PersonalController extends \BaseController {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(Request $request)
 	{
 		$acta = new Acta();
 		$acta->institucion_id = \Auth::user()->institucion_id;
 		$acta->save();
-		$datos = Input::all();
+		$datos = $request->all();
 
 
-		$personal = Personal::find($datos['Personal']['id']);
+		$personal 									= new Personal;
 		$personal->enlace_dotacion_personal			= $datos['personal']['enlace_dotacion_personal'];
 		$personal->estado 							= 'borrador';
 		$personal->acta_id 							= $acta->id;
@@ -103,28 +105,27 @@ class PersonalController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update($id, Request $request)
 	{
 		
 		$acta = Acta::find($id);
-		$datos = Input::all();
+		$datos = $request->all();
 
-		$personal = Personal::find($datos['personal']['id']);
+		if(isset($datos['personal']['id']))
+			$personal = Personal::find($datos['personal']['id']);
+		else
+			$personal = new Personal;
 		$personal->enlace_dotacion_personal			= $datos['personal']['enlace_dotacion_personal'];
 		$personal->estado 							= 'borrador';
 		$personal->acta_id 							= $acta->id;
 		$personal->save();
-		$array_existentes = array();
-		$array_no_modificados = array();
-		$personal_nombramiento_existente = PersonalNombramiento::where('acta_id',$acta->id)->get();
-		foreach ($personal_nombramiento_existente as $ps) {
-			array_push($array_existentes, $ps->id);
-		}
 
+		$array_nombramientos = PersonalNombramiento::where('acta_id',$acta->id)->pluck('id')->toArray();
+		$array_no_nombramientos = array();
 		foreach($datos['nombramientos'] as $n){
 			if(isset($n['id'])){
 				$nombramiento = PersonalNombramiento::find($n['id']);
-				array_push($array_no_modificados,$n['id']);
+				array_push($array_no_nombramientos,$n['id']);
 			}else{
 				$nombramiento = new PersonalNombramiento;
 			}	
@@ -134,7 +135,7 @@ class PersonalController extends \BaseController {
 			$nombramiento->acta_id = $acta->id;
 			$nombramiento->save();
 		}
-		$resultado = array_diff($array_existentes, $array_no_modificados);
+		$resultado = array_diff($array_nombramientos, $array_no_nombramientos);
 		PersonalNombramiento::whereIn('id',$resultado)->delete();
 	}
 

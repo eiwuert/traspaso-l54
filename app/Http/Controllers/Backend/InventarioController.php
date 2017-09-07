@@ -1,18 +1,20 @@
 <?php
 
 namespace App\Http\Controllers\Backend;
+use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Http\Request;
 use View;
 use Input;
-use Acta;
-use Inventario;
-use InventarioContrato;
-use InventarioEscritorio;
-use InventarioMuebleInmueble;
-use InventarioProductoEmergencia;
-use InventarioVehiculo;
+use App\Models\Acta;
+use App\Models\Inventario;
+use App\Models\InventarioContrato;
+use App\Models\InventarioEscritorio;
+use App\Models\InventarioMuebleInmueble;
+use App\Models\InventarioProductoEmergencia;
+use App\Models\InventarioVehiculo;
 use Response;
 
-class InventarioController extends \BaseController {
+class InventarioController extends BaseController {
 
 	/**
 	 * Display a listing of the resource.
@@ -41,12 +43,12 @@ class InventarioController extends \BaseController {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(Request $request)
 	{
 		$acta = new Acta();
 		$acta->institucion_id = \Auth::user()->institucion_id;
 		$acta->save();
-		$datos = Input::all();
+		$datos = $request->all();
 
 
 		$inventario 									= new Inventario;
@@ -171,19 +173,22 @@ class InventarioController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update($id,Request $request)
 	{
 		
 		$acta = Acta::find($id);
-		$datos = Input::all();
+		$datos = $request->all();
 
-		$inventario 									= Inventario::find($datos['inventario']['id']);
+		if(isset($datos['inventario']['id']))
+			$inventario = Inventario::find($datos['inventario']['id']);
+		else
+			$inventario = new Inventario;
 		$inventario->estado 							= 'borrador';
 		$inventario->acta_id 							= $acta->id;
 		$inventario->save();
 
 		//Muebles inmuebles		
-		$array_mueble_inmueble = InventarioMuebleInmueble::where('acta_id',$acta->id)->get()->lists('id');
+		$array_mueble_inmueble = InventarioMuebleInmueble::where('acta_id',$acta->id)->pluck('id')->toArray();
 		$array_no_muebles_inmuebles = array();
 		foreach($datos['muebles'] as $n){
 			if(isset($n['id'])){
@@ -201,7 +206,7 @@ class InventarioController extends \BaseController {
 		InventarioMuebleInmueble::whereIn('id',$resultado)->delete();
 
 		//Vehículos
-		$array_vehiculos = InventarioVehiculo::where('acta_id',$acta->id)->get()->lists('id');
+		$array_vehiculos = InventarioVehiculo::where('acta_id',$acta->id)->pluck('id')->toArray();
 		$array_no_vehiculos = array();
 		foreach($datos['vehiculos'] as $n){
 			if(isset($n['id'])){
@@ -222,7 +227,7 @@ class InventarioController extends \BaseController {
 		InventarioVehiculo::whereIn('id',$resultado)->delete();
 
 		//Escritorios
-		$array_escritorios = InventarioEscritorio::where('acta_id',$acta->id)->get()->lists('id');
+		$array_escritorios = InventarioEscritorio::where('acta_id',$acta->id)->pluck('id')->toArray();
 		$array_no_escritorios = array();
 		foreach($datos['escritorios'] as $n){
 			if(isset($n['id'])){
@@ -241,7 +246,7 @@ class InventarioController extends \BaseController {
 		InventarioEscritorio::whereIn('id',$resultado)->delete();
 
 		//Productos emergencias
-		$array_productos = InventarioProductoEmergencia::where('acta_id',$acta->id)->get()->lists('id');
+		$array_productos = InventarioProductoEmergencia::where('acta_id',$acta->id)->pluck('id')->toArray();
 		$array_no_productos = array();
 		foreach($datos['productos'] as $n){
 			if(isset($n['id'])){
@@ -259,7 +264,7 @@ class InventarioController extends \BaseController {
 		InventarioProductoEmergencia::whereIn('id',$resultado)->delete();
 
 		//Contratos
-		$array_contratos = InventarioContrato::where('acta_id',$acta->id)->get()->lists('id');
+		$array_contratos = InventarioContrato::where('acta_id',$acta->id)->get()->pluck('id')->toArray();
 		$array_no_contratos = array();
 		foreach($datos['contratos'] as $n){
 			if(isset($n['id'])){

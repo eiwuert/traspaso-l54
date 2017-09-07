@@ -32,7 +32,7 @@ var App = new Vue({
 			var self = this;
 
 			if(window.location.pathname == '/backend/actas/inventario'){
-				//this.$set('inventariodata',{'enlace_dotacion_inventario': null});
+				this.$set('inventariodata',null);
 			}
 			else{
 				var acta_id = window.location.pathname.match( /\d+/g )[0];
@@ -52,7 +52,7 @@ var App = new Vue({
 			self.mueblesinmuebles.push({"tipo_activo": "","unidades": ""});
 		},
 
-		borrarMueble: function(mueble) {
+		borrarMuebleInmueble: function(mueble) {
 			var self = this;
 			self.mueblesinmuebles.$remove(mueble);
 		},
@@ -99,13 +99,15 @@ var App = new Vue({
 
 		setData: function () {
             var self = this;
+            var token = $('meta[name="csrf-token"]').attr('content');
             var payload = {
             	inventario: this.inventariodata,
             	muebles: this.mueblesinmuebles,
             	vehiculos: this.vehiculos,
             	escritorios: this.escritorios,
             	productos: this.productos,
-            	contratos: this.contratos
+            	contratos: this.contratos,
+            	_token: token
             }
             var payload = JSON.stringify(payload);
 			if(window.location.pathname == '/backend/actas/inventario'){
@@ -119,7 +121,7 @@ var App = new Vue({
 				var acta_id = window.location.pathname.match( /\d+/g )[0];
 				this.$http.put('/backend/actas/inventario/'+acta_id,payload)
 	            .then((response) => {
-				    window.location.replace('/backend/actas/iniciar/'+this.inventariodata.acta_id)
+				    window.location.replace('/backend/actas/iniciar/'+acta_id)
 				}, (error) => {
 					this.handleError(error);
 			    });

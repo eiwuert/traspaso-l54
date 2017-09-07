@@ -41,7 +41,10 @@ var App = new Vue({
 				var acta_id = window.location.pathname.match( /\d+/g )[0];
 
 				this.$http.get('/backend/actas/gestion/'+acta_id+'/edit').then((response) => {
-					this.$set('gestiondata',response.data.gestion[0]);
+					if(response.data.gestion[0])
+						this.$set('gestiondata',response.data.gestion[0]);
+					else
+						this.$set('gestiondata',{'enlace_marco_normativo': null, 'enlace_definiciones_estrategicas':null, 'enlace_estructura_organica': null, 'enlace_compromisos_gestion': null, 'enlace_ejecucion_presupuestaria':null, 'balance_logros':null});
 	            	this.$set('programas', response.data.programas);
 	            	this.$set('comites', response.data.comites);
 	            	this.$set('publicaciones', response.data.publicaciones);

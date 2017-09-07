@@ -47,12 +47,13 @@ Route::group(["before" => "auth"], function() {
 	Route::resource('backend/actas/financiera', 'Backend\FinancieraController');
 	Route::resource('backend/actas/legal', 'Backend\LegalController');
 	Route::resource('backend/actas/inventario', 'Backend\InventarioController');
+	Route::resource('backend/actas/administrativa', 'Backend\AdministrativaController');
+	Route::resource('backend/actas/otro', 'Backend\OtroAntecedenteController');
 
 
-	Route::get('backend/actas/administrativa', 'Backend\PersonalController@index');
+	
 	Route::resource('backend/actas/auditoria', 'Backend\AuditoriaController');
 	Route::get('backend/actas/participacion', 'Backend\PersonalController@index');
-	Route::get('backend/actas/otro', 'Backend\PersonalController@index');
 	//Route::get('backend/actas/iniciar', 'ActaController@iniciar');
 
 	Route::get('404', function()

@@ -14,8 +14,7 @@ class CreateOtrosAntecedentes extends Migration {
 	{
 		Schema::create('otros_antecedentes', function($table) {
 			$table->increments('id');
-			$table->string('archivo_otros_antecedentes',128);
-			$table->text('archivo_descripcion');
+			$table->string('direccion')->nullable();
             $table->enum('estado', array('borrador', 'publicado'))->default('borrador');
 			$table->integer('acta_id')->unsigned();
 			$table->foreign('acta_id')->references('id')->on('actas');

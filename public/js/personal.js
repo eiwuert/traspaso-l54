@@ -51,12 +51,13 @@ var App = new Vue({
 
 		setData: function () {
             var self = this;
+            var token = $('meta[name="csrf-token"]').attr('content');
             var payload = {
             	nombramientos: this.nombramientos,
-            	personal: this.personaldata
+            	personal: this.personaldata,
+            	_token: token
             }
             var payload = JSON.stringify(payload);
-
 			if(window.location.pathname == '/backend/actas/personal'){
 				this.$http.post('/backend/actas/personal',payload)
 	            .then((response) => {
@@ -68,7 +69,7 @@ var App = new Vue({
 				var acta_id = window.location.pathname.match( /\d+/g )[0];
 				this.$http.put('/backend/actas/personal/'+acta_id,payload)
 	            .then((response) => {
-				    window.location.replace('/backend/actas/iniciar/'+this.personaldata.acta_id)
+				    window.location.replace('/backend/actas/iniciar/'+acta_id)
 				}, (error) => {
 					this.handleError(error);
 			    });
