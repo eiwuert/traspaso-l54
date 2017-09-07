@@ -2,6 +2,8 @@
 
 namespace App\Exceptions;
 
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Redirect;
 use Exception;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
@@ -44,6 +46,11 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+        if ($exception instanceof NotFoundHttpException) 
+        {
+            return redirect('404');; // Or do here what ever you want
+        }
+
         return parent::render($request, $exception);
     }
 
