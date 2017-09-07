@@ -1,12 +1,13 @@
 <?php
 namespace App\Http\Controllers\Backend;
+use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Http\Request;
 use View;
-use Input;
-use Acta;
+use App\Models\Acta;
 use Response;
-use Auditoria;
+use App\Models\Auditoria;
 
-class AuditoriaController extends \BaseController {
+class AuditoriaController extends BaseController {
 
 	
 	/**
@@ -37,17 +38,18 @@ class AuditoriaController extends \BaseController {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(Request $request)
 	{
 
 		$acta = new Acta();
 		$acta->institucion_id = \Auth::user()->institucion_id;
 		$acta->save();
-		$datos = Input::all();
+		$datos = $request->all();
 
 
 		$auditoria 						= new Auditoria;
-		$auditoria->archivo_resolucion 	= $datos['financiera']['archivo_resolucion'];
+		//Almacenar ruta del archivo
+		$auditoria->archivo_resolucion 	= $datos['auditoria']['documento'];
 		$financiera->estado 			= 'borrador';
 		$financiera->acta_id 			= $acta->id;
 		$financiera->save();
@@ -97,14 +99,17 @@ class AuditoriaController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update(Request $request, $id)
 	{
+		dd($request->all());
+
+
 		$acta = Acta::find($id);
-		$datos = Input::all();
+		$datos = $request->all();
 
-		$financiera = Financiera::find($datos['financiera']['id']);
+		$financiera = Financiera::find($datos['auditoria']['id']);
 
-		$financiera->archivo_resolucion = $datos['financiera']['archivo_resolucion'];
+		$financiera->archivo_resolucion = $datos['auditoria']['documento'];
 		$financiera->estado 			= 'borrador';
 		$financiera->acta_id 			= $id;
 		$financiera->save();

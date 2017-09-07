@@ -43,8 +43,8 @@
 	        	<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gestión <span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li><a href="{{ url('backend/mantenedor/usuarios') }}">Usuarios</a></li>
-						<li><a href="{{ url('backend/mantenedor/instituciones') }}">Instituciones</a></li>
+						<li><a href="{{ url('backend/gestion/usuarios') }}">Usuarios</a></li>
+						<li><a href="{{ url('backend/gestion/instituciones') }}">Instituciones</a></li>
 						
 					</ul>
 				</li>
@@ -98,6 +98,7 @@
 		<script type="text/javascript" src="<?=asset('js/financiera.js');?>"></script>
 		<script type="text/javascript" src="<?=asset('js/legal.js');?>"></script>
 		<script type="text/javascript" src="<?=asset('js/inventario.js');?>"></script>
+		<script type="text/javascript" src="{{ asset('js/usuario.js') }}"></script>
 
     </body>
 </html>

@@ -38,7 +38,9 @@
 						<tbody>
 							<tr v-for="documento in documentos">
 								<td><input type="text" name="nombre" class="form-control" v-model="documento.nombre" ></td>
-								<td><input type="text" name="fecha_ingreso" class="form-control" v-model="documento.fecha_ingreso" ></td>
+								<td>
+									<input type="text" name="fecha_ingreso" class="form-control" v-model="documento.fecha_ingreso" >
+								</td>
 								<td><input type="text" name="estado" class="form-control" v-model="documento.estado"></td>
 								<td><button class="btn btn-danger" @click.prevent="borrarDocumento(documento)">Eliminar</button></td>
 							</tr>

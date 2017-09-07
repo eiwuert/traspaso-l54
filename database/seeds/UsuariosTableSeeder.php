@@ -20,7 +20,6 @@ class UsuariosTableSeeder extends Seeder {
 				'apellidos' => 'Prueba',
 				'rut' => '11111111',
 				'correo' => 'prueba@prueba.com',
-				'institucion_id' => Institucion::first()->id,
 				'perfil' => 'root'
 
 			)

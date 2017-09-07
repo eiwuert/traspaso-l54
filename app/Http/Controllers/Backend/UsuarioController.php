@@ -11,6 +11,7 @@ use Validator;
 use Session;
 use Redirect;
 use Auth;
+use App\Helpers as Helpers;
 
 class UsuarioController extends BaseController {
 
@@ -78,21 +79,45 @@ class UsuarioController extends BaseController {
 			'institucion_id' => 'required|numeric',
 			'perfil'       => 'required'
 		);
-
-		//Validar que el usuario no esté creado
+		
 		$validator = Validator::make(Input::except('_token'), $rules);
 
 		if ($validator->fails()) {
-			return Redirect::to('backend/mantenedor/usuarios/create')
-				->withErrors($validator)
+			return Redirect::to('backend/gestion/usuarios/create')
+				->withErrors($validator->errors())
 				->withInput(Input::except('password'));
 		} else {
+			//validar rut
+			$data = Input::except('_token');
+			$data['rut'] = preg_replace('/[^k0-9]/i', '', $data['rut']);
 
-			$usuario = Usuario::create(Input::except('_token'));
-			$usuario->save();
+			$rut_valido = Helpers::validateRun($data['rut']);
 
-			Session::flash('message', 'Usuario creado exitosamente');
-			return Redirect::to('backend/mantenedor/usuarios');
+			if($rut_valido ){
+				//Validar que el usuario no esté creado
+				$usuario_rut = Usuario::where('rut', $data['rut'])->first();
+				$usuario_email = Usuario::Where('correo', $data['correo'])->first();
+				if(!is_null($usuario_rut)){
+					Session::flash('error', 'No fue posible crear el usuario. El rut ingresado pertenece a un usuario ya registrado en la plataforma.');
+					return Redirect::to('backend/gestion/usuarios/create');
+				}
+				if(!is_null($usuario_email)){
+					Session::flash('error', 'No fue posible crear el usuario. El e-mail ingresado pertenece a un usuario ya registrado en la plataforma.');
+					return Redirect::to('backend/gestion/usuarios/create');
+				}
+				$usuario = Usuario::create($data);
+				$usuario->save();
+
+				Session::flash('message', 'Usuario creado exitosamente');
+				return Redirect::to('backend/gestion/usuarios');
+
+			}
+			else{
+				Session::flash('error', 'El rut ingresado no es válido');
+				return Redirect::to('backend/gestion/usuarios/create');
+			}
+
+			
 		}
 	}
 
@@ -161,7 +186,7 @@ class UsuarioController extends BaseController {
 		$validator = Validator::make(Input::all(), $rules);
 		// process the login
 		if ($validator->fails()) {
-			return Redirect::to('backend/mantenedor/usuarios/' . $id . '/edit')
+			return Redirect::to('backend/gestion/usuarios/' . $id . '/edit')
 				->withErrors($validator)
 				->withInput(Input::all());
 		} else {
@@ -176,7 +201,7 @@ class UsuarioController extends BaseController {
 			$usuario->save();
 			// redirect
 			Session::flash('message', 'Usuario actualizado exitosamente');
-			return Redirect::to('backend/mantenedor/usuarios/');
+			return Redirect::to('backend/gestion/usuarios/');
 		}
 	}
 
@@ -194,7 +219,7 @@ class UsuarioController extends BaseController {
 		$usuario->delete();
 
 		Session::flash('message', 'El usuario fue borrado exitosamente');
-		return Redirect::to('backend/mantenedor/usuarios');
+		return Redirect::to('backend/gestion/usuarios');
 	}
 
 

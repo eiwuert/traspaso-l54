@@ -18,34 +18,33 @@
 
 		<br>
 
-		<div class="table-responsive" id="legal">
+		<div class="table-responsive" id="auditoria">
 			<form method="POST" enctype="multipart/form-data" v-on:submit.prevent="setData">
 
 			  	<div class="form-group">
 					<table class="table">
 						<caption>
-							<h3>Tramitación documentos</h3>
-							<p>Estado de tramitación de documentos que deben ser tomados de razón en Contraloría</p>
+							<h3>Plan anual auditoría</h3>
+							<p>Plan anual de auditoría año 2018 aprobado por la Dirección del Servicio respectivo.</p>
 						</caption>
 						<thead>
 							<tr>
-								<th>Nombre documento</th>
-								<th>Fecha ingreso</th>
-								<th>Estado</th>
+								<th>Archivo resolución aprobatoria plan de auditorias 2018</th>
 								<th></th>
 							</tr>
 						</thead>
 						<tbody>
-							<tr v-for="documento in documentos">
-								<td><input type="text" name="nombre" class="form-control" v-model="documento.nombre" ></td>
-								<td><input type="text" name="fecha_ingreso" class="form-control" v-model="documento.fecha_ingreso" ></td>
-								<td><input type="text" name="estado" class="form-control" v-model="documento.estado"></td>
-								<td><button class="btn btn-danger" @click.prevent="borrarDocumento(documento)">Eliminar</button></td>
+							<tr v-for="resolucion in resoluciones">
+								<td>
+									{!! Form::file('resolucion.archivo', null) !!}
+								</td>
+
+								<!--<td><button class="btn btn-danger" @click.prevent="borrarResolucion(resolucion)">Eliminar</button></td>-->
 							</tr>
 						</tbody>
 						<tfoot>
 							<tr>
-								<td colspan="4"><button class="btn btn-primary" @click.prevent="agregarDocumento"><i class="fa fa-plus"></i>Agregar registro</button></td>
+								<!--<td colspan="4"><button class="btn btn-primary" @click.prevent="agregarResolucion"><i class="fa fa-plus"></i>Agregar archivo</button></td>-->
 							</tr>
 							<tr>
 								<td></td>
@@ -55,16 +54,10 @@
 				</div>
 				<br>
 
-
-
-
-
-			  	
-
 				<!-- SUBMIT -->
 				<div class="form-group pull-right">
 				<!--<button class="btn btn-success" @click.prevent="setData">Guardar borrador</button>-->
-				<button type="submit" class="btn btn-success">Guardar borrador</button>
+				<button type="submit" class="btn btn-success">Subir archivo</button>
 				</div>
 
 			</form>

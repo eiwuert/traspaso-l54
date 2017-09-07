@@ -88,8 +88,7 @@
 						<h4>7. Entrega Área Auditoría Interna</h4>
 					</div>
 					<div class="col-md-2">
-						<!--<a href="{{ (isset($acta_id))? url('/backend/actas/auditoria/'.$acta_id) :  url('/backend/actas/auditoria')}}" class="btn btn-warning btn-lg">Editar</a>-->
-						<a href="{{url('/backend/actas/auditoria')}}" class="btn btn-warning btn-lg">Editar</a>
+						<a href="{{ (isset($acta_id))? url('/backend/actas/auditoria/'.$acta_id) :  url('/backend/actas/auditoria')}}" class="btn btn-warning btn-lg">Editar</a>
 					</div>
 				</div>
 				

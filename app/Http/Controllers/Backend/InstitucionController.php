@@ -1,10 +1,12 @@
 <?php
 
 namespace App\Http\Controllers\Backend;
-use Institucion;
+use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Support\Facades\Input as Input;
+use App\Models\Institucion;
 use View;
 
-class InstitucionController extends \BaseController {
+class InstitucionController extends BaseController {
 
 	/**
 	 * Display a listing of the resource.

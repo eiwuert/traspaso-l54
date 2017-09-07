@@ -98,8 +98,18 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'rut' => [
+            'required' => 'El campo Rut es obligatorio',
+        ],
+        'nombres' => [
+            'required' => 'El campo Nombres es obligatorio',
+        ],
+        'apellidos' => [
+            'required' => 'El campo Apellidos es obligatorio',
+        ],
+        'correo' => [
+            'required' => 'El campo E-mail es obligatorio',
+            'email'    => 'El campo E-mail debe corresponder a una dirección de correo electrónico válido',
         ],
     ],
 
