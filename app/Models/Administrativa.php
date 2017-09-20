@@ -18,7 +18,7 @@ class Administrativa extends Model {
 
 	public function acta () 
 	{
-		return $this->belongsTo('Acta', 'acta_id');
+		return $this->belongsTo('App\Models\Acta', 'acta_id');
 	}
 
 

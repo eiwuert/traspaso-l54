@@ -17,11 +17,11 @@ class Acta extends Model  {
 
 	public function gestion ()
     {
-        return $this->hasMany('Gestion');
+        return $this->hasMany('App\Models\Gestion');
     }
     public function personal ()
     {
-        return $this->hasMany('Personal');
+        return $this->hasMany('App\Models\Personal');
     }
     public function financiera ()
     {
@@ -29,35 +29,31 @@ class Acta extends Model  {
     }
     public function inventario ()
     {
-        return $this->hasMany('Inventario');
+        return $this->hasMany('App\Models\Inventario');
     }
     public function administrativa ()
     {
-        return $this->hasMany('Administrativa');
+        return $this->hasMany('App\Models\Administrativa');
     }
     public function participacionCiudadana ()
     {
-        return $this->hasMany('ParticipacionCiudadana');
+        return $this->hasMany('App\Models\ParticipacionCiudadana');
     }
     public function gestionProgramaProyecto ()
     {
-        return $this->hasMany('GestionProgramaProyecto');
+        return $this->hasMany('App\Models\GestionProgramaProyecto');
     }
     public function gestionPublicaciones ()
     {
-        return $this->hasMany('GestionPublicacion');
+        return $this->hasMany('App\Models\GestionPublicacion');
     }
     public function gestionCompromisosInternacionales ()
     {
-        return $this->hasMany('GestionCompromisoInternacional');
+        return $this->hasMany('App\Models\GestionCompromisoInternacional');
     }
     public function personalNombramientos ()
     {
-        return $this->hasMany('PersonalNombramiento');
-    }
-    public function financieraFuncionarios ()
-    {
-        return $this->hasMany('App\Models\FinancieraFuncionario');
+        return $this->hasMany('App\Models\PersonalNombramiento');
     }
     public function FinancieraConciliacionesBancarias ()
     {
@@ -71,37 +67,37 @@ class Acta extends Model  {
     {
         return $this->hasMany('App\Models\FinancieraAnticipoFondo');
     }
-    public function iventarioVehiculos ()
+    public function inventarioVehiculos ()
     {
-        return $this->hasMany('IventarioVehiculo');
+        return $this->hasMany('App\Models\InventarioVehiculo');
     }
      public function legalDocumentosTomaRazon ()
     {
-        return $this->hasMany('LegalDocumentoTomaRazon');
+        return $this->hasMany('App\Models\LegalDocumentoTomaRazon');
     }
     public function legalProyectosLeyTramitacion ()
     {
-        return $this->hasMany('LegalProyectoLeyTramitacion');
+        return $this->hasMany('App\Models\LegalProyectoLeyTramitacion');
     }
     public function legal ()
     {
-        return $this->hasMany('Legal');
+        return $this->hasMany('App\Models\Legal');
     }
     public function auditoria ()
     {
-        return $this->hasMany('Auditoria');
+        return $this->hasMany('App\Models\Auditoria');
     }
     public function otroAntecedente ()
     {
-        return $this->hasMany('OtrosAntecedentes');
+        return $this->hasMany('App\Models\OtroAntecedente');
     }
     public function gestionComiteInterministerial ()
     {
-        return $this->hasMany('GestionComiteInterministerial');
+        return $this->hasMany('App\Models\GestionComiteInterministerial');
     }
     public function gestionLicitacion ()
     {
-        return $this->hasMany('GestionLicitacion');
+        return $this->hasMany('App\Models\GestionLicitacion');
     }
     public function financieraCuentaCorriente ()
     {
@@ -113,36 +109,37 @@ class Acta extends Model  {
     }
     public function inventarioMuebleInmueble ()
     {
-        return $this->hasMany('InventarioMuebleInmueble');
+        return $this->hasMany('App\Models\InventarioMuebleInmueble');
     }
     public function inventarioProductoEmergencia ()
     {
-        return $this->hasMany('InventarioProductoEmergencia');
+        return $this->hasMany('App\Models\InventarioProductoEmergencia');
     }
     public function inventarioContrato ()
     {
-        return $this->hasMany('InventarioContrato');
+        return $this->hasMany('App\Models\InventarioContrato');
     }
     public function legalJuicioPendiente ()
     {
-        return $this->hasMany('LegalJuicioPendiente');
+        return $this->hasMany('App\Models\LegalJuicioPendiente');
     }
     public function legalSumarioInvestigacion ()
     {
-        return $this->hasMany('LegalSumarioInvestigacion');
+        return $this->hasMany('App\Models\LegalSumarioInvestigacion');
     }
     public function legalRequerimientoRespuesta ()
     {
-        return $this->hasMany('LegalRequerimientoRespuesta');
+        return $this->hasMany('App\Models\LegalRequerimientoRespuesta');
     }
     public function inventarioEscritorio ()
     {
-        return $this->hasMany('InventarioEscritorio');
+        return $this->hasMany('App\Models\InventarioEscritorio');
     }
     public function administrativaDocumento ()
     {
-        return $this->hasMany('AdministrativaDocumento');
+        return $this->hasMany('App\Models\AdministrativaDocumento');
     }
+
 
 
 }

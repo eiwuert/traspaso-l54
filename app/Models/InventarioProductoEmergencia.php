@@ -10,6 +10,6 @@ class InventarioProductoEmergencia extends Model {
 	protected $table = 'inventario_productos_emergencias';
 
 	public function acta(){
-		return $this->belongsTo('Acta', 'acta_id');
+		return $this->belongsTo('App\Models\Acta', 'acta_id');
 	}
 }

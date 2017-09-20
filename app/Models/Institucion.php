@@ -10,6 +10,6 @@ class Institucion extends Model {
 	protected $table = 'instituciones';
 
 	public function usuarios(){
-        return $this->hasMany('Usuario');
+        return $this->hasMany('App\Models\Usuario');
     }
 }

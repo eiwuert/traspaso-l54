@@ -10,6 +10,6 @@ class OtroAntecedente extends Model {
 	protected $table = 'otros_antecedentes';
 
 	public function acta(){
-		return $this->belongsTo('Acta', 'acta_id');
+		return $this->belongsTo('App\Models\Acta', 'acta_id');
 	}
 }
