@@ -8,6 +8,7 @@ namespace App\Http\Controllers\Backend;
 	use InoOicClient\Http;
 	use InoOicClient\Client;
 	use InoOicClient\Oic\Token;
+	use Session;
 
 	class AuthController extends BaseController{
 
@@ -65,6 +66,7 @@ namespace App\Http\Controllers\Backend;
 	        	\Auth::login($usuario);
 	        	return \Redirect::to(\URL::to('backend'));	
 	        }else{
+	        	Session::flash('message', 'Su rut no cuenta con un usuario en la Plataforma. Para más información contáctese con  traspaso2018@minsegpres.gob.cl.');
 	        	return \Redirect::to(\URL::to('/'));
 	        }
 		}
