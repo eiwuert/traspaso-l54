@@ -21,14 +21,10 @@ Route::get('/portada', function()
 	return View::make('frontend.home');
 });
 
-Route::post('backend/autenticar', 'Backend\AuthController@autenticar');
-Route::get('backend/callback', 'Backend\AuthController@getCallback');
-Route::get('login', 'Backend\AuthController@login');
-Route::get('logout', 'Backend\AuthController@logout');
+Route::group(["middleware" => "auth"], function() {
 
-Route::get('/instituciones','Frontend\InstitucionesController@index');
+	Route::resource('backend/perfil', 'Backend\PerfilController');
 
-Route::group(["before" => "auth"], function() {
 	Route::get('backend', 'ActaController@home');
 	Route::get('backend/actas/listado', 'ActaController@getListado');
 
@@ -55,9 +51,17 @@ Route::group(["before" => "auth"], function() {
 	Route::resource('backend/actas/auditoria', 'Backend\AuditoriaController');
 	Route::get('backend/actas/participacion', 'Backend\PersonalController@index');
 	//Route::get('backend/actas/iniciar', 'ActaController@iniciar');
+	Route::get('backend/actas/auditoria-descargar/{id}', 'Backend\AuditoriaController@downloadFile');
 
 	Route::get('404', function()
 	{
 		return View::make('404');
 	});
 });
+
+Route::post('backend/autenticar', 'Backend\AuthController@autenticar');
+Route::get('backend/callback', 'Backend\AuthController@getCallback');
+Route::get('login', 'Backend\AuthController@login');
+Route::get('logout', 'Backend\AuthController@logout');
+
+Route::get('/instituciones','Frontend\InstitucionesController@index');
