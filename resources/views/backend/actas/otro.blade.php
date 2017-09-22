@@ -4,53 +4,52 @@
 
 	@include('layouts.header_menu')
 
-	<div class="col-md-12">
-		<div class="page-header">
-			<h2>9.Otros antecedentes</h2>
-		</div>
-	</div>
+	<div id="otro">
 
-	<div class="col-lg-12">
-        <form method="POST" enctype="multipart/form-data" action="backend/actas/otro" id="my-dropzone" class="dropzone" v-on:submit.prevent="setData">
-            <div class="form-control" style="height:100px;">
-                Drop your files here
-            </div>
-            <div class="dropzone-previews"></div>
-            <button type="submit" class="btn btn-success" id="submit">Save</button>
-        </form>
+		<i v-show="loading" class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+
+		<div class="col-md-12">
+			<div class="page-header">
+				<h2>9.Otros antecedentes</h2>
+			</div>
+		</div>
+
+		<div class="col-lg-12">
+	        <form method="POST" enctype="multipart/form-data" action="backend/actas/otro" id="my-dropzone" class="dropzone" v-on:submit.prevent="validateBeforeSubmit">
+
+	        	<div class="form-group">
+			    	<label for="direccion">Dirección electrónica.</label>
+			    	<input type="text" class="form-control" v-model="otrodata.direccion" v-el:direccionInput placeholder="Dirección electrónica con otros antecedentes del servicio." />
+			  	</div>
+			  	<div class="form-group">
+	            	<input class="form-control" type="file" id="fileInput" multiple v-el:fileInput />
+	            </div>
+
+	            <table class="table">
+					<caption><h3>Listado de archivos</h3></caption>
+					<thead>
+						<tr>
+							<th>Nombre</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr v-for="archivo in archivos">
+							<td>@{{archivo.nombre}}</td>
+							<td>
+								<a href="<?php echo url('backend/actas/otro/descarga/'."{{archivo.id}}") ?>" class="btn btn-info">Descargar</a>
+								<button class="btn btn-danger" @click.prevent="borrarArchivo(archivo)">Eliminar</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+	            <!-- SUBMIT -->
+				<div class="form-group pull-right">
+				<button type="submit" class="btn btn-success">Guardar borrador</button>
+				</div>
+	        </form>
+	    </div>
     </div>
 
-@stop
-
-@section('scripts')
-	<script>
-	    Dropzone.options.myDropzone = {
-	        autoProcessQueue: false,
-	        uploadMultiple: true,
-	        maxFilezise: 10,
-	        maxFiles: 2,
-	        
-	        init: function() {
-	            var submitBtn = document.querySelector("#submit");
-	            myDropzone = this;
-	            
-	            submitBtn.addEventListener("click", function(e){
-	                e.preventDefault();
-	                e.stopPropagation();
-	                myDropzone.processQueue();
-	            });
-	            this.on("addedfile", function(file) {
-	                alert("file uploaded");
-	            });
-	            
-	            this.on("complete", function(file) {
-	                myDropzone.removeFile(file);
-	            });
-
-	            this.on("success", 
-	                myDropzone.processQueue.bind(myDropzone)
-	            );
-	        }
-	    };
-	</script>
 @stop

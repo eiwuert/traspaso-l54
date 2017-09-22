@@ -1,6 +1,7 @@
 <?php
 namespace App\Http\Controllers\Backend;
 use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Http\Request;
 use View;
 use Input;
 use Acta;
@@ -43,13 +44,13 @@ class GestionController extends BaseController {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(Request $request)
 	{
 
 		$acta = new Acta();
 		$acta->institucion_id = \Auth::user()->institucion_id;
 		$acta->save();
-		$datos = Input::all();
+		$datos = $request->all();
 
 
 		$gestion = new Gestion;
@@ -169,10 +170,10 @@ class GestionController extends BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update($id, Request $request)
 	{
 		$acta = Acta::find($id);
-		$datos = Input::all();
+		$datos = $request->all();
 
 		if(isset($datos['gestion']['id']))
 			$gestion = Gestion::find($datos['gestion']['id']);
@@ -188,7 +189,7 @@ class GestionController extends BaseController {
 		$gestion->acta_id 							= $id;
 		$gestion->save();
 
-		$array_programas = GestionProgramaProyecto::where('acta_id',$acta->id)->get()->lists('id');
+		$array_programas = GestionProgramaProyecto::select('id')->where('acta_id',$acta->id)->pluck('id')->toArray();
 		$array_no_programas = array();
 		foreach($datos['programas'] as $n){
 			if(isset($n['id'])){
@@ -206,7 +207,7 @@ class GestionController extends BaseController {
 		$resultado = array_diff($array_programas, $array_no_programas);
 		GestionProgramaProyecto::whereIn('id',$resultado)->delete();
 
-		$array_comites = GestionComiteInterministerial::where('acta_id',$acta->id)->get()->lists('id');
+		$array_comites = GestionComiteInterministerial::select('id')->where('acta_id',$acta->id)->pluck('id')->toArray();
 		$array_no_comites = array();
 		foreach($datos['comites'] as $n){
 			if(isset($n['id'])){
@@ -223,7 +224,7 @@ class GestionController extends BaseController {
 		$resultado = array_diff($array_comites, $array_no_comites);
 		GestionComiteInterministerial::whereIn('id',$resultado)->delete();
 
-		$array_publicaciones = GestionPublicacion::where('acta_id',$acta->id)->get()->lists('id');
+		$array_publicaciones = GestionPublicacion::select('id')->where('acta_id',$acta->id)->pluck('id')->toArray();
 		$array_no_publicaciones = array();
 		foreach($datos['publicaciones'] as $n){
 			if(isset($n['id'])){
@@ -240,7 +241,7 @@ class GestionController extends BaseController {
 		$resultado = array_diff($array_publicaciones, $array_no_publicaciones);
 		GestionPublicacion::whereIn('id',$resultado)->delete();
 
-		$array_compromisos = GestionCompromisoInternacional::where('acta_id',$acta->id)->get()->lists('id');
+		$array_compromisos = GestionCompromisoInternacional::select('id')->where('acta_id',$acta->id)->pluck('id')->toArray();
 		$array_no_compromisos = array();
 		foreach($datos['compromisos'] as $n){
 			if(isset($n['id'])){
@@ -257,7 +258,7 @@ class GestionController extends BaseController {
 		$resultado = array_diff($array_compromisos, $array_no_compromisos);
 		GestionCompromisoInternacional::whereIn('id',$resultado)->delete();
 
-		$array_licitaciones = GestionLicitacion::where('acta_id',$acta->id)->get()->lists('id');
+		$array_licitaciones = GestionLicitacion::select('id')->where('acta_id',$acta->id)->pluck('id')->toArray();
 		$array_no_licitaciones = array();
 		foreach($datos['licitaciones'] as $n){
 			if(isset($n['id'])){

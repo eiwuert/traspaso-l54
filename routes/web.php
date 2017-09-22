@@ -48,7 +48,11 @@ Route::group(["before" => "auth"], function() {
 	Route::resource('backend/actas/legal', 'Backend\LegalController');
 	Route::resource('backend/actas/inventario', 'Backend\InventarioController');
 	Route::resource('backend/actas/administrativa', 'Backend\AdministrativaController');
+	Route::resource('backend/actas/participacion', 'Backend\ParticipacionController');
+	Route::resource('backend/actas/biblioteca', 'Backend\BibliotecaController');
 	Route::resource('backend/actas/otro', 'Backend\OtroAntecedenteController');
+	Route::get('backend/actas/otro/descarga/{id}', 'Backend\OtroAntecedenteController@download');
+	//Route::get('backend/actas/otro/eliminar/{id}', 'Backend\OtroAntecedenteController@eliminarArchivo');
 
 
 	

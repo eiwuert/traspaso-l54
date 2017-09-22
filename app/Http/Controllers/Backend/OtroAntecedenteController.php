@@ -43,40 +43,66 @@ class OtroAntecedenteController extends BaseController {
 	 */
 	public function store(Request $request)
 	{
-		/*
-		$acta = new Acta();
+		
+		$input = $request->all();
+		$dataotro = json_decode($input['otro'],true);
+
+		if(isset($dataotro['id']))
+			$acta = Acta::find($dataotro['acta_id']);
+		else
+			$acta = new Acta();
 		$acta->institucion_id = \Auth::user()->institucion_id;
 		$acta->save();
-		*/
 
-		$input = $request->all();
-
-
+		if(isset($dataotro['id']))
+			$otro 								= OtroAntecedente::find($dataotro['id']);
+		else
+			$otro 								= new OtroAntecedente;
 		
-		$otro 									= new OtroAntecedente;
-		if($request->has('name'))
-			$otro->direccion 					= $request->input('direccion');
+		if(isset($dataotro['direccion']))
+			$otro->direccion 					= $dataotro['direccion'];
 		
 		$otro->estado 							= 'borrador';
-		$otro->acta_id 							= 1;
+		$otro->acta_id 							= $acta->id;
 		$otro->save();
 
-		if($request->hasFile('archivo')){
-			$archivo = $request->file('archivo');
-			$archivoFileName = time().'.'.$archivo->getClientOriginalExtension();
-			$s3 = Storage::disk('s3');
-			$filePath = '/pruebas/' . $archivoFileName;
-			$s3->put($filePath, file_get_contents($archivo), 'public');
-			
-			$otro_archivo 			= new OtroAntecedenteArchivo;
-			$otro_archivo->nombre 	= $archivoFileName;
-			$otro_archivo->acta_id 	= 1;
-			$otro_archivo->save();
+		if($request->hasFile('archivos')){
+			//$archivo = $request->file('file');
+			foreach($request->file('archivos') as $archivo){
+				$s3 = Storage::disk('s3');
+				$filePath = \Auth::user()->institucion->codigo.'/'.$acta->id.'/'.$archivo->getClientOriginalName();
+				$s3->put($filePath, file_get_contents($archivo), 'public');
+				$otro_archivo 			= new OtroAntecedenteArchivo;
+				$otro_archivo->nombre 	= $archivo->getClientOriginalName();
+				$otro_archivo->acta_id 	= $acta->id;
+				$otro_archivo->save();
+			}
 		}
-
 		
+		/*
+		$dataarchivos = json_decode($input['files'],true);
+		if(isset($dataarchivos)){
+			$array_archivos = OtroAntecedenteArchivo::select('id')->where('acta_id',$acta->id)->pluck('id')->toArray();
+			$array_no_archivos = array();
+			foreach($dataarchivos as $n){
+				if(isset($n['id'])){
+					$otro_archivo = OtroAntecedenteArchivo::find($n['id']);
+					array_push($array_no_archivos,$n['id']);
+				}
+			}
+			$resultado = array_diff($array_archivos, $array_no_archivos);
+			$archivos = OtroAntecedenteArchivo::whereIn('id',$resultado)->get();
+			foreach($archivos as $archivo){
+				$path = \Auth::user()->institucion->codigo.'/'.$acta->id.'/'.$archivo->nombre;
+				Storage::disk('s3')->delete($path);
+			}
+			OtroAntecedenteArchivo::whereIn('id',$resultado)->delete();
+		}
+		*/
 
-		return View::make('backend.actas.otro', array());
+		return Response::json(array(
+					'acta_id'=>$acta->id
+				));
 	}
 
 
@@ -88,13 +114,6 @@ class OtroAntecedenteController extends BaseController {
 	 */
 	public function show($id)
 	{
-		/*
-		$otro = OtroAntecedente::where('acta_id', '=', $id)->first();
-		$archivo = Storage::disk('s3')->get('pruebas/'.$otro->archivo);
-		header("Content-type: application/pdf");
-		header("Content-Disposition: attachment; filename=$otro->archivo");
-		echo $archivo;
-		*/
 		return View::make('backend.actas.otro');
 		
 	}
@@ -125,19 +144,13 @@ class OtroAntecedenteController extends BaseController {
 	 */
 	public function update($id, Request $request)
 	{
-		
-		$acta = Acta::find($id);
 		$datos = $request->all();
-
-		if(isset($datos['personal']['id']))
-			$personal = Personal::find($datos['personal']['id']);
-		else
-			$personal = new Personal;
-		$personal->enlace_dotacion_personal			= $datos['personal']['enlace_dotacion_personal'];
-		$personal->estado 							= 'borrador';
-		$personal->acta_id 							= $acta->id;
-		$personal->save();
-
+		$archivo = OtroAntecedenteArchivo::find($datos['archivo']['id']);
+		if($archivo){
+			$path = \Auth::user()->institucion->codigo.'/'.$archivo->acta_id.'/'.$archivo->nombre;
+			Storage::disk('s3')->delete($path);
+			$archivo->delete();
+		}
 	}
 
 
@@ -152,5 +165,12 @@ class OtroAntecedenteController extends BaseController {
 		//
 	}
 
+	public function download($archivo_id)
+	{
+		$otro_archivo = OtroAntecedenteArchivo::find($archivo_id);
+		$archivo = Storage::disk('s3')->get(\Auth::user()->institucion->codigo.'/'.$otro_archivo->acta_id.'/'.$otro_archivo->nombre);
+		header("Content-Disposition: attachment; filename=$otro_archivo->nombre");
+		echo $archivo;
+	}
 
 }

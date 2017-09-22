@@ -76,8 +76,7 @@
 						<h4>6. Entrega Área Administrativa</h4>
 					</div>
 					<div class="col-md-2">
-						<!--<a href="{{ (isset($acta_id))? url('/backend/actas/administrativa/'.$acta_id) :  url('/backend/actas/administrativa')}}" class="btn btn-warning btn-lg">Editar</a>-->
-						<a href="{{url('/backend/actas/administrativa')}}" class="btn btn-warning btn-lg">Editar</a>
+						<a href="{{ (isset($acta_id))? url('/backend/actas/administrativa/'.$acta_id) :  url('/backend/actas/administrativa')}}" class="btn btn-warning btn-lg">Editar</a>
 					</div>
 				</div>
 				
@@ -99,8 +98,7 @@
 						<h4>8. Instancias de participación ciudadana</h4>
 					</div>
 					<div class="col-md-2">
-						<!--<a href="{{ (isset($acta_id))? url('/backend/actas/participacion/'.$acta_id) :  url('/backend/actas/participacion')}}" class="btn btn-warning btn-lg">Editar</a>-->
-						<a href="{{url('/backend/actas/participacion')}}" class="btn btn-warning btn-lg">Editar</a>
+						<a href="{{ (isset($acta_id))? url('/backend/actas/participacion/'.$acta_id) :  url('/backend/actas/participacion')}}" class="btn btn-warning btn-lg">Editar</a>
 					</div>
 				</div>
 				
@@ -108,11 +106,21 @@
 			<li class="list-group-item">
 				<div class="row">
 					<div class="col-md-10">
-						<h4>9. Otros antecedentes</h4>
+						<h4>9. Biblioteca Digital del Gobierno de Chile</h4>
 					</div>
 					<div class="col-md-2">
-						<!--<a href="{{ (isset($acta_id))? url('/backend/actas/otro/'.$acta_id) :  url('/backend/otro/gestion')}}" class="btn btn-warning btn-lg">Editar</a>-->
-						<a href="{{url('/backend/actas/otro')}}" class="btn btn-warning btn-lg">Editar</a>
+						<a href="{{ (isset($acta_id))? url('/backend/actas/biblioteca/'.$acta_id) :  url('/backend/actas/biblioteca')}}" class="btn btn-warning btn-lg">Editar</a>
+					</div>
+				</div>
+				
+			</li>
+			<li class="list-group-item">
+				<div class="row">
+					<div class="col-md-10">
+						<h4>10. Otros antecedentes</h4>
+					</div>
+					<div class="col-md-2">
+						<a href="{{ (isset($acta_id))? url('/backend/actas/otro/'.$acta_id) :  url('/backend/actas/otro')}}" class="btn btn-warning btn-lg">Editar</a>
 					</div>
 				</div>
 				

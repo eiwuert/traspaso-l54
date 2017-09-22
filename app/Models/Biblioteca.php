@@ -1,10 +1,9 @@
 <?php
 namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
-
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class ParticipacionCiudadana extends Model {
+class Biblioteca extends Model {
 
 	use SoftDeletes;
 
@@ -14,11 +13,11 @@ class ParticipacionCiudadana extends Model {
 	 *
 	 * @var string
 	 */
-	protected $table = 'participacion_ciudadana';
+	protected $table = 'biblioteca';
 
 	public function acta () 
 	{
-		return $this->belongsTo('Acta', 'acta_id');
+		return $this->belongsTo('App\Models\Acta', 'acta_id');
 	}
 
 
