@@ -44,9 +44,14 @@
 							8. Participación
 						</a>
 					</li>
+					<li id="menu-biblioteca" role="presentation">
+						<a class="btn btn-default {{ (Request::is('backend/actas/biblioteca/*') || Request::is('backend/actas/biblioteca') ) ? 'active': ''}}" href="{{isset($acta_id)? url('/backend/actas/biblioteca/'.$acta_id) : url('/backend/actas/biblioteca')}}">
+							9. Biblioteca
+						</a>
+					</li>
 					<li id="menu-otro" role="presentation">
 						<a class="btn btn-default {{ (Request::is('backend/actas/otro/*') || Request::is('backend/actas/otro') ) ? 'active': ''}}" href="{{isset($acta_id)? url('/backend/actas/otro/'.$acta_id) : url('/backend/actas/otro')}}">
-							9. Otros
+							10. Otros
 						</a>
 					</li>
 				

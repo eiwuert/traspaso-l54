@@ -10,62 +10,69 @@
 		<div class="page-header">
 			<h2>7. Entrega Área Auditoría Interna</h2>
 		</div>
-
-		
 	</div>
 
 	<div class="col-lg-12">
-
 		<br>
 
 		<div class="table-responsive" id="auditoria">
-			<form method="POST" enctype="multipart/form-data" v-on:submit.prevent="setData">
+			<div class="form-group">
+				<table class="table">
+					<caption>
+						<h3>Plan anual de auditoría año 2018 aprobado por la Dirección del servicio respectivo</h3>
+						<p>Agregar archivo resolución aprobatoria de plan de auditorías 2018</p>
+					</caption>
 
-			  	<div class="form-group">
+					@if(isset($auditoria))
 					<table class="table">
-						<caption>
-							<h3>Plan anual auditoría</h3>
-							<p>Plan anual de auditoría año 2018 aprobado por la Dirección del Servicio respectivo.</p>
-						</caption>
+						<p>Archivo subido</p>
 						<thead>
 							<tr>
-								<th>Archivo resolución aprobatoria plan de auditorias 2018</th>
-								<th></th>
+								<td>Nombre Archivo</td>
+								<td>Acciones</td>
 							</tr>
 						</thead>
 						<tbody>
-							<tr v-for="resolucion in resoluciones">
+							<tr>
+								<td><a href="{{url('/backend/actas/auditoria-descargar/'.$auditoria->acta_id)}}" >{{$auditoria->archivo_nombre}}</a></td>
 								<td>
-									{!! Form::file('resolucion.archivo', null) !!}
+									{!! Form::open(array('url' => 'backend/actas/auditoria/' . $auditoria->id, 'class' => 'pull-right')) !!}
+									{!! Form::hidden('_method', 'DELETE') !!}
+									{!! Form::submit('Eliminar', array('class' => 'btn btn-warning')) !!}
+									{!! Form::close() !!}
+									<a class="btn btn-small btn-info" href="{{ URL::to('backend/actas/auditoria-descargar/' . $auditoria->acta_id ) }}">Descargar</a>
 								</td>
-
-								<!--<td><button class="btn btn-danger" @click.prevent="borrarResolucion(resolucion)">Eliminar</button></td>-->
 							</tr>
 						</tbody>
-						<tfoot>
-							<tr>
-								<!--<td colspan="4"><button class="btn btn-primary" @click.prevent="agregarResolucion"><i class="fa fa-plus"></i>Agregar archivo</button></td>-->
-							</tr>
-							<tr>
-								<td></td>
-							</tr>
-						</tfoot>
 					</table>
-				</div>
-				<br>
+					@endif
+					
+					<tbody>
+						<tr>
+							<td>
+								<form enctype="multipart/form-data"  v-on:submit.prevent="onSubmitForm">
 
-				<!-- SUBMIT -->
-				<div class="form-group pull-right">
-				<!--<button class="btn btn-success" @click.prevent="setData">Guardar borrador</button>-->
-				<button type="submit" class="btn btn-success">Subir archivo</button>
-				</div>
+								  	<div class="form-group">
+						            	<input class="form-control" type="file" id="fileInput" multiple v-el:fileInput />
+						            </div>
 
-			</form>
-			
+						            <!-- SUBMIT -->
+									<div class="form-group pull-right">
+									<button type="submit" class="btn btn-success"> {!! (isset($auditoria)) ? 'Actualizar archivo' : 'Subir archivo ' !!}</button>
+									</div>
+						        </form>
+							</td>
+						</tr>
+					</tbody>
 
+				</table>
+			</div>
 
 		</div>
 	</div>
 </div>
 
 @stop
+
+
+

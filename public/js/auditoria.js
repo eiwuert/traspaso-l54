@@ -1,17 +1,16 @@
 
 var App = new Vue({
-	el: '#Auditoria',
+	el: '#auditoria',
 
 	data: {
 		auditoriadata: [],
-		documentos: [],
+		archivo: []
 	},
 
 	ready: function() {
 		var self = this;
-
-		// this.option = window.varname;
 		self.fetchData();
+
 	},
 
 	methods: {
@@ -26,75 +25,65 @@ var App = new Vue({
 				}
 			}
 		},
+
 		fetchData: function() {
+			console.log('fetchData');
 			var self = this;
 
 			if(window.location.pathname == '/backend/actas/auditoria'){
-				this.$set('auditoriadata', null);
+				this.$set('auditoriadata',null);
 			}
 			else{
 				var acta_id = window.location.pathname.match( /\d+/g )[0];
 				this.$http.get('/backend/actas/auditoria/'+acta_id+'/edit').then((response) => {
-					this.$set('auditoriadata',response.data.legal[0]);
-	            	this.$set('resoluciones', response.data.resoluciones);
-
+					this.$set('auditoriadata',response.data.auditoria);
+					this.$set('archivo',response.data.archivo);
+	          	});
 			}
-			
-		},
-		/*agregarDocumento: function() {
-			var self = this;
-			self.documentos.push({"archivo": ""});
 		},
 
-		
 
-		borrarDocumento: function(documento) {
-			var self = this;
-			self.documentos.$remove(documento);
-		},*/
+        onSubmitForm: function(e) {
 
+        	console.log('onSubmitForm');
+		    var formData = new FormData();
+		    var token = $('meta[name="csrf-token"]').attr('content');
+		    console.log(token);
+    		formData.append('archivo', this.$els.fileinput.files[0]);
 
-		setData: function () {
-            var self = this;
-            var token = $('meta[name="csrf-token"]').attr('content');
+    		formData.append('_token', token);
 
-            var payload = {
-            	documentos: this.documentos,
-
-            	_token: token
-            }
-            var payload = JSON.stringify(payload);
-
-            console.log(payload);
-
-
-			if(window.location.pathname == '/backend/actas/auditoria'){
-
-				this.$http.post('/backend/actas/auditoria',payload)
-	            .then((response) => {
-				    window.location.replace('/backend/actas/iniciar/'+response.data.acta_id)
-
-				}, (error) => {
-					this.handleError(error);
-			    });
-
-			}
-			else{
-
-				var acta_id = window.location.pathname.match( /\d+/g )[0];
-				console.log(acta_id);
-
-				this.$http.put('/backend/actas/auditoria/'+acta_id,payload)
-	            .then((response) => {
-	            	console.log(this.response);
-				    window.location.replace('/backend/actas/iniciar/'+this.auditoriadata.acta_id)
-
-				}, (error) => {
-					this.handleError(error);
-			    });
-
+    		for (var pair of formData.entries())
+			{
+			 console.log(pair[0]+ ', '+ pair[1]); 
 			}
 
-        }
+    		if(this.auditoriadata)
+    			formData.append('auditoria', JSON.stringify(this.auditoriadata));
+
+			this.$http.post('/backend/actas/auditoria',formData)
+            .then((response) => {
+            	console.log(response);
+			    window.location.replace('/backend/actas/iniciar/'+response.data.acta_id)
+			}, (error) => {
+				this.handleError(error);
+		    });
+
+    		
+		},
+
+
+		descargar: function(e) {
+        	console.log('descargar');
+        	var acta_id = window.location.pathname.match( /\d+/g )[0];
+        	this.$http.get('/backend/actas/auditoria-descargar/'+acta_id)
+	            .then((response) => {
+				    //window.location.replace('/backend/actas/iniciar/'+response.data.acta_id)
+				}, (error) => {
+					//this.handleError(error);
+			    });
+    		
+		}
+
 	}
 });

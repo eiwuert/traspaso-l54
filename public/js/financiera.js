@@ -34,7 +34,7 @@ var App = new Vue({
 			var self = this;
 
 			if(window.location.pathname == '/backend/actas/financiera'){
-				this.$set('financieradata',{'enlace_informe_contabilidad': null});
+				this.$set('financieradata',null);
 			}
 			else{
 
@@ -111,46 +111,30 @@ var App = new Vue({
 
             var token = $('meta[name="csrf-token"]').attr('content');
 
-            var payload = {
-            	cuentas: this.cuentas,
-            	conciliaciones: this.conciliaciones,
-            	activos: this.activos,
-            	internos: this.internos,
-            	anticipos: this.anticipos,
-            	financiera: this.financieradata,
-            	_token : token,
-            }
-            var payload = JSON.stringify(payload);
+            var formData = new FormData();
+  			
+    		formData.append('_token', token);
 
-            console.log(payload);
+    		formData.append('financiera', JSON.stringify(this.financieradata));
+    		formData.append('archivo', this.$els.fileinput.files[0]);
+            formData.append('cuentas', JSON.stringify(this.cuentas));
+            formData.append('conciliaciones', JSON.stringify(this.conciliaciones));
+            formData.append('activos', JSON.stringify(this.activos));
+            formData.append('internos', JSON.stringify(this.internos));
+            formData.append('anticipos', JSON.stringify(this.anticipos));
 
-
-			if(window.location.pathname == '/backend/actas/financiera'){
-
-				this.$http.post('/backend/actas/financiera',payload)
-	            .then((response) => {
-				    window.location.replace('/backend/actas/iniciar/'+response.data.acta_id)
-
-				}, (error) => {
-					this.handleError(error);
-			    });
-
+            for (var pair of formData.entries())
+			{
+			 console.log(pair[0]+ ', '+ pair[1]); 
 			}
-			else{
-
-				var acta_id = window.location.pathname.match( /\d+/g )[0];
-
-				this.$http.put('/backend/actas/financiera/'+acta_id,payload)
-	            .then((response) => {
-				    window.location.replace('/backend/actas/iniciar/'+this.financieradata.acta_id)
-
-				}, (error) => {
-					this.handleError(error);
-			    });
-
-			}
-
-            
+    		
+    		this.$http.post('/backend/actas/financiera',formData)
+            .then((response) => {
+            	this.loading = false;
+			    window.location.replace('/backend/actas/iniciar/'+response.data.acta_id)
+			}, (error) => {
+				//this.handleError(error);
+		    });            
 
 
         }

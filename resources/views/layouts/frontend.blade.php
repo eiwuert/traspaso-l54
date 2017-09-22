@@ -47,22 +47,7 @@
 
 								<div class="btn-group pull-right" role="group" aria-label="...">
 									<a class="btn btn-primary btn-lg {{ (URL::current() == url('acerca'))?'active':'' }}" href="#">Acerca de la iniciativa</a>
-									<a class="btn btn-primary btn-lg" href="http://biblioteca.digital.gob.cl/">Biblioteca Digital</a>
 								</div>
-
-							</div>
-
-						</div>
-
-						<div class="row">
-
-							<div class="col-xs-12">
-								@if (Session::has('message-error'))
-								<div id="alert-box" class="alert alert-danger">{{ Session::get('message-error') }}</div>
-								@endif
-								@if (Session::has('message'))
-								<div id="alert-box" class="alert alert-success">{{  Session::get('message') }}</div>
-								@endif 
 
 							</div>
 

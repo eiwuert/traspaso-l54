@@ -179,7 +179,7 @@
 
 			<div class="form-group" >
 		    	<label for="enlace_informe_contabilidad">Copia del último informe de contabilidad gubernamental, remitido a la Contraloría General de la República</label>
-		    	<input type="text" class="form-control" v-model="financieradata.enlace_informe_contabilidad" placeholder="Indicar link" />
+		    	<input class="form-control" type="file" id="fileInput" multiple v-el:fileInput />
 		  	</div>
 		  	<br>
 

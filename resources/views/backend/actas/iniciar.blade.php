@@ -29,7 +29,7 @@
 					<div class="col-md-10">
 						<h4>1. Entrega Programática, gestión
 							<small>
-								@if($gestion) <span class="label label-info">Con información</span> 
+								@if(isset($gestion) && $gestion) <span class="label label-info">Con información</span> 
 								@else <span class="label label-warning">Sin información</span>
 								@endif
 							</small>
@@ -46,7 +46,7 @@
 					<div class="col-md-10">
 						<h4>2. Entrega Área de Personal 
 							<small>
-								@if($personal) <span class="label label-info">Con información</span> 
+								@if(isset($personal) && $personal) <span class="label label-info">Con información</span> 
 								@else <span class="label label-warning">Sin información</span>
 								@endif
 							</small>
@@ -65,7 +65,7 @@
 					<div class="col-md-10">
 						<h4>3. Entrega Área Financiera
 							<small>
-								@if($financiera) <span class="label label-info">Con información</span> 
+								@if(isset($financiera) && $financiera) <span class="label label-info">Con información</span> 
 								@else <span class="label label-warning">Sin información</span>
 								@endif
 							</small>
@@ -83,7 +83,7 @@
 					<div class="col-md-10">
 						<h4>4. Entrega Área Inventario
 							<small>
-								@if($inventario) <span class="label label-info">Con información</span> 
+								@if(isset($inventario) && $inventario) <span class="label label-info">Con información</span> 
 								@else <span class="label label-warning">Sin información</span>
 								@endif
 							</small>
@@ -101,7 +101,7 @@
 					<div class="col-md-10">
 						<h4>5. Entrega Área Legal
 							<small>
-								@if($legal) <span class="label label-info">Con información</span> 
+								@if(isset($legal) && $legal) <span class="label label-info">Con información</span> 
 								@else <span class="label label-warning">Sin información</span>
 								@endif
 							</small>
@@ -119,7 +119,7 @@
 					<div class="col-md-10">
 						<h4>6. Entrega Área Administrativa
 							<small>
-								@if($administrativa) <span class="label label-info">Con información</span> 
+								@if(isset($administrativa) && $administrativa) <span class="label label-info">Con información</span> 
 								@else <span class="label label-warning">Sin información</span>
 								@endif
 							</small>
@@ -137,7 +137,7 @@
 					<div class="col-md-10">
 						<h4>7. Entrega Área Auditoría Interna
 							<small>
-								@if($auditoria) <span class="label label-info">Con información</span> 
+								@if(isset($auditoria) && $auditoria) <span class="label label-info">Con información</span> 
 								@else <span class="label label-warning">Sin información</span>
 								@endif
 							</small>
@@ -155,7 +155,7 @@
 					<div class="col-md-10">
 						<h4>8. Instancias de participación ciudadana
 							<small>
-								@if($participacion) <span class="label label-info">Con información</span> 
+								@if(isset($participacion) && $participacion) <span class="label label-info">Con información</span> 
 								@else <span class="label label-warning">Sin información</span>
 								@endif
 							</small>
@@ -187,7 +187,7 @@
 					<div class="col-md-10">
 						<h4>10. Otros antecedentes
 							<small>
-								@if($otros) <span class="label label-info">Con información</span> 
+								@if(isset($otros) && $otros ) <span class="label label-info">Con información</span> 
 								@else <span class="label label-warning">Sin información</span>
 								@endif
 							</small>

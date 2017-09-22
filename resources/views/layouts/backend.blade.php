@@ -39,7 +39,7 @@
 	        <ul class="nav navbar-nav">
             	<li><a role="menuitem" tabindex="-1" href="{{ url('backend/actas/listado') }}">Actas</a></li>
 	        </ul>
-	        @if(Auth::user()->perfil == 'root' || Auth::user()->perfil == 'superadmin')
+	        @if( !is_null(Auth::user()) && (Auth::user()->perfil == 'root' || Auth::user()->perfil == 'superadmin'))
 	        <ul class="nav navbar-nav">
 	        	<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gestión <span class="caret"></span></a>
@@ -60,7 +60,7 @@
 	            </a>
 
 	            <ul class="dropdown-menu" role="menu" aria-labelledby="menu_usuario">
-	              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Editar perfil</a></li>
+	              <li role="presentation"><a role="menuitem" tabindex="-1" href="{{url('backend/perfil')}}">Editar perfil</a></li>
 	              <li role="presentation" class="divider"></li>
 		          <li role="presentation"><a role="menuitem" tabindex="-1" href="{{ url('logout') }}">Cerrar sesión</a></li>
 	            </ul>
@@ -78,7 +78,7 @@
         <footer class="footer">
 			<div class="col-md-6 col-md-offset-3">
 		    	<br>
-		        <p style="text-align:center">En caso de consultas envíe un correo electrónico a <a href="mailto:traspaso@minsegpres.gob.cl">traspaso@minsegpres.gob.cl</a></p>
+		        <p style="text-align:center">En caso de consultas envíe un correo electrónico a <a href="mailto:traspaso@minsegpres.gob.cl">traspaso2018@digital.gob.cl</a></p>
 		        <br>
 		    </div>
 		</footer>
@@ -103,6 +103,7 @@
 		<script type="text/javascript" src="<?=asset('js/inventario.js');?>"></script>
 		<script type="text/javascript" src="{{ asset('js/usuario.js') }}"></script>
 		<script type="text/javascript" src="<?=asset('js/administrativa.js');?>"></script>
+		<script type="text/javascript" src="<?=asset('js/auditoria.js');?>"></script>
 		<script type="text/javascript" src="<?=asset('js/otro.js');?>"></script>
 		<script type="text/javascript" src="<?=asset('js/dropzone.js');?>"></script>
 

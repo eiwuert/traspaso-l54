@@ -14,8 +14,7 @@ class CreateAuditoria extends Migration {
 	{
 		Schema::create('auditoria', function($table) {
 			$table->increments('id');
-			$table->string('archivo_resolucion',128);
-			$table->text('archivo_descripcion');
+			$table->string('archivo_nombre',128);
             $table->enum('estado', array('borrador', 'publicado'))->default('borrador');
 			$table->integer('acta_id')->unsigned();
 			$table->foreign('acta_id')->references('id')->on('actas');
