@@ -96,7 +96,7 @@
 		
         <script type="text/javascript" src="<?=asset('js/vue-min.js');?>"></script>
         <script type="text/javascript" src="<?=asset('js/vue-resource.js');?>"></script>
-        <script type="text/javascript" src="<?=asset('js/vee-validate.min.js');?>"></script>
+        
         
         <script type="text/javascript" src="<?=asset('js/selectize.js');?>"></script>
 		<script type="text/javascript" src="<?=asset('js/backend.js');?>"></script>

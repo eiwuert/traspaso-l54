@@ -173,8 +173,11 @@
 				<div class="row">
 					<div class="col-md-10">
 						<h4>9. Biblioteca Digital del Gobierno de Chile
-
-						
+							<small>
+								@if(isset($bibliotecas) && $bibliotecas ) <span class="label label-info">Con información</span> 
+								@else <span class="label label-warning">Sin información</span>
+								@endif
+							</small>
 						</h4>
 					</div>
 					<div class="col-md-2">

@@ -15,7 +15,7 @@
 		</div>
 
 		<div class="col-lg-12">
-	        <form method="POST" enctype="multipart/form-data" action="backend/actas/otro" id="my-dropzone" class="dropzone" v-on:submit.prevent="validateBeforeSubmit">
+	        <form method="POST" enctype="multipart/form-data" action="backend/actas/otro" v-on:submit.prevent="onSubmitForm">
 
 	        	<div class="form-group">
 			    	<label for="direccion">Dirección electrónica.</label>

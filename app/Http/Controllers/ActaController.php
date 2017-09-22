@@ -42,6 +42,7 @@ class ActaController extends BaseController{
 	        ($acta->participacionCiudadana->count() > 0 )? $data['participacion'] = true : $data['participacion'] = false;
 	        //(!is_null($acta->biblioteca) || !is_null($acta->inventarioVehiculos) )? $data['biblioteca'] = true : $data['biblioteca'] = false;
 	        ($acta->otroAntecedente->count() > 0 )? $data['otros'] = true : $data['otros'] = false;
+	        ($acta->biblioteca->count() > 0 )? $data['bibliotecas'] = true : $data['bibliotecas'] = false;
 		} 
 
 		return View::make('backend.actas.iniciar', $data);

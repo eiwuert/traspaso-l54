@@ -139,7 +139,14 @@ class Acta extends Model  {
     {
         return $this->hasMany('App\Models\AdministrativaDocumento');
     }
-
+    public function otroAntecedenteArchivo ()
+    {
+        return $this->hasMany('App\Models\OtroAntecedenteArchivo');
+    }
+    public function biblioteca ()
+    {
+        return $this->hasMany('App\Models\Biblioteca');
+    }
 
 
 }
