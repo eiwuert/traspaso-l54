@@ -174,7 +174,7 @@
 					<div class="col-md-10">
 						<h4>9. Biblioteca Digital del Gobierno de Chile
 							<small>
-								@if(isset($bibliotecas) && $bibliotecas ) <span class="label label-info">Con información</span> 
+								@if(isset($biblioteca) && $biblioteca ) <span class="label label-info">Con información</span> 
 								@else <span class="label label-warning">Sin información</span>
 								@endif
 							</small>
@@ -201,7 +201,7 @@
 						</h4>
 					</div>
 					<div class="col-md-2">
-						<a href="{{ (isset($acta_id))? url('/backend/actas/otro/'.$acta_id) :  url('/backend/otro/gestion')}}" class="btn btn-primary btn-lg">Editar</a>
+						<a href="{{ (isset($acta_id))? url('/backend/actas/otro/'.$acta_id) :  url('/backend/actas/otro')}}" class="btn btn-primary btn-lg">Editar</a>
 					</div>
 				</div>
 				

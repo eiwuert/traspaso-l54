@@ -2,6 +2,7 @@ var App = new Vue({
 	el: '#otro',
 
 	data: {
+		actadata: [],
 		otrodata: [],
 		archivos: [],
 		loading: false
@@ -38,6 +39,7 @@ var App = new Vue({
 						this.$set('otrodata',response.data.otro[0]);
 					else
 						this.$set('otrodata',{'direccion': null});
+					this.$set('actadata',response.data.acta);
 					this.$set('archivos',response.data.archivos);
 	          	});
 			}
@@ -106,12 +108,12 @@ var App = new Vue({
   			}
   			
     		formData.append('_token', token);
+    		if(this.actadata)
+    			formData.append('acta', JSON.stringify(this.actadata));
     		if(this.otrodata)
     			formData.append('otro', JSON.stringify(this.otrodata));
     		if(this.archivos)
     			formData.append('files', JSON.stringify(this.archivos));
-
-
     		
     		this.$http.post('/backend/actas/otro',formData)
             .then((response) => {

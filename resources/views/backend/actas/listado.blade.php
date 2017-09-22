@@ -6,7 +6,9 @@
 	<div class="col-lg-12">
 
 		<h3>Actas de entrega
+			@if(!$actas->count())
 			<a href="{{ url('/backend/actas/iniciar') }}" class="btn btn-primary pull-right"><span class="glyphicon glyphicon-plus"></span>Iniciar Acta</a>
+			@endif
 		</h3>
 
 		<hr/>
@@ -29,16 +31,11 @@
 		                    <td class="text-center">{{ $d->updated_at->timezone('America/Santiago')->format('d-m-Y') }}</td>
 				      	    <td class="text-left">
 				      		    <a class="btn btn-mini {{ $d->status}}" href="{{ url('/backend/patrimonio/'.$d->id.'/ver') }}">{{ $d->status }}</a>
-								@if($d->status != 'anulada')
+								@if($d->estado != 'publicado')
 		                        	<!--<a class="btn btn-mini btn-default" href="{{ url('/backend/patrimonio/'.$d->id.'/ver/publico') }}">Previsualizar acta</a>-->
 		                        	<a class="btn btn-mini btn-default" href="{{ url('/backend/actas/iniciar/'.$d->id) }}">Editar acta</a>
+		                        	<a class="btn btn-mini btn-danger" href="{{ url('/backend/actas/eliminar/'.$d->id) }}">Eliminar acta</a>
 		                    	@endif
-								@if(($d->status == 'publicada' || $d->status == 'aprobada') && $d->autoriza_datos_personales == 0)
-									<a class="btn btn-mini btn-danger" href="{{ url('/backend/patrimonio/'.$d->id.'/autorizar-datos-personales') }}">Autorizar datos del instructivo</a>
-								@endif
-
-		                        	<!--<a class="btn btn-mini btn-danger" href="{{ url('/backend/patrimonio/'.$d->id.'/anular')}}">Anular Declaración</a>-->
-
 				      	    </td>
 				      </tr>
 				   @endforeach

@@ -45,10 +45,11 @@ class OtroAntecedenteController extends BaseController {
 	{
 		
 		$input = $request->all();
+		$dataacta = json_decode($input['acta'],true);
 		$dataotro = json_decode($input['otro'],true);
 
-		if(isset($dataotro['id']))
-			$acta = Acta::find($dataotro['acta_id']);
+		if(isset($dataacta['id']))
+			$acta = Acta::find($dataacta['id']);
 		else
 			$acta = new Acta();
 		$acta->institucion_id = \Auth::user()->institucion_id;
@@ -127,9 +128,11 @@ class OtroAntecedenteController extends BaseController {
 	 */
 	public function edit($id)
 	{
+		$acta = Acta::find($id);
 		$otro = OtroAntecedente::where('acta_id', '=', $id)->get();
 		$archivos = OtroAntecedenteArchivo::where('acta_id', '=', $id)->get();
 		return Response::json(array(
+					'acta'=>$acta,
 					'otro'=>$otro,
 					'archivos'=>$archivos
 				));

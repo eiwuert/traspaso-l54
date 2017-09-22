@@ -17,11 +17,13 @@
 		<div class="col-lg-12">
 	        <form method="POST" enctype="multipart/form-data" action="backend/actas/otro" v-on:submit.prevent="onSubmitForm">
 
+	        	<p>Agregar archivo/s o dirección electrónica con otros antecedentes que el Servicio considere relevantes de los 4 años de gestión y necesarios agregar</p>
 	        	<div class="form-group">
 			    	<label for="direccion">Dirección electrónica.</label>
 			    	<input type="text" class="form-control" v-model="otrodata.direccion" v-el:direccionInput placeholder="Dirección electrónica con otros antecedentes del servicio." />
 			  	</div>
 			  	<div class="form-group">
+			  		<label for="fileInput">Archivo/s.</label>
 	            	<input class="form-control" type="file" id="fileInput" multiple v-el:fileInput />
 	            </div>
 

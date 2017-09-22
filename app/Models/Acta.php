@@ -148,5 +148,46 @@ class Acta extends Model  {
         return $this->hasMany('App\Models\Biblioteca');
     }
 
+    public static function boot()
+    {
+        parent::boot();
+        Acta::deleting(function($acta)
+        {   
+            $acta->gestion()->delete();
+            $acta->personal()->delete();
+            $acta->financiera()->delete();
+            $acta->inventario()->delete();
+            $acta->legal()->delete();
+            $acta->administrativa()->delete();
+            $acta->participacionCiudadana()->delete();
+            $acta->gestionProgramaProyecto()->delete();
+            $acta->gestionLicitacion()->delete();
+            $acta->gestionPublicaciones()->delete();
+            $acta->gestionComiteInterministerial()->delete();
+            $acta->gestionCompromisosInternacionales()->delete();
+            $acta->personalNombramientos()->delete();
+            $acta->financieraInternoRendir()->delete();
+            $acta->financieraCuentaCorriente()->delete();
+            $acta->FinancieraActivos()->delete();
+            $acta->FinancieraAnticiposFondos()->delete();
+            $acta->inventarioEscritorio()->delete();
+            $acta->inventarioContrato()->delete();
+            $acta->inventarioVehiculos()->delete();
+            $acta->inventarioProductoEmergencia()->delete();
+            $acta->inventarioMuebleInmueble()->delete();
+            $acta->legalRequerimientoRespuesta()->delete();
+            $acta->legalSumarioInvestigacion()->delete();
+            $acta->legalJuicioPendiente()->delete();
+            $acta->legalProyectosLeyTramitacion()->delete();
+            $acta->legalDocumentosTomaRazon()->delete();
+            $acta->administrativaDocumento()->delete();
+            $acta->auditoria()->delete();
+            $acta->participacionCiudadana()->delete();
+            $acta->biblioteca()->delete();
+            $acta->otroAntecedente()->delete();
+            $acta->otroAntecedenteArchivo()->delete();
+        });
+    }
+
 
 }
