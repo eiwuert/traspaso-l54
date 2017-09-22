@@ -57,7 +57,8 @@ var App = new Vue({
 			{
 			 console.log(pair[0]+ ', '+ pair[1]); 
 			}
-
+			var acta_id = window.location.pathname.match( /\d+/g )[0];
+			if(acta_id !== null ) formData.append('acta_id', acta_id);
     		if(this.auditoriadata)
     			formData.append('auditoria', JSON.stringify(this.auditoriadata));
 

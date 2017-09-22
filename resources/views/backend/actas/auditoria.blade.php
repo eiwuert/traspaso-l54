@@ -22,29 +22,31 @@
 						<h3>Plan anual de auditoría año 2018 aprobado por la Dirección del servicio respectivo</h3>
 						<p>Agregar archivo resolución aprobatoria de plan de auditorías 2018</p>
 					</caption>
-
+					<br>
 					@if(isset($auditoria))
-					<table class="table">
-						<p>Archivo subido</p>
-						<thead>
-							<tr>
-								<td>Nombre Archivo</td>
-								<td>Acciones</td>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td><a href="{{url('/backend/actas/auditoria-descargar/'.$auditoria->acta_id)}}" >{{$auditoria->archivo_nombre}}</a></td>
-								<td>
-									{!! Form::open(array('url' => 'backend/actas/auditoria/' . $auditoria->id, 'class' => 'pull-right')) !!}
-									{!! Form::hidden('_method', 'DELETE') !!}
-									{!! Form::submit('Eliminar', array('class' => 'btn btn-warning')) !!}
-									{!! Form::close() !!}
-									<a class="btn btn-small btn-info" href="{{ URL::to('backend/actas/auditoria-descargar/' . $auditoria->acta_id ) }}">Descargar</a>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+						<table class="table">
+							<!--<caption><h3>Archivo</h3></caption>-->
+							<thead>
+								<tr>
+									<td>Nombre archivo</td>
+									<td>Acciones</td>
+								</tr>
+							</thead>					
+							<tbody>
+								<tr>
+									<td><a href="{{url('/backend/actas/auditoria-descargar/'.$auditoria->acta_id)}}" >{{$auditoria->archivo_nombre}}</a></td>
+									<td>
+										<a class="btn btn-info" href="{{ URL::to('backend/actas/auditoria-descargar/' . $auditoria->acta_id ) }}">Descargar</a>
+										{!! Form::open(array('url' => 'backend/actas/auditoria/' . $auditoria->acta_id, 'class' => 'form-inline')) !!}
+										{!! Form::hidden('_method', 'DELETE') !!}
+										{!! Form::submit('Eliminar', array('class' => 'btn btn-danger')) !!}
+										{!! Form::close() !!}
+										
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
 					@endif
 					
 					<tbody>
@@ -53,7 +55,7 @@
 								<form enctype="multipart/form-data"  v-on:submit.prevent="onSubmitForm">
 
 								  	<div class="form-group">
-						            	<input class="form-control" type="file" id="fileInput" multiple v-el:fileInput />
+						            	<input class="form-control" type="file" id="fileInput"  v-el:fileInput />
 						            </div>
 
 						            <!-- SUBMIT -->
