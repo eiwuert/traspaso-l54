@@ -17,6 +17,7 @@
 		<!-- Bootstrap core CSS - Modificado Gobstrap -->
 		<link href="<?=asset('bower_components/modstrap/custom/bootstrap.min.css');?>" rel="stylesheet" />
 		<link href="<?=asset('css/common.css');?>" rel="stylesheet" />
+		<link href="<?=asset('css/font-awesome.min.css');?>" rel="stylesheet" />
 
 
 	</head>
@@ -92,9 +93,11 @@
 
         
 		
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script type="text/javascript" src="<?=asset('js/vue.js');?>"></script>
+		
+        <script type="text/javascript" src="<?=asset('js/vue-min.js');?>"></script>
         <script type="text/javascript" src="<?=asset('js/vue-resource.js');?>"></script>
+        <script type="text/javascript" src="<?=asset('js/vee-validate.min.js');?>"></script>
+        
         <script type="text/javascript" src="<?=asset('js/selectize.js');?>"></script>
 		<script type="text/javascript" src="<?=asset('js/backend.js');?>"></script>
 		<script type="text/javascript" src="<?=asset('js/personal.js');?>"></script>
@@ -104,9 +107,11 @@
 		<script type="text/javascript" src="{{ asset('js/usuario.js') }}"></script>
 		<script type="text/javascript" src="<?=asset('js/administrativa.js');?>"></script>
 		<script type="text/javascript" src="<?=asset('js/auditoria.js');?>"></script>
+		<script type="text/javascript" src="<?=asset('js/participacion.js');?>"></script>
+		<script type="text/javascript" src="<?=asset('js/biblioteca.js');?>"></script>
 		<script type="text/javascript" src="<?=asset('js/otro.js');?>"></script>
-		<script type="text/javascript" src="<?=asset('js/dropzone.js');?>"></script>
+		
 
-		@yield('scripts')
+		
     </body>
 </html>

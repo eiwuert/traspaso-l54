@@ -146,6 +146,7 @@
 					</div>
 					<div class="col-md-2">
 						<a href="{{ (isset($acta_id))? url('/backend/actas/auditoria/'.$acta_id) :  url('/backend/actas/auditoria')}}" class="btn btn-primary btn-lg">Editar</a>
+
 					</div>
 				</div>
 				
@@ -177,7 +178,9 @@
 						</h4>
 					</div>
 					<div class="col-md-2">
+
 						<a href="{{ (isset($acta_id))? url('/backend/actas/biblioteca/'.$acta_id) :  url('/backend/actas/biblioteca')}}" class="btn btn-primary btn-lg">Editar</a>
+
 					</div>
 				</div>
 				

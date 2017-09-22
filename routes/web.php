@@ -34,7 +34,6 @@ Route::group(["middleware" => "auth"], function() {
 	Route::get('backend/actas/ver/{id}/publica', 'ActaController@getPublica');
 
 	Route::get('backend/actas/gestion/obtener', 'ActaController@getData');
-	/*Route::post('backend/actas/gestion/guardar', 'ActaController@setData');*/
 
 	Route::resource('backend/actas/gestion', 'Backend\GestionController');
 	Route::resource('backend/gestion/instituciones', 'Backend\InstitucionController');
@@ -44,13 +43,13 @@ Route::group(["middleware" => "auth"], function() {
 	Route::resource('backend/actas/legal', 'Backend\LegalController');
 	Route::resource('backend/actas/inventario', 'Backend\InventarioController');
 	Route::resource('backend/actas/administrativa', 'Backend\AdministrativaController');
+	Route::resource('backend/actas/participacion', 'Backend\ParticipacionController');
+	Route::resource('backend/actas/biblioteca', 'Backend\BibliotecaController');
 	Route::resource('backend/actas/otro', 'Backend\OtroAntecedenteController');
+	Route::get('backend/actas/otro/descarga/{id}', 'Backend\OtroAntecedenteController@download');
+	//Route::get('backend/actas/otro/eliminar/{id}', 'Backend\OtroAntecedenteController@eliminarArchivo');
 
-
-	
 	Route::resource('backend/actas/auditoria', 'Backend\AuditoriaController');
-	Route::get('backend/actas/participacion', 'Backend\PersonalController@index');
-	//Route::get('backend/actas/iniciar', 'ActaController@iniciar');
 	Route::get('backend/actas/auditoria-descargar/{id}', 'Backend\AuditoriaController@downloadFile');
 
 	Route::get('404', function()
