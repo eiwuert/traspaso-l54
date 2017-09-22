@@ -32,7 +32,7 @@ Route::group(["middleware" => "auth"], function() {
 	Route::get('backend/actas/iniciar/{id}', 'ActaController@getIniciar');
 	Route::get('backend/actas/iniciar', 'ActaController@getIniciar');
 	Route::get('backend/actas/ver/{id}/publica', 'ActaController@getPublica');
-
+	Route::get('backend/actas/eliminar/{id}', 'ActaController@setEliminar');
 	Route::get('backend/actas/gestion/obtener', 'ActaController@getData');
 
 	Route::resource('backend/actas/gestion', 'Backend\GestionController');

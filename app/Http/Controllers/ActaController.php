@@ -9,6 +9,7 @@ use App\Models\GestionComiteInterministerial;
 use App\Models\GestionPublicacion;
 use App\Models\GestionCompromisoInternacional;
 use App\Models\GestionLicitacion;
+use Illuminate\Support\Facades\Redirect;
 
 class ActaController extends BaseController{
 	
@@ -17,11 +18,14 @@ class ActaController extends BaseController{
 	}
 
 	public function getListado(){
-		$data['actas'] = Acta::all();
+		$data['actas'] = Acta::where('institucion_id',\Auth::user()->institucion_id)->get();
 		return View::make('backend.actas.listado',$data);
 	}
 
 	public function getIniciar($id = null){
+
+		$actas = Acta::where('institucion_id',\Auth::user()->institucion_id)->count();
+
 
 		//Obtener el avance de las secciones
 		$data = array();
@@ -42,7 +46,10 @@ class ActaController extends BaseController{
 	        ($acta->participacionCiudadana->count() > 0 )? $data['participacion'] = true : $data['participacion'] = false;
 	        //(!is_null($acta->biblioteca) || !is_null($acta->inventarioVehiculos) )? $data['biblioteca'] = true : $data['biblioteca'] = false;
 	        ($acta->otroAntecedente->count() > 0 )? $data['otros'] = true : $data['otros'] = false;
-	        ($acta->biblioteca->count() > 0 )? $data['bibliotecas'] = true : $data['bibliotecas'] = false;
+	        ($acta->biblioteca->count() > 0 )? $data['biblioteca'] = true : $data['biblioteca'] = false;
+		}else{
+			if($actas)
+				return Redirect::to('backend/actas/listado');
 		} 
 
 		return View::make('backend.actas.iniciar', $data);
@@ -79,6 +86,14 @@ class ActaController extends BaseController{
 					'compromisos'=>$compromisos,
 					'licitaciones'=>$licitaciones
 				));
+	}
+
+	public function setEliminar($id=null){
+		$acta = Acta::find($id);
+		if($acta){
+			$acta->delete();
+		}
+		return Redirect::to('backend/actas/listado');
 	}
 
 
