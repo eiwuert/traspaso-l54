@@ -156,7 +156,7 @@
 					</thead>
 					<tbody>
 						<tr v-for="interno in internos">
-							<td><input type="text" name="fondo_interno" class="form-control" v-model="interno.fondo_interno" ></td>
+							<td><input type="text" name="fondo_interno" class="form-control" v-model="interno.fondo_interno" disabled></td>
 							<td><input type="text" name="monto_autorizado" class="form-control" v-model="interno.monto_autorizado" ></td>
 							<td><input type="text" name="monto_gastado" class="form-control" v-model="interno.monto_gastado"></td>
 							<td><input type="text" name="detalle_gastado" class="form-control" v-model="interno.detalle_gastado"></td>
@@ -176,11 +176,48 @@
 				</table>
 			</div>
 			<br>
+			<div class="form-group">
+				<table class="table">
+					<caption>
+						<h3>Informe contabilidad gubernamental</h3>
+						<p>Copia del último informe de contabilidad gubernamental, remitido a la Contraloría General de la República.</p>
+					</caption>
+				</table>
+				@if(isset($financiera) && !is_null($financiera->enlace_informe_contabilidad))
+					<table class="table">
+						<!--<caption><h3>Archivo</h3></caption>-->
+						<thead>
+							<tr>
+								<td>Nombre archivo subido</td>
+								<td>Acciones</td>
+							</tr>
+						</thead>					
+						<tbody>
+							<tr>
+								<td><a href="{{url('/backend/actas/financiera/descarga/'.$financiera->acta_id)}}" >{{$financiera->enlace_informe_contabilidad}}</a></td>
+								<td>
+									<a class="btn btn-info" href="{{ URL::to('backend/actas/financiera/descarga/' . $financiera->acta_id ) }}">Descargar</a>
+									<a class="btn btn-danger" href="{{ URL::to('backend/actas/financiera/eliminar/' . $financiera->acta_id ) }}">Eliminar</a>
+									
+								</td>
 
-			<div class="form-group" >
-		    	<label for="enlace_informe_contabilidad">Copia del último informe de contabilidad gubernamental, remitido a la Contraloría General de la República</label>
-		    	<input class="form-control" type="file" id="fileInput" multiple v-el:fileInput />
-		  	</div>
+							</tr>
+						</tbody>
+					</table>
+
+				@endif
+
+				<div class="form-group" >
+					<label> Subir un nuevo archivo en reemplazo del existente</label>
+			    	<input class="form-control" type="file" id="fileInput" multiple v-el:fileInput />
+			  	</div>
+				
+					
+
+			</div>
+			
+
+			
 		  	<br>
 
 		  	<div class="form-group">
@@ -210,7 +247,7 @@
 
 							</td>
 							<td><input type="text" name="numero_beneficiarios" class="form-control" v-model="anticipo.numero_beneficiarios" ></td>
-							<td><input type="text" name="monto" class="form-control" v-model="anticipo.etapa"></td>
+							<td><input type="text" name="monto" class="form-control" v-model="anticipo.monto"></td>
 
 							<td><button class="btn btn-danger" @click.prevent="borrarAnticipo(anticipo)">Eliminar</button></td>
 						</tr>

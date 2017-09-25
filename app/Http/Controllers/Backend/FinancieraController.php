@@ -15,6 +15,7 @@ use App\Models\FinancieraCuentaCorriente;
 use App\Models\FinancieraInternoRendir;
 use Session;
 use Storage;
+use Auth;
 
 class FinancieraController extends BaseController {
 
@@ -202,7 +203,17 @@ class FinancieraController extends BaseController {
 	{
 		//Acta existente
 
-		return View::make('backend.actas.financiera', array('acta_id' => $id));
+		$data 				= array();
+		$data['acta_id'] 	= $id;
+		$institucion 		= Institucion::find(Auth::user()->institucion_id);
+		$financiera 		= Financiera::where('acta_id', '=', $id)->first();
+
+		if(!is_null($financiera->enlace_informe_contabilidad)){
+			$financiera['archivo_enlace'] 	= Storage::disk('s3')->get($institucion->codigo.'/'.$id.'/Financiera/'.$financiera->enlace_informe_contabilidad);
+			$data['financiera'] 			= $financiera;
+		}
+
+		return View::make('backend.actas.financiera', $data);
 	}
 
 
@@ -215,6 +226,7 @@ class FinancieraController extends BaseController {
 	public function edit($id)
 	{
 		//
+		$acta 			= Acta::find($id);
 		$financiera 	= Financiera::where('acta_id', '=', $id)->get();
 		$activos 		= FinancieraActivo::where('acta_id', '=', $id)->get();
 		$anticipos 		= FinancieraAnticipoFondo::where('acta_id', '=', $id)->get();
@@ -223,6 +235,7 @@ class FinancieraController extends BaseController {
 		$internos 		= FinancieraInternoRendir::where('acta_id', '=', $id)->get();
 
 		return Response::json(array(
+					'acta' => $acta,
 					'financiera'=>$financiera,
 					'activos'=>$activos,
 					'anticipos'=>$anticipos,
@@ -253,7 +266,39 @@ class FinancieraController extends BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+
+		//Borrar archivo
+		$acta 		= Acta::find($id);
+		$financiera = financiera::where('acta_id','=',$id)->first();
+		
+		$path = \Auth::user()->institucion->codigo.'/'.$acta->id.'/Financiera/'.$financiera->enlace_informe_contabilidad;
+		Storage::disk('s3')->delete($path);
+
+		$financiera->enlace_informe_contabilidad = null;
+		$financiera->save();
+
+		Session::flash('message', 'información actualizada exitosamente');
+		return redirect('backend/actas/iniciar/'.$financiera->acta_id);
+		//return View::make('backend.actas.iniciar', array('acta_id' => $financiera->acta_id ));
+	}
+
+	public function downloadFile($id){
+
+
+		$institucion 	= Institucion::find(Auth::user()->institucion_id);
+		$financiera 	= Financiera::where('acta_id', '=', $id)->first();
+
+		$archivo = Storage::disk('s3')->get($institucion->codigo.'/'.$id.'/Financiera/'.$financiera->enlace_informe_contabilidad);
+		$headers = [
+		    'Content-Type' => 'text/csv', 
+		    'Content-Description' => 'File Transfer',
+		    'Content-Disposition' => "attachment; filename={$financiera->enlace_informe_contabilidad}",
+		    'filename'=> $financiera->enlace_informe_contabilidad
+		];
+
+		return response($archivo, 200, $headers);
+		return View::make('backend.actas.iniciar', array('acta_id' => $financiera->acta_id ));
+
 	}
 
 

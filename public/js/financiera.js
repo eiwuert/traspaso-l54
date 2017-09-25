@@ -8,7 +8,8 @@ var App = new Vue({
 		anticipos: [],
 		conciliaciones: [],
 		cuentas: [],
-		internos: []
+		internos: [],
+		cuentadante: 0
 	},
 
 	ready: function() {
@@ -47,6 +48,8 @@ var App = new Vue({
 	            	this.$set('conciliaciones', response.data.conciliaciones);
 	            	this.$set('cuentas', response.data.cuentas);
 	            	this.$set('internos', response.data.internos);
+	            	this.$set('cuentadante', response.data.internos.length);
+	            	console.log(response.data.internos.length);
 	          	});
 
 			}
@@ -76,7 +79,9 @@ var App = new Vue({
 
 		agregarInterno: function() {
 			var self = this;
-			self.internos.push({"fondo_interno": "","monto_autorizado": "", "monto_gastado": "", "detalle_gastado": "", "observaciones": ""});
+			self.cuentadante++;
+			self.internos.push({"fondo_interno": "Cargo del cuentadante "+self.cuentadante,"monto_autorizado": "", "monto_gastado": "", "detalle_gastado": "", "observaciones": ""});
+			
 		},
 
 		
@@ -99,6 +104,7 @@ var App = new Vue({
 		borrarInterno: function(interno) {
 			var self = this;
 			self.internos.$remove(interno);
+			self.cuentadante--;
 		},
 
 		borrarAnticipo: function(anticipo) {
