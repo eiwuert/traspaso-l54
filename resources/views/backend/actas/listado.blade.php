@@ -5,8 +5,10 @@
 <div class="row">
 	<div class="col-lg-12">
 
-		<h3>Actas de entrega
-			@if(!$actas->count())
+		@include('layouts.mensajes_header')
+
+		<h3>Acta de entrega
+			@if(!$actas->count() && !is_null(\Auth::user()->institucion_id))
 			<a href="{{ url('/backend/actas/iniciar') }}" class="btn btn-primary pull-right"><span class="glyphicon glyphicon-plus"></span>Iniciar Acta</a>
 			@endif
 		</h3>
