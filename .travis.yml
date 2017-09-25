@@ -16,7 +16,7 @@ before_script:
 
 after_success:
   - if [ "$TRAVIS_BRANCH" == "testing" ]; then
-    docker build -t "$DOCKER_HUB_ORG"/consola-apps:v"$TRAVIS_BUILD_NUMBER" .;
+    docker build -t "$DOCKER_HUB_ORG"/traspaso:v0."$TRAVIS_BUILD_NUMBER" .;
     docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
-    docker push "$DOCKER_HUB_ORG"/consola-apps:v"$TRAVIS_BUILD_NUMBER";
+    docker push "$DOCKER_HUB_ORG"/traspaso:v0."$TRAVIS_BUILD_NUMBER";
     fi
