@@ -15,7 +15,6 @@ class CreateFinancieraConciliacionesBancariasTable extends Migration {
 		Schema::create('financiera_conciliaciones_bancarias', function ($table) 
 		{
 			$table->increments('id');
-			$table->string('nombre');
 			$table->string('numero_cuenta_corriente');
 			$table->integer('saldo_contable')->unsigned();
 			$table->integer('saldo_banco_cartola')->unsigned();
