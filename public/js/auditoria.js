@@ -3,6 +3,7 @@ var App = new Vue({
 	el: '#auditoria',
 
 	data: {
+		actadata: [],
 		auditoriadata: [],
 		archivo: []
 	},
@@ -36,9 +37,12 @@ var App = new Vue({
 			else{
 				var acta_id = window.location.pathname.match( /\d+/g )[0];
 				this.$http.get('/backend/actas/auditoria/'+acta_id+'/edit').then((response) => {
+					console.log(response);
 					this.$set('auditoriadata',response.data.auditoria);
 					this.$set('archivo',response.data.archivo);
+					this.$set('actadata',response.data.acta);
 	          	});
+	          	console.log('acta data: '+this.actadata);
 			}
 		},
 
@@ -53,15 +57,16 @@ var App = new Vue({
 
     		formData.append('_token', token);
 
+    		
+			if(this.actadata)
+    			formData.append('acta', JSON.stringify(this.actadata));
+    		if(this.auditoriadata)
+    			formData.append('auditoria', JSON.stringify(this.auditoriadata));
+
     		for (var pair of formData.entries())
 			{
 			 console.log(pair[0]+ ', '+ pair[1]); 
 			}
-			var acta_id = window.location.pathname.match( /\d+/g )[0];
-			if(acta_id !== null ) formData.append('acta_id', acta_id);
-    		if(this.auditoriadata)
-    			formData.append('auditoria', JSON.stringify(this.auditoriadata));
-
 			this.$http.post('/backend/actas/auditoria',formData)
             .then((response) => {
             	console.log(response);

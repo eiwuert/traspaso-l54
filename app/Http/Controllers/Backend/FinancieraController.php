@@ -48,6 +48,10 @@ class FinancieraController extends BaseController {
 	 */
 	public function store(Request $request)
 	{
+
+		
+
+
 		$datos 			= $request->all();
 		$institucion 	= Institucion::find(\Auth::user()->institucion_id);
 
@@ -84,6 +88,21 @@ class FinancieraController extends BaseController {
 		$datos['activos'] 				= json_decode($datos['activos'],true);
 		$data_activo_existente 			= FinancieraActivo::where('acta_id',$acta->id)->get()->pluck('id')->all();
 		$array_no_modificados_activo 	= array();
+
+		$rules_activos = array(
+			'nombre'       => 'required',
+			'detalle'     => 'required',
+			'monto'      => 'required',
+			'plazo'      => 'required',
+		);
+		
+		$validator = Validator::make(Input::except('_token'), $rules_activos);
+
+		if ($validator->fails()) {
+			return Redirect::to('backend/actas/financiera/'.$acta_id)
+				->withErrors($validator->errors());
+		}
+
 		foreach($datos['activos'] as $data_activo){
 			if(isset($data_activo['id'])){
 				$activo = FinancieraActivo::find($data_activo['id']);

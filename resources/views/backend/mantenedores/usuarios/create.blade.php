@@ -24,7 +24,7 @@
 		    </div>
 		@endif
 
-		<div class="col-md-6 ">
+		<div class="col-md-10 col-md-offset-1 ">
 
 			{!! Form::open(array('url' => 'backend/gestion/usuarios' , 'class' => 'form-horizontal', 'id' => 'form-usuario', 'method' => 'post', 'v-on:submit' => 'validateForm')) !!}
 

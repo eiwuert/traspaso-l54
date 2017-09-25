@@ -34,13 +34,10 @@
 							</thead>					
 							<tbody>
 								<tr>
-									<td><a href="{{url('/backend/actas/auditoria-descargar/'.$auditoria->acta_id)}}" >{{$auditoria->archivo_nombre}}</a></td>
+									<td><a href="{{url('/backend/actas/auditoria/descarga/'.$auditoria->acta_id)}}" >{{$auditoria->archivo_nombre}}</a></td>
 									<td>
-										<a class="btn btn-info" href="{{ URL::to('backend/actas/auditoria-descargar/' . $auditoria->acta_id ) }}">Descargar</a>
-										{!! Form::open(array('url' => 'backend/actas/auditoria/' . $auditoria->acta_id, 'class' => 'form-inline')) !!}
-										{!! Form::hidden('_method', 'DELETE') !!}
-										{!! Form::submit('Eliminar', array('class' => 'btn btn-danger')) !!}
-										{!! Form::close() !!}
+										<a class="btn btn-info" href="{{ URL::to('backend/actas/auditoria/descarga/' . $auditoria->acta_id ) }}">Descargar</a>
+										<a class="btn btn-danger" href="{{ URL::to('backend/actas/auditoria/eliminar/' . $auditoria->acta_id ) }}">Eliminar</a>
 										
 									</td>
 								</tr>

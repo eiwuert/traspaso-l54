@@ -49,25 +49,20 @@ class AuditoriaController extends BaseController {
 
 		$input = $request->all();
 
-		if(isset($data['auditoria'])){
+		if(isset($input['acta'])) $dataacta = json_decode($input['acta'],true);
+		if(isset($input['auditoria'])) $dataauditoria = json_decode($input['auditoria'],true);
 
-			$data = json_decode($input['auditoria'],true);
+		if(isset($dataacta['id']))
+			$acta = Acta::find($dataacta['id']);
+		else
+			$acta = new Acta();
+		$acta->institucion_id = \Auth::user()->institucion_id;
+		$acta->save();
 
-			if(isset($data['auditoria']['id'])){
-
-				$acta 		= Acta::find($datos['auditoria']['acta_id']);
-				$auditoria 	= Auditoria::where('acta_id', $acta->id)->first();
-			}
-			else{
-				isset($input['acta_id']) ? $acta = Acta::find($input['acta_id']) : $acta = new Acta();
-				$auditoria 	= new Auditoria;
-			}
-
-		}
-		else{
-			isset($input['acta_id']) ? $acta = Acta::find($input['acta_id']) : $acta = new Acta();
+		if(isset($dataauditoria['id']))
+			$auditoria 	= Auditoria::find($dataauditoria['id']);
+		else
 			$auditoria 	= new Auditoria;
-		}
 
 		$institucion = Institucion::find(\Auth::user()->institucion_id);
 
@@ -84,8 +79,6 @@ class AuditoriaController extends BaseController {
 		/*} else {*/
 
 
-		$acta->institucion_id = $institucion->id;
-		$acta->save();
 
 		if($request->hasFile('archivo')){
 			$archivo = $request->file('archivo');
@@ -142,17 +135,16 @@ class AuditoriaController extends BaseController {
 	public function edit($id)
 	{
 
-		$data 				= array();
-		$data['acta_id'] 	= $id;
+		$acta 				= Acta::find($id);
 		$institucion 		= Institucion::find(Auth::user()->institucion_id);
 		$auditoria 			= Auditoria::where('acta_id', '=', $id)->first();
 
-		if(!is_null($auditoria)){
-			$auditoria['archivo_enlace'] 	= Storage::disk('s3')->get($institucion->codigo.'/'.$id.'/Auditoria/'.$auditoria->archivo_nombre);
-			$data['auditoria'] 				= $auditoria;
-		}
+		return Response::json(array(
+					'acta' => $acta,
+					'auditoria' => $auditoria
+				));
+		
 
-		return View::make('backend.actas.auditoria', $data);
 	}
 
 
