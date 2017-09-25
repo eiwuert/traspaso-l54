@@ -5,9 +5,9 @@ RUN apt-get update && \
       ca-certificates php5-curl --no-install-recommends && \
     curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-COPY . /var/www/docker/consola-apps
+COPY . /var/www/docker/traspaso
 
-RUN chown -R www-data:www-data /var/www/docker/consola-apps
+RUN chown -R www-data:www-data /var/www/docker/traspaso
 
 RUN sed -i 's/\;clear_env/clear_env/g' /etc/php5/fpm/pool.d/www.conf
 
