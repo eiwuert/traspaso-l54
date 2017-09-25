@@ -11,7 +11,7 @@ RUN chown -R www-data:www-data /var/www/docker/consola-apps
 
 RUN sed -i 's/\;clear_env/clear_env/g' /etc/php5/fpm/pool.d/www.conf
 
-RUN cd /var/www/docker/consola-apps && \
+RUN cd /var/www/docker/traspaso && \
     composer install --no-interaction
 
 EXPOSE 9000
