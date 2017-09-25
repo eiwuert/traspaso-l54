@@ -1,7 +1,8 @@
-## Plataforma de Traspaso
-# Unidad de Gobierno Digital
+# Plataforma de Traspaso
 
-# Deployment
+## Unidad de Gobierno Digital
+
+## Instrucciones Deployment
 
 Descargar la imagen docker:
 
