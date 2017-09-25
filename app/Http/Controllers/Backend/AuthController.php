@@ -17,15 +17,15 @@ namespace App\Http\Controllers\Backend;
 	   public function __construct(){
 	       $this->authConfig = array(
 	           'client_info' => array(
-	               'client_id' => env('claveunica_client_id'),
-	               'redirect_uri' => \URL::to('/backend/callback'),
-	               'authorization_endpoint' => 'https://www.claveunica.gob.cl/openid/authorize',
-	               'token_endpoint' => 'https://www.claveunica.gob.cl/openid/token',
-	               'user_info_endpoint' => 'https://www.claveunica.gob.cl/openid/userinfo',
+	               'client_id' => getenv('cu_client_id'),
+	               'redirect_uri' => getenv('cu_callback'),
+	               'authorization_endpoint' => getenv('cu_url_auth'),
+	               'token_endpoint' => getenv('cu_url_token'),
+	               'user_info_endpoint' => getenv('cu_url_userinfo'),
 	               'authentication_info' => array(
 	                   'method' => 'client_secret_post',
 	                   'params' => array(
-	                       'client_secret' => env('claveunica_secret_id')
+	                       'client_secret' => getenv('cu_client_secret')
 	                   )
 	               )
 	           )
@@ -36,7 +36,7 @@ namespace App\Http\Controllers\Backend;
 			$flow = new Basic($this->authConfig);
 		    if (!isset($_GET['redirect'])) {
 		        try {
-		            $uri = $flow->getAuthorizationRequestUri('openid run name');
+		            $uri = $flow->getAuthorizationRequestUri(getenv('cu_scope'));
 		            return \Redirect::to($uri);
 		        } catch (\Exception $e) {
 		            printf("Exception during authorization URI creation: [%s] %s", get_class($e), $e->getMessage());
