@@ -2,14 +2,32 @@
 var App = new Vue({
 	el: '#legal',
 
+	components: {
+      vSelect: VueStrap.select,
+      datepicker: VueStrap.datepicker
+    },
+
 	data: {
 		legaldata: [],
 		documentos: [],
 		proyectos: [],
 		juicios: [],
 		sumarios: [],
-		requerimientos: []
+		requerimientos: [],
+		disabled : [],
+    	format: 'yy-MM-dd',
+    	clear: true,
 	},
+	watch: {
+    	disabled () {
+    		console.log('disabled');
+	    	this.$refs.dp.getDateRange()
+	    },
+	    format (newV) {
+	    	console.log('format');
+	    	this.value = this.$refs.dp.stringify()
+	    }
+	  },
 
 	ready: function() {
 		var self = this;
@@ -31,6 +49,7 @@ var App = new Vue({
 			}
 		},
 		fetchData: function() {
+
 			var self = this;
 
 			if(window.location.pathname == '/backend/actas/legal'){

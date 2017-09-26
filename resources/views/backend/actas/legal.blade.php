@@ -19,6 +19,7 @@
 		<br>
 
 		<div class="table-responsive" id="legal">
+			
 			<form method="POST" enctype="multipart/form-data" v-on:submit.prevent="setData">
 
 			  	<div class="form-group">
@@ -39,7 +40,9 @@
 							<tr v-for="documento in documentos">
 								<td><input type="text" name="nombre" class="form-control" v-model="documento.nombre" ></td>
 								<td>
-									<input type="text" name="fecha_ingreso" class="form-control" v-model="documento.fecha_ingreso" >
+									<datepicker  name="fecha_ingreso" v-model="documento.fecha_ingreso" :value.sync="documento.fecha_ingreso" :disabled-days-of-week="disabled" :format="format" :clear-button="clear"  readonly >
+									</datepicker>
+
 								</td>
 								<td><input type="text" name="estado" class="form-control" v-model="documento.estado"></td>
 								<td><button class="btn btn-danger" @click.prevent="borrarDocumento(documento)">Eliminar</button></td>
@@ -70,7 +73,11 @@
 						<tbody>
 							<tr v-for="proyecto in proyectos">
 								<td><input type="text" name="nombre" class="form-control" v-model="proyecto.nombre" ></td>
-								<td><input type="text" name="fecha_ingreso" class="form-control" v-model="proyecto.fecha_ingreso" ></td>
+								<td>
+									<datepicker  name="fecha_ingreso" v-model="proyecto.fecha_ingreso" :value.sync="proyecto.fecha_ingreso" :disabled-days-of-week="disabled" :format="format" :clear-button="clear"  >
+									</datepicker>
+								</td>
+								
 								<td><input type="text" name="estado" class="form-control" v-model="proyecto.estado"></td>
 								<td><button class="btn btn-danger" @click.prevent="borrarProyecto(proyecto)">Eliminar</button></td>
 							</tr>
@@ -155,7 +162,10 @@
 									</select>
 								</td>
 								<td><input type="text" name="numero_resolucion" class="form-control" v-model="sumario.numero_resolucion" ></td>
-								<td><input type="text" name="fecha_resolucion" class="form-control" v-model="sumario.fecha_resolucion" ></td>
+								<td>
+									<datepicker  name="fecha_resolucion" v-model="sumario.fecha_resolucion" :value.sync="sumario.fecha_resolucion" :disabled-days-of-week="disabled" :format="format" :clear-button="clear"  >
+									</datepicker>
+								</td>
 								<td><input type="text" name="estado_proceso" class="form-control" v-model="sumario.estado_proceso" ></td>
 								<td><button class="btn btn-danger" @click.prevent="borrarSumario(sumario)">Eliminar</button></td>
 							</tr>
@@ -191,7 +201,11 @@
 							<tr v-for="requerimiento in requerimientos">
 								<td><input type="text" name="institucion" class="form-control" v-model="requerimiento.institucion" ></td>
 								<td><input type="text" name="identificacion_documento" class="form-control" v-model="requerimiento.identificacion_documento" ></td>
-								<td><input type="text" name="fecha_documento" class="form-control" v-model="requerimiento.fecha_documento" ></td>
+								<td>
+									<datepicker  name="fecha_documento" v-model="requerimiento.fecha_documento" :value.sync="requerimiento.fecha_documento" :disabled-days-of-week="disabled" :format="format" :clear-button="clear"  >
+									</datepicker>
+								</td>
+								
 								<td><input type="text" name="materia" class="form-control" v-model="requerimiento.materia" ></td>
 								<td><input type="text" name="estado" class="form-control" v-model="requerimiento.estado" ></td>
 								<td><button class="btn btn-danger" @click.prevent="borrarRequerimiento(requerimiento)">Eliminar</button></td>

@@ -1,4 +1,3 @@
-console.log('usuario');
 var form = new Vue({
     el: '#form-usuario',
     data: {
