@@ -15,6 +15,8 @@ namespace App\Http\Controllers\Backend;
        protected $authConfig;
 	   
 	   public function __construct(){
+
+	   		dd(getenv(getenv('cu_client_id')));
 	       $this->authConfig = array(
 	           'client_info' => array(
 	               'client_id' => getenv('cu_client_id'),

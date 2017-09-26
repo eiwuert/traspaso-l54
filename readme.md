@@ -28,6 +28,10 @@ docker run -itd \
 -e DB_DATABASE=[DB DATABASE NAME] \
 -e DB_USERNAME=[DB USER] \
 -e DB_PASSWORD=[DB PASS] \
+-e AWS_REGION=[REGION AWS] \
+-e AWS_BUCKET=[BUCKET AWS] \
+-e AWS_KEY=[AWS KEY] \
+-e AWS_SECRET=[AWS SECRET] \
 -p 9000:9000 \
 -v /var/www/docker/traspaso:/var/www/docker/traspaso \
 --name traspaso egob/traspaso:latest
