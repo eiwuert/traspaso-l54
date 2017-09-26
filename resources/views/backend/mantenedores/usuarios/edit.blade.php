@@ -22,7 +22,7 @@
 		    </div>
 		@endif
 
-		<div class="col-md-6 ">
+		<div class="col-md-10 col-md-offset-1 ">
 			{{ Form::model($usuario, array('action' => array('Backend\UsuarioController@update', $usuario->id), 'method' => 'PUT', 'class' => '', 'id' => 'form-usuario')) }}
 
 				<div class="form-group">

@@ -35,6 +35,11 @@ Route::group(["middleware" => "auth"], function() {
 	Route::get('backend/actas/eliminar/{id}', 'ActaController@setEliminar');
 	Route::get('backend/actas/gestion/obtener', 'ActaController@getData');
 
+	Route::get('backend/actas/auditoria/descarga/{id}', 'Backend\AuditoriaController@downloadFile');
+	Route::get('backend/actas/financiera/descarga/{id}', 'Backend\FinancieraController@downloadFile');
+	Route::get('backend/actas/auditoria/eliminar/{id}', 'Backend\AuditoriaController@destroy');
+	Route::get('backend/actas/financiera/eliminar/{id}', 'Backend\FinancieraController@destroy');
+
 	Route::resource('backend/actas/gestion', 'Backend\GestionController');
 	Route::resource('backend/gestion/instituciones', 'Backend\InstitucionController');
 	Route::resource('backend/gestion/usuarios', 'Backend\UsuarioController');
@@ -50,7 +55,7 @@ Route::group(["middleware" => "auth"], function() {
 	//Route::get('backend/actas/otro/eliminar/{id}', 'Backend\OtroAntecedenteController@eliminarArchivo');
 
 	Route::resource('backend/actas/auditoria', 'Backend\AuditoriaController');
-	Route::get('backend/actas/auditoria-descargar/{id}', 'Backend\AuditoriaController@downloadFile');
+
 
 	Route::get('404', function()
 	{

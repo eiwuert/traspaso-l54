@@ -49,16 +49,20 @@ class AuditoriaController extends BaseController {
 
 		$input = $request->all();
 
-		$data = json_decode($input['auditoria'],true);
+		if(isset($input['acta'])) $dataacta = json_decode($input['acta'],true);
+		if(isset($input['auditoria'])) $dataauditoria = json_decode($input['auditoria'],true);
 
-		if(isset($data['auditoria']['id'])){
-			$acta 		= Acta::find($datos['auditoria']['acta_id']);
-			$auditoria 	= Auditoria::where('acta_id', $acta->id)->first();
-		}
-		else{
-			$acta 		= new Acta();
+		if(isset($dataacta['id']))
+			$acta = Acta::find($dataacta['id']);
+		else
+			$acta = new Acta();
+		$acta->institucion_id = \Auth::user()->institucion_id;
+		$acta->save();
+
+		if(isset($dataauditoria['id']))
+			$auditoria 	= Auditoria::find($dataauditoria['id']);
+		else
 			$auditoria 	= new Auditoria;
-		}
 
 		$institucion = Institucion::find(\Auth::user()->institucion_id);
 
@@ -75,8 +79,6 @@ class AuditoriaController extends BaseController {
 		/*} else {*/
 
 
-		$acta->institucion_id = $institucion->id;
-		$acta->save();
 
 		if($request->hasFile('archivo')){
 			$archivo = $request->file('archivo');
@@ -88,7 +90,7 @@ class AuditoriaController extends BaseController {
 			$auditoria->save();
 			
 			$s3 = Storage::disk('s3');
-			$filePath =  $institucion->codigo.'/'.$acta->id.'/'. $archivoFileName;
+			$filePath =  $institucion->codigo.'/'.$acta->id.'/Auditoria/'. $archivoFileName;
 			$s3->put($filePath, file_get_contents($archivo), 'public');
 			
 		}
@@ -115,7 +117,7 @@ class AuditoriaController extends BaseController {
 		$auditoria 			= Auditoria::where('acta_id', '=', $id)->first();
 
 		if(!is_null($auditoria)){
-			$auditoria['archivo_enlace'] 	= Storage::disk('s3')->get($institucion->codigo.'/'.$id.'/'.$auditoria->archivo_nombre);
+			$auditoria['archivo_enlace'] 	= Storage::disk('s3')->get($institucion->codigo.'/'.$id.'/Auditoria/'.$auditoria->archivo_nombre);
 			$data['auditoria'] 				= $auditoria;
 		}
 
@@ -133,17 +135,16 @@ class AuditoriaController extends BaseController {
 	public function edit($id)
 	{
 
-		$data 				= array();
-		$data['acta_id'] 	= $id;
+		$acta 				= Acta::find($id);
 		$institucion 		= Institucion::find(Auth::user()->institucion_id);
 		$auditoria 			= Auditoria::where('acta_id', '=', $id)->first();
 
-		if(!is_null($auditoria)){
-			$auditoria['archivo_enlace'] 	= Storage::disk('s3')->get($institucion->codigo.'/'.$id.'/'.$auditoria->archivo_nombre);
-			$data['auditoria'] 				= $auditoria;
-		}
+		return Response::json(array(
+					'acta' => $acta,
+					'auditoria' => $auditoria
+				));
+		
 
-		return View::make('backend.actas.auditoria', $data);
 	}
 
 
@@ -156,7 +157,7 @@ class AuditoriaController extends BaseController {
 	public function update($id, Request $request)
 	{
 		
-		$acta = Acta::find($id);
+		/*$acta = Acta::find($id);
 		$datos = $request->all();
 
 		if(isset($datos['auditoria']['id']))
@@ -174,10 +175,10 @@ class AuditoriaController extends BaseController {
 			$archivo = $request->file('archivo');
 			$archivoFileName = time().'.'.$archivo->getClientOriginalExtension();
 			$s3 = Storage::disk('s3');
-			$filePath = '/pruebas2/' . $archivoFileName;
+			$filePath = \Auth::user()->institucion->codigo.'/'.$acta->id.'/Auditoria/'. $archivoFileName;
 			$s3->put($filePath, file_get_contents($archivo), 'public');
 			
-		}
+		}*/
 
 	}
 
@@ -190,9 +191,17 @@ class AuditoriaController extends BaseController {
 	 */
 	public function destroy($id)
 	{	
-		Auditoria::find($id)->delete();
+
+		$acta = Acta::find($id);
+		$auditoria = Auditoria::where('acta_id','=',$id)->first();
+		
+		$path = \Auth::user()->institucion->codigo.'/'.$acta->id.'/Auditoria/'.$auditoria->archivo_nombre;
+		Storage::disk('s3')->delete($path);
+
+		$auditoria->delete();
 
 		Session::flash('message', 'información actualizada exitosamente');
+		return View::make('backend.actas.iniciar', array('acta_id' => $auditoria->acta_id ));
 
 
 		
@@ -204,7 +213,7 @@ class AuditoriaController extends BaseController {
 		$institucion 					= Institucion::find(Auth::user()->institucion_id);
 		$auditoria 						= Auditoria::where('acta_id', '=', $id)->first();
 
-		$archivo = Storage::disk('s3')->get($institucion->codigo.'/'.$id.'/'.$auditoria->archivo_nombre);
+		$archivo = Storage::disk('s3')->get($institucion->codigo.'/'.$id.'/Auditoria/'.$auditoria->archivo_nombre);
 		$headers = [
 		    'Content-Type' => 'text/csv', 
 		    'Content-Description' => 'File Transfer',
