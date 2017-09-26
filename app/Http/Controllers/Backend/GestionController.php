@@ -4,7 +4,7 @@ use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Http\Request;
 use View;
 use Input;
-use Acta;
+use App\Models\Acta;
 use App\Models\Gestion;
 use App\Models\GestionProgramaProyecto;
 use App\Models\GestionComiteInterministerial;

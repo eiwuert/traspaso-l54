@@ -99,7 +99,7 @@
         
         
         <script type="text/javascript" src="<?=asset('js/selectize.js');?>"></script>
-		<script type="text/javascript" src="<?=asset('js/backend.js');?>"></script>
+		<script type="text/javascript" src="<?=asset('js/gestion.js');?>"></script>
 		<script type="text/javascript" src="<?=asset('js/personal.js');?>"></script>
 		<script type="text/javascript" src="<?=asset('js/financiera.js');?>"></script>
 		<script type="text/javascript" src="<?=asset('js/legal.js');?>"></script>
