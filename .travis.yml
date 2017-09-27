@@ -1,5 +1,5 @@
 env:
-  - DOCKER_TAG_VERSION="0.1"
+  - DOCKER_TAG_VERSION="0"
 
 sudo: required
 
