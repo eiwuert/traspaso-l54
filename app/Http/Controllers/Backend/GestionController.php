@@ -4,7 +4,7 @@ use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Http\Request;
 use View;
 use Input;
-use Acta;
+use App\Models\Acta;
 use App\Models\Gestion;
 use App\Models\GestionProgramaProyecto;
 use App\Models\GestionComiteInterministerial;
@@ -12,7 +12,6 @@ use App\Models\GestionPublicacion;
 use App\Models\GestionCompromisoInternacional;
 use App\Models\GestionLicitacion;
 use Response;
-
 
 class GestionController extends BaseController {
 
@@ -51,7 +50,6 @@ class GestionController extends BaseController {
 		$acta->institucion_id = \Auth::user()->institucion_id;
 		$acta->save();
 		$datos = $request->all();
-
 
 		$gestion = new Gestion;
 		$gestion->enlace_marco_normativo 			= $datos['gestion']['enlace_marco_normativo'];
@@ -146,7 +144,6 @@ class GestionController extends BaseController {
 	 */
 	public function edit($id)
 	{
-		//
 		$gestion = Gestion::where('acta_id', '=', $id)->get();
 		$programas = GestionProgramaProyecto::where('acta_id', '=', $id)->get();
 		$comites = GestionComiteInterministerial::where('acta_id', '=', $id)->get();
@@ -175,6 +172,21 @@ class GestionController extends BaseController {
 		$acta = Acta::find($id);
 		$datos = $request->all();
 
+		$gestion = Gestion::where('acta_id', '=', $id)->get();
+		$programas = GestionProgramaProyecto::where('acta_id', '=', $id)->get();
+		$comites = GestionComiteInterministerial::where('acta_id', '=', $id)->get();
+		$publicaciones = GestionPublicacion::where('acta_id', '=', $id)->get();
+		$compromisos = GestionCompromisoInternacional::where('acta_id', '=', $id)->get();
+		$licitaciones = GestionLicitacion::where('acta_id', '=', $id)->get();
+		$data = json_encode(array(
+					'gestion'=>$gestion,
+					'programas'=>$programas,
+					'comites'=>$comites,
+					'publicaciones'=>$publicaciones,
+					'compromisos'=>$compromisos,
+					'licitaciones'=>$licitaciones
+				));
+
 		if(isset($datos['gestion']['id']))
 			$gestion = Gestion::find($datos['gestion']['id']);
 		else
@@ -198,9 +210,9 @@ class GestionController extends BaseController {
 			}else{
 				$programa = new GestionProgramaProyecto;
 			}
-			$programa->nombre = $p['nombre'];
-			$programa->monto = $p['monto'];
-			$programa->etapa = $p['etapa'];
+			$programa->nombre = $n['nombre'];
+			$programa->monto = $n['monto'];
+			$programa->etapa = $n['etapa'];
 			$programa->acta_id = $id;
 			$programa->save();
 		}
@@ -216,8 +228,8 @@ class GestionController extends BaseController {
 			}else{
 				$comite = new GestionComiteInterministerial;
 			}
-			$comite->nombre = $c['nombre'];
-			$comite->calidad_participacion = $c['calidad_participacion'];
+			$comite->nombre = $n['nombre'];
+			$comite->calidad_participacion = $n['calidad_participacion'];
 			$comite->acta_id = $id;
 			$comite->save();
 		}
@@ -233,8 +245,8 @@ class GestionController extends BaseController {
 			}else{
 				$publicacion = new GestionPublicacion;
 			}
-			$publicacion->nombre = $p['nombre'];
-			$publicacion->enlace_publicacion = $p['enlace_publicacion'];
+			$publicacion->nombre = $n['nombre'];
+			$publicacion->enlace_publicacion = $n['enlace_publicacion'];
 			$publicacion->acta_id = $id;
 			$publicacion->save();
 		}
@@ -250,8 +262,8 @@ class GestionController extends BaseController {
 			}else{
 				$compromiso = new GestionCompromisoInternacional;
 			}
-			$compromiso->nombre = $c['nombre'];
-			$compromiso->calidad_participacion = $c['calidad_participacion'];
+			$compromiso->nombre = $n['nombre'];
+			$compromiso->calidad_participacion = $n['calidad_participacion'];
 			$compromiso->acta_id = $acta->id;
 			$compromiso->save();
 		}
@@ -267,8 +279,9 @@ class GestionController extends BaseController {
 			}else{
 				$licitacion = new GestionLicitacion;
 			}
-			$licitacion->nombre = $l['nombre'];
-			$licitacion->estado = $l['estado'];
+			$licitacion->nombre = $n['nombre'];
+			$licitacion->estado = $n['estado'];
+			$licitacion->acta_id = $acta->id;
 			$licitacion->save();
 		}
 		$resultado = array_diff($array_licitaciones, $array_no_licitaciones);
